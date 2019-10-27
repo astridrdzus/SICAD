@@ -16,8 +16,8 @@ import javax.swing.JOptionPane;
  * @author astri
  */
 public class conexion extends javax.swing.JFrame {
-    public static final String URL = "jdbc:mysql://localhost:3306/sicad";
-    public static final String USERNAME = "root";
+    public static final String URL = "jdbc:mysql://localhost:3306/SICAD";
+    public static final String USERNAME = "'root@'localhost'";
     public static final String PASSWORD = "1234";
 
     /**
@@ -36,14 +36,14 @@ public class conexion extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        btnConectar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnConectar.setText("Conectar");
+        btnConectar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnConectarActionPerformed(evt);
             }
         });
 
@@ -53,21 +53,21 @@ public class conexion extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(140, 140, 140)
-                .addComponent(jButton1)
-                .addContainerGap(187, Short.MAX_VALUE))
+                .addComponent(btnConectar)
+                .addContainerGap(183, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(135, 135, 135)
-                .addComponent(jButton1)
+                .addComponent(btnConectar)
                 .addContainerGap(142, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnConectarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConectarActionPerformed
         // TODO add your handling code here:
         try{
             Connection con = null;
@@ -80,7 +80,7 @@ public class conexion extends javax.swing.JFrame {
             res = ps.executeQuery();
             
             if(res.next()){
-                JOptionPane.showMessageDialog(null,res.getString("Nombre")+ " " + res.getString("folio"));
+                JOptionPane.showMessageDialog(null,res.getString("municipio")+ " " + res.getString("nivel"));
             }else{
                 JOptionPane.showMessageDialog(null, "No existen datos");
             }
@@ -90,11 +90,11 @@ public class conexion extends javax.swing.JFrame {
         }catch(Exception e){
             System.out.println(e);
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnConectarActionPerformed
     public static Connection getConnection(){
         Connection con = null;
         try{
-            Class.forName("com.mysql.jdbc.Driver");
+            //Class.forName("com.mysql.cj.jdbc.Driver");
             con = (Connection) DriverManager.getConnection(URL, USERNAME, PASSWORD);
             JOptionPane.showMessageDialog(null,"Conexion exitosa");
             
@@ -140,6 +140,6 @@ public class conexion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnConectar;
     // End of variables declaration//GEN-END:variables
 }

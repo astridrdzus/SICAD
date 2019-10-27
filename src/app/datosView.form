@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="126" max="-2" attributes="0"/>
+                      <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="31" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" pref="317" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="120" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="12" style="0"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                  <Component id="L_nivel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="L_municipio" min="-2" max="-2" attributes="0"/>
+                                  <Component id="L_sistema" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="L_turno" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="L_modalidad" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="cbox_turno" alignment="0" max="32767" attributes="0"/>
+                              <Component id="cbox_sistema" alignment="0" max="32767" attributes="0"/>
+                              <Component id="cbox_nivel" alignment="0" max="32767" attributes="0"/>
+                              <Component id="L_datosEsc" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jComboBox1" alignment="0" pref="213" max="32767" attributes="0"/>
+                              <Component id="cbox_modalidad" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="L_antiguedad" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                          <Component id="cbox_antiguedad" min="-2" pref="213" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="78" max="32767" attributes="0"/>
+                  <Component id="jPanel2" min="-2" pref="348" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="L_datosEsc" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="L_municipio" min="-2" max="-2" attributes="0"/>
+                      <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="L_nivel" min="-2" max="-2" attributes="0"/>
+                      <Component id="cbox_nivel" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="cbox_sistema" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="L_sistema" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="L_turno" min="-2" max="-2" attributes="0"/>
+                      <Component id="cbox_turno" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="L_modalidad" min="-2" max="-2" attributes="0"/>
+                      <Component id="cbox_modalidad" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="L_antiguedad" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cbox_antiguedad" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="145" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="L_municipio">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Municipio: "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="L_nivel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Nivel: "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="cbox_nivel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="5">
+                <StringItem index="0" value="--SELECCIONE--"/>
+                <StringItem index="1" value="Preescolar"/>
+                <StringItem index="2" value="Primaria"/>
+                <StringItem index="3" value="Secundaria"/>
+                <StringItem index="4" value="CAM"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbox_nivelActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="L_sistema">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Sistema: "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="cbox_sistema">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="3">
+                <StringItem index="0" value="--SELECCIONE--"/>
+                <StringItem index="1" value="Federal"/>
+                <StringItem index="2" value="Estatal"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="L_turno">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Turno: "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="cbox_turno">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="3">
+                <StringItem index="0" value="--SELECCIONE--"/>
+                <StringItem index="1" value="Matutino"/>
+                <StringItem index="2" value="Vespertino"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="L_modalidad">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Modalidad: "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="cbox_modalidad">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="4">
+                <StringItem index="0" value="--SELECCIONE--"/>
+                <StringItem index="1" value="Regular"/>
+                <StringItem index="2" value="Ind&#xed;gena"/>
+                <StringItem index="3" value="CONAFE"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="L_antiguedad">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Antig&#xfc;edad: "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="cbox_antiguedad">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="6">
+                <StringItem index="0" value="--SELECCIONE--"/>
+                <StringItem index="1" value="De 0 a 5 a&#xf1;os"/>
+                <StringItem index="2" value="De 6 a 10 a&#xf1;os"/>
+                <StringItem index="3" value="De 11 a 15 a&#xf1;os"/>
+                <StringItem index="4" value="De 16 a 20 a&#xf1;os"/>
+                <StringItem index="5" value="M&#xe1;s de 20 a&#xf1;os"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbox_antiguedadActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="jComboBox1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="106">
+                <StringItem index="0" value="--SELECCIONE--"/>
+                <StringItem index="1" value="1.-Abal&#xe1;"/>
+                <StringItem index="2" value="2.-Acanc&#xe9;h"/>
+                <StringItem index="3" value="3.-Baca"/>
+                <StringItem index="4" value="4.-Bokob&#xe1;"/>
+                <StringItem index="5" value="5.-Buctzotz"/>
+                <StringItem index="6" value="6.-Cacalch&#xe9;n"/>
+                <StringItem index="7" value="7.-Calotmul"/>
+                <StringItem index="8" value="8.-Cansahcab"/>
+                <StringItem index="9" value="9.-Cantamayec"/>
+                <StringItem index="10" value="10.-Celest&#xfa;n"/>
+                <StringItem index="11" value="11.-Cenotillo"/>
+                <StringItem index="12" value="12.-Conkal"/>
+                <StringItem index="13" value="13.-Cuncunul"/>
+                <StringItem index="14" value="14.-Cuzam&#xe1;"/>
+                <StringItem index="15" value="15.-Chacsink&#xed;n"/>
+                <StringItem index="16" value="16.-Chankom"/>
+                <StringItem index="17" value="17.-Chapab"/>
+                <StringItem index="18" value="18.-Chemax"/>
+                <StringItem index="19" value="19.-Chicxulub Pueblo"/>
+                <StringItem index="20" value="20.-Chichimil&#xe1;"/>
+                <StringItem index="21" value="21.-Chikindzonot"/>
+                <StringItem index="22" value="22.-Chochol&#xe1;"/>
+                <StringItem index="23" value="23.-Chumayel"/>
+                <StringItem index="24" value="24.-Dzan"/>
+                <StringItem index="25" value="25.-Dzemul"/>
+                <StringItem index="26" value="26.-Dzidzant&#xfa;n"/>
+                <StringItem index="27" value="27.-Dzilam de Bravo"/>
+                <StringItem index="28" value="28.-Dzlilam Gonz&#xe1;lez"/>
+                <StringItem index="29" value="29.-Dzit&#xe1;s"/>
+                <StringItem index="30" value="30.-Dzoncauich"/>
+                <StringItem index="31" value="31.-Espita"/>
+                <StringItem index="32" value="32.-Halach&#xf3;"/>
+                <StringItem index="33" value="33.-Hocab&#xe1;"/>
+                <StringItem index="34" value="34.-Hoct&#xfa;n"/>
+                <StringItem index="35" value="35.-Hom&#xfa;n"/>
+                <StringItem index="36" value="36.-Huhi"/>
+                <StringItem index="37" value="37.-Hununcm&#xe1;"/>
+                <StringItem index="38" value="38.-Ixil"/>
+                <StringItem index="39" value="39.-Izamal"/>
+                <StringItem index="40" value="40.-Kanas&#xed;n"/>
+                <StringItem index="41" value="41.-Kantunil"/>
+                <StringItem index="42" value="42.-Kaua"/>
+                <StringItem index="43" value="43.-Kinchil"/>
+                <StringItem index="44" value="44.-Kopom&#xe1;"/>
+                <StringItem index="45" value="45.-Mama"/>
+                <StringItem index="46" value="46.-Man&#xed;"/>
+                <StringItem index="47" value="47.-Maxcan&#xfa;"/>
+                <StringItem index="48" value="48.-Mayap&#xe1;n"/>
+                <StringItem index="49" value="49.-M&#xe9;rida"/>
+                <StringItem index="50" value="50.-Mococh&#xe1;"/>
+                <StringItem index="51" value="51.-Motul"/>
+                <StringItem index="52" value="52.-Muna"/>
+                <StringItem index="53" value="53.-Muxupip"/>
+                <StringItem index="54" value="54.-Opich&#xe9;n"/>
+                <StringItem index="55" value="55.-Oxkutzcab"/>
+                <StringItem index="56" value="56.-Panab&#xe1;"/>
+                <StringItem index="57" value="57.-Peto"/>
+                <StringItem index="58" value="58.-Progreso"/>
+                <StringItem index="59" value="59.-Quintana Roo"/>
+                <StringItem index="60" value="60.-R&#xed;o Lagartos"/>
+                <StringItem index="61" value="61.-Sacalum"/>
+                <StringItem index="62" value="62.-Samahil"/>
+                <StringItem index="63" value="63.-Sanahcat"/>
+                <StringItem index="64" value="64.-San Felipe"/>
+                <StringItem index="65" value="65.-Santa Elena"/>
+                <StringItem index="66" value="66.-Sey&#xe9;"/>
+                <StringItem index="67" value="67.-Sinanch&#xe9;"/>
+                <StringItem index="68" value="68.-Sotuta"/>
+                <StringItem index="69" value="69.-Sucil&#xe1;"/>
+                <StringItem index="70" value="70.-Sudzal"/>
+                <StringItem index="71" value="71.-Suma de Hidalgo"/>
+                <StringItem index="72" value="72.-Tahdzi&#xfa;"/>
+                <StringItem index="73" value="73.-Tahmek"/>
+                <StringItem index="74" value="74.-Teabo"/>
+                <StringItem index="75" value="75.-Tec&#xf3;h"/>
+                <StringItem index="76" value="76.-Tekal de Venegas"/>
+                <StringItem index="77" value="77.-Tekant&#xf3;"/>
+                <StringItem index="78" value="78.-Tekax"/>
+                <StringItem index="79" value="79.-Tekit"/>
+                <StringItem index="80" value="80.-Tekom"/>
+                <StringItem index="81" value="81.-Telchac Pueblo"/>
+                <StringItem index="82" value="82.-Telchac Puerto"/>
+                <StringItem index="83" value="83.-Temax"/>
+                <StringItem index="84" value="84.-Temoz&#xf3;n"/>
+                <StringItem index="85" value="85.-Tepak&#xe1;n"/>
+                <StringItem index="86" value="86.-Tetiz"/>
+                <StringItem index="87" value="87.-Teya"/>
+                <StringItem index="88" value="88.-Ticul"/>
+                <StringItem index="89" value="89.-Timucuy"/>
+                <StringItem index="90" value="90.-Tinum"/>
+                <StringItem index="91" value="91.-Tixcacalcupul"/>
+                <StringItem index="92" value="92.-Tixkokob"/>
+                <StringItem index="93" value="93.-Tixm&#xe9;huac"/>
+                <StringItem index="94" value="94.-Tixp&#xe9;hual"/>
+                <StringItem index="95" value="95.-Tizim&#xed;n"/>
+                <StringItem index="96" value="96.-Tunk&#xe1;s"/>
+                <StringItem index="97" value="97.-Tzucacab"/>
+                <StringItem index="98" value="98.-Uayma"/>
+                <StringItem index="99" value="99.-Ucu"/>
+                <StringItem index="100" value="100.-Um&#xe1;n"/>
+                <StringItem index="101" value="101.-Valladolid"/>
+                <StringItem index="102" value="102.-Xocchel"/>
+                <StringItem index="103" value="103.-Yaxcab&#xe1;"/>
+                <StringItem index="104" value="104.-Yaxkukul"/>
+                <StringItem index="105" value="105.-Yobain"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="L_datosEsc">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Datos de la Escuela"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel3" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="L_sexo" min="-2" max="-2" attributes="0"/>
+                          <Component id="L_edad" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jComboBox2" min="-2" pref="195" max="-2" attributes="0"/>
+                          <Component id="cbox_sexo" min="-2" pref="195" max="-2" attributes="0"/>
+                          <Component id="cbox_aniosServicio" min="-2" pref="195" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" pref="28" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="L_sexo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbox_sexo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="L_edad" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jComboBox2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbox_aniosServicio" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="100" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Datos del director o directora"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="L_edad">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Edad: "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="cbox_sexo">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="0"/>
+                </Property>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="3">
+                    <StringItem index="0" value="--SELECCIONE--"/>
+                    <StringItem index="1" value="Mujer"/>
+                    <StringItem index="2" value="Hombre"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="L_sexo">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Sexo: "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="A&#xf1;os de servicio "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel3">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="como director (a):"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBox2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="0"/>
+                </Property>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="97">
+                    <StringItem index="0" value="--SELECCIONE--"/>
+                    <StringItem index="1" value="15"/>
+                    <StringItem index="2" value="16"/>
+                    <StringItem index="3" value="17"/>
+                    <StringItem index="4" value="18"/>
+                    <StringItem index="5" value="19"/>
+                    <StringItem index="6" value="20"/>
+                    <StringItem index="7" value="21"/>
+                    <StringItem index="8" value="22"/>
+                    <StringItem index="9" value="23"/>
+                    <StringItem index="10" value="24"/>
+                    <StringItem index="11" value="25"/>
+                    <StringItem index="12" value="26"/>
+                    <StringItem index="13" value="27"/>
+                    <StringItem index="14" value="28"/>
+                    <StringItem index="15" value="29"/>
+                    <StringItem index="16" value="30"/>
+                    <StringItem index="17" value="31"/>
+                    <StringItem index="18" value="32"/>
+                    <StringItem index="19" value="33"/>
+                    <StringItem index="20" value="34"/>
+                    <StringItem index="21" value="35"/>
+                    <StringItem index="22" value="36"/>
+                    <StringItem index="23" value="37"/>
+                    <StringItem index="24" value="38"/>
+                    <StringItem index="25" value="39"/>
+                    <StringItem index="26" value="40"/>
+                    <StringItem index="27" value="41"/>
+                    <StringItem index="28" value="42"/>
+                    <StringItem index="29" value="43"/>
+                    <StringItem index="30" value="44"/>
+                    <StringItem index="31" value="45"/>
+                    <StringItem index="32" value="46"/>
+                    <StringItem index="33" value="47"/>
+                    <StringItem index="34" value="48"/>
+                    <StringItem index="35" value="49"/>
+                    <StringItem index="36" value="50"/>
+                    <StringItem index="37" value="51"/>
+                    <StringItem index="38" value="52"/>
+                    <StringItem index="39" value="53"/>
+                    <StringItem index="40" value="54"/>
+                    <StringItem index="41" value="55"/>
+                    <StringItem index="42" value="56"/>
+                    <StringItem index="43" value="57"/>
+                    <StringItem index="44" value="58"/>
+                    <StringItem index="45" value="59"/>
+                    <StringItem index="46" value="60"/>
+                    <StringItem index="47" value="61"/>
+                    <StringItem index="48" value="62"/>
+                    <StringItem index="49" value="63"/>
+                    <StringItem index="50" value="64"/>
+                    <StringItem index="51" value="65"/>
+                    <StringItem index="52" value="66"/>
+                    <StringItem index="53" value="67"/>
+                    <StringItem index="54" value="68"/>
+                    <StringItem index="55" value="69"/>
+                    <StringItem index="56" value="70"/>
+                    <StringItem index="57" value="71"/>
+                    <StringItem index="58" value="72"/>
+                    <StringItem index="59" value="73"/>
+                    <StringItem index="60" value="74"/>
+                    <StringItem index="61" value="75"/>
+                    <StringItem index="62" value="76"/>
+                    <StringItem index="63" value="77"/>
+                    <StringItem index="64" value="78"/>
+                    <StringItem index="65" value="79"/>
+                    <StringItem index="66" value="80"/>
+                    <StringItem index="67" value="81"/>
+                    <StringItem index="68" value="82"/>
+                    <StringItem index="69" value="83"/>
+                    <StringItem index="70" value="84"/>
+                    <StringItem index="71" value="85"/>
+                    <StringItem index="72" value="86"/>
+                    <StringItem index="73" value="87"/>
+                    <StringItem index="74" value="88"/>
+                    <StringItem index="75" value="89"/>
+                    <StringItem index="76" value="90"/>
+                    <StringItem index="77" value="91"/>
+                    <StringItem index="78" value="92"/>
+                    <StringItem index="79" value="93"/>
+                    <StringItem index="80" value="94"/>
+                    <StringItem index="81" value="95"/>
+                    <StringItem index="82" value="96"/>
+                    <StringItem index="83" value="97"/>
+                    <StringItem index="84" value="98"/>
+                    <StringItem index="85" value="99"/>
+                    <StringItem index="86" value="100"/>
+                    <StringItem index="87" value="101"/>
+                    <StringItem index="88" value="102"/>
+                    <StringItem index="89" value="103"/>
+                    <StringItem index="90" value="104"/>
+                    <StringItem index="91" value="105"/>
+                    <StringItem index="92" value="106"/>
+                    <StringItem index="93" value="107"/>
+                    <StringItem index="94" value="108"/>
+                    <StringItem index="95" value="109"/>
+                    <StringItem index="96" value="110"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="cbox_aniosServicio">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="0"/>
+                </Property>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="6">
+                    <StringItem index="0" value="--SELECCIONE--"/>
+                    <StringItem index="1" value="De 0 a 5 a&#xf1;os"/>
+                    <StringItem index="2" value="De 6 a 10 a&#xf1;os"/>
+                    <StringItem index="3" value="De 11 a 15 a&#xf1;os"/>
+                    <StringItem index="4" value="De 16 a 20 a&#xf1;os"/>
+                    <StringItem index="5" value="M&#xe1;s de 20 a&#xf1;os"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbox_aniosServicioActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel3">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="L_Encuestador" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="txt_encuestador" max="32767" attributes="0"/>
+                      <Component id="jDateChooser1" pref="315" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="L_Encuestador" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_encuestador" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jDateChooser1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel4" min="-2" pref="17" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="45" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="L_Encuestador">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Nombre del encuestador (a):"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txt_encuestador">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Fecha : "/>
+          </Properties>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
