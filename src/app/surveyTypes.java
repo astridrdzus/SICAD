@@ -114,9 +114,10 @@ public class surveyTypes extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.setVisible(false);
         this.sv.setEncuesta("DESARROLLO");
-        System.out.println("survey type" +this.sv.getEncuesta());
+        System.out.println("survey type: " +this.sv.getEncuesta());
         dataView datav = new dataView();
         datav.sv = this.sv;
+        datav.encuesta_label.setText(this.sv.getEncuesta());
         datav.setVisible(true);
     }//GEN-LAST:event_btn_DesarrolloSurvActionPerformed
 
@@ -124,9 +125,10 @@ public class surveyTypes extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.setVisible(false);
         this.sv.setEncuesta("VIOLENCIA");
-        System.out.println("survey type" +this.sv.getEncuesta());
+        System.out.println("survey type: " +this.sv.getEncuesta());
         dataView datav = new dataView();
         datav.sv = this.sv;
+        datav.encuesta_label.setText(this.sv.getEncuesta());
         datav.setVisible(true);
     }//GEN-LAST:event_btn_ViolenciaSurvActionPerformed
 

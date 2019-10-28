@@ -20,12 +20,13 @@ public class ctrlData implements ActionListener{
     private surveyData sv;
     private dataQueries dq;
     private dataView dataFrm;
-    public int folioCont = 0;
+    public int folioCont;
     
-    public ctrlData(surveyData sv, dataQueries dq, dataView dataFrm){
+    public ctrlData(surveyData sv, dataQueries dq, dataView dataFrm, int folioCont){
         this.sv = sv;
         this.dq = dq;
         this.dataFrm = dataFrm;
+        this.folioCont = folioCont;
         this.dataFrm.btn_SaveData.addActionListener(this);
         
         
@@ -40,6 +41,7 @@ public class ctrlData implements ActionListener{
             System.out.println(sv.getFolio());
             
             System.out.println(sv.getEncuesta());
+            dataFrm.encuesta_label.setText(sv.getEncuesta());
             
             sv.setMunicipio(dataFrm.cbox_municipio.getSelectedItem().toString());
             System.out.println(sv.getMunicipio());
@@ -82,7 +84,6 @@ public class ctrlData implements ActionListener{
             //if(dq.create(sv)){
             if(flag){
                 JOptionPane.showMessageDialog(null, "Datos guardados");
-                folioCont++;
             }else{
                 JOptionPane.showMessageDialog(null, "Error al guardar");
             }

@@ -26,7 +26,8 @@ public class SICAD {
         dataQueries queries = new dataQueries();
         mainMenu  menuFrm = new mainMenu();
         dataView dataFrm = new dataView();
-        ctrlData ctrl = new ctrlData(mod,queries,dataFrm);
+        //We initialize 
+        ctrlData ctrl = new ctrlData(mod,queries,dataFrm, dataFrm.folio);
         
         menuFrm.setVisible(true);
         
