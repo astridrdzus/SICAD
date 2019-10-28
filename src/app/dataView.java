@@ -15,7 +15,7 @@ import surveyClasses.surveyData;
  * @author astridrou
  */
 public class dataView extends javax.swing.JFrame {
-
+    public surveyData sv = new surveyData();
     /**
      * Creates new form datosEscuelaView
      */
@@ -448,12 +448,12 @@ public class dataView extends javax.swing.JFrame {
         try{
             //Connection con = null;
             //con = getConnection();
-            surveyTypes  surveyTypeView = new surveyTypes();             
-            System.out.println(surveyTypeView.sv.getEncuesta());
+            //surveyTypes  surveyTypeView = new surveyTypes();             
+            //System.out.println(surveyTypeView.sv.getEncuesta());
             dataQueries dq = new dataQueries();
             
             
-            ctrlData controller = new ctrlData(surveyTypeView.sv,dq,this);
+            ctrlData controller = new ctrlData(this.sv,dq,this);
             controller.actionPerformed(evt);
             
         }catch(Exception e){

@@ -13,7 +13,7 @@ import surveyClasses.surveyData;
  * @author astri
  */
 public class surveyTypes extends javax.swing.JFrame {
-    public surveyData sv = new surveyData();
+    public surveyData sv = new surveyData(); //This object is for setting the survey type when clicking the buttons.
 
     /** Creates new form tiposCuestionarios */
     public surveyTypes() {
@@ -114,7 +114,9 @@ public class surveyTypes extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.setVisible(false);
         this.sv.setEncuesta("DESARROLLO");
+        System.out.println("survey type" +this.sv.getEncuesta());
         dataView datav = new dataView();
+        datav.sv = this.sv;
         datav.setVisible(true);
     }//GEN-LAST:event_btn_DesarrolloSurvActionPerformed
 
@@ -122,7 +124,9 @@ public class surveyTypes extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.setVisible(false);
         this.sv.setEncuesta("VIOLENCIA");
+        System.out.println("survey type" +this.sv.getEncuesta());
         dataView datav = new dataView();
+        datav.sv = this.sv;
         datav.setVisible(true);
     }//GEN-LAST:event_btn_ViolenciaSurvActionPerformed
 
