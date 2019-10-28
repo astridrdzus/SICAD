@@ -33,20 +33,47 @@ public class ctrlData implements ActionListener{
     
     @Override
     public void actionPerformed(ActionEvent e){
-        
+        System.out.println("Button pushed");
         if(e.getSource() == dataFrm.btn_SaveData){
             sv.setFolio(folioCont);
-            sv.setMunicipio(dataFrm.cbox_municipio.getName());
-            sv.setNivel(dataFrm.cbox_nivel.getName());
-            sv.setSistema(dataFrm.cbox_sistema.getName());
-            sv.setTurno(dataFrm.cbox_turno.getName());
-            sv.setModalidad(dataFrm.cbox_modalidad.getName());
-            sv.setAntiguedad(dataFrm.cbox_antiguedad.getName());
-            sv.setSexo(dataFrm.cbox_sexo.getName());
-            sv.setEdad(dataFrm.cbox_edad.getName());
-            sv.setAnios_servicio(dataFrm.cbox_aniosServicio.getName());
-            sv.setNombre(dataFrm.txt_encuestador.getName());
-            sv.setFecha(dataFrm.jDateChooser1.getDateFormatString());
+            System.out.println(sv.getFolio());
+            
+            System.out.println(sv.getEncuesta());
+            
+            sv.setMunicipio(dataFrm.cbox_municipio.getSelectedItem().toString());
+            System.out.println(sv.getMunicipio());
+            
+            sv.setNivel(dataFrm.cbox_nivel.getSelectedItem().toString());
+            System.out.println(sv.getNivel());
+            
+            sv.setSistema(dataFrm.cbox_sistema.getSelectedItem().toString());
+            System.out.println(sv.getSistema());
+            
+            sv.setTurno(dataFrm.cbox_turno.getSelectedItem().toString());
+            System.out.println(sv.getTurno());
+            
+            sv.setModalidad(dataFrm.cbox_modalidad.getSelectedItem().toString());
+            System.out.println(sv.getModalidad());
+            
+            sv.setAntiguedad(dataFrm.cbox_antiguedad.getSelectedItem().toString());
+            System.out.println(sv.getAntiguedad());
+            
+            sv.setSexo(dataFrm.cbox_sexo.getSelectedItem().toString());
+            System.out.println(sv.getSexo());
+            
+            sv.setEdad(dataFrm.cbox_edad.getSelectedItem().toString());
+            System.out.println(sv.getEdad());
+            
+            sv.setAnios_servicio(dataFrm.cbox_aniosServicio.getSelectedItem().toString());
+            System.out.println(sv.getAnios_servicio());
+            
+            sv.setNombre(dataFrm.txt_encuestador.getText());
+            System.out.println(sv.getNombre());
+            
+            sv.setFecha(dataFrm.jDateChooser1.getDate().toString());
+            System.out.println(sv.getFecha());
+            
+            System.out.println("Datos guardados");
             
             if(dq.create(sv)){
                 JOptionPane.showMessageDialog(null, "Datos guardados");

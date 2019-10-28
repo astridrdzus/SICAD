@@ -4,8 +4,11 @@
  * and open the template in the editor.
  */
 package app;
+import controller.ctrlData;
 import static databaseConnection.connect.getConnection;
+import databaseConnection.dataQueries;
 import java.sql.Connection;
+import surveyClasses.surveyData;
 
 /**
  *
@@ -443,8 +446,15 @@ public class dataView extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         try{
-            Connection con = null;
-            con = getConnection();
+            //Connection con = null;
+            //con = getConnection();
+            surveyData sv = new surveyData();
+            sv.setEncuesta("desarrollo");
+            dataQueries dq = new dataQueries();
+            
+            
+            ctrlData controller = new ctrlData(sv,dq,this);
+            controller.actionPerformed(evt);
             
         }catch(Exception e){
             
