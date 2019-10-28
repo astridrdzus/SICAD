@@ -20,6 +20,7 @@ public class connect {
     public static final String URL = "jdbc:mysql://localhost/SICAD";
     public static final String USERNAME = "root";
     public static final String PASSWORD = "";
+    //public Connection con = null;
     
     
     public static Connection getConnection(){
@@ -37,4 +38,8 @@ public class connect {
         }
         return con;
     }
+
+
+
+
 }

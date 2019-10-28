@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package app;
+import static databaseConnection.connect.getConnection;
 
 /**
  *
@@ -515,16 +516,16 @@ public class dataView extends javax.swing.JFrame {
     private javax.swing.JButton btn_SaveData;
     private javax.swing.JButton btn_back;
     private javax.swing.JButton btn_next;
-    private javax.swing.JComboBox<String> cbox_aniosServicio;
-    private javax.swing.JComboBox<String> cbox_antiguedad;
-    private javax.swing.JComboBox<String> cbox_edad;
-    private javax.swing.JComboBox<String> cbox_modalidad;
-    private javax.swing.JComboBox<String> cbox_nivel;
-    private javax.swing.JComboBox<String> cbox_sexo;
-    private javax.swing.JComboBox<String> cbox_sistema;
-    private javax.swing.JComboBox<String> cbox_turno;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
+    public javax.swing.JComboBox<String> cbox_aniosServicio;
+    public javax.swing.JComboBox<String> cbox_antiguedad;
+    public javax.swing.JComboBox<String> cbox_edad;
+    public javax.swing.JComboBox<String> cbox_modalidad;
+    public javax.swing.JComboBox<String> cbox_nivel;
+    public javax.swing.JComboBox<String> cbox_sexo;
+    public javax.swing.JComboBox<String> cbox_sistema;
+    public javax.swing.JComboBox<String> cbox_turno;
+    public javax.swing.JComboBox<String> jComboBox1;
+    public com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -534,6 +535,6 @@ public class dataView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JTextField txt_encuestador;
+    public javax.swing.JTextField txt_encuestador;
     // End of variables declaration//GEN-END:variables
 }
