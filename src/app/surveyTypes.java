@@ -6,11 +6,14 @@
 
 package app;
 
+import surveyClasses.surveyData;
+
 /**
  *
  * @author astri
  */
 public class surveyTypes extends javax.swing.JFrame {
+    public surveyData sv = new surveyData();
 
     /** Creates new form tiposCuestionarios */
     public surveyTypes() {
@@ -29,8 +32,8 @@ public class surveyTypes extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        button1 = new java.awt.Button();
-        button2 = new java.awt.Button();
+        btn_DesarrolloSurv = new java.awt.Button();
+        btn_ViolenciaSurv = new java.awt.Button();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(850, 600));
@@ -39,18 +42,23 @@ public class surveyTypes extends javax.swing.JFrame {
         jLabel1.setText("Encuestas");
         jLabel1.setVerifyInputWhenFocusTarget(false);
 
-        button1.setBackground(new java.awt.Color(51, 255, 0));
-        button1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        button1.setLabel("Encuesta Desarrollo del PNCE");
-        button1.addActionListener(new java.awt.event.ActionListener() {
+        btn_DesarrolloSurv.setBackground(new java.awt.Color(51, 255, 0));
+        btn_DesarrolloSurv.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        btn_DesarrolloSurv.setLabel("Encuesta Desarrollo del PNCE");
+        btn_DesarrolloSurv.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button1ActionPerformed(evt);
+                btn_DesarrolloSurvActionPerformed(evt);
             }
         });
 
-        button2.setBackground(new java.awt.Color(204, 153, 0));
-        button2.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        button2.setLabel("Encuesta Violencia Escolar");
+        btn_ViolenciaSurv.setBackground(new java.awt.Color(204, 153, 0));
+        btn_ViolenciaSurv.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        btn_ViolenciaSurv.setLabel("Encuesta Violencia Escolar");
+        btn_ViolenciaSurv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ViolenciaSurvActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -59,9 +67,9 @@ public class surveyTypes extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(button2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_ViolenciaSurv, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn_DesarrolloSurv, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(jPanel2Layout.createSequentialGroup()
@@ -74,13 +82,13 @@ public class surveyTypes extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(22, 22, 22)
-                .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btn_DesarrolloSurv, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
-                .addComponent(button2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btn_ViolenciaSurv, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40))
         );
 
-        button2.getAccessibleContext().setAccessibleName("btn_Desarrollo");
+        btn_ViolenciaSurv.getAccessibleContext().setAccessibleName("btn_Desarrollo");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -102,12 +110,21 @@ public class surveyTypes extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
+    private void btn_DesarrolloSurvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_DesarrolloSurvActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
+        this.sv.setEncuesta("DESARROLLO");
         dataView datav = new dataView();
         datav.setVisible(true);
-    }//GEN-LAST:event_button1ActionPerformed
+    }//GEN-LAST:event_btn_DesarrolloSurvActionPerformed
+
+    private void btn_ViolenciaSurvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ViolenciaSurvActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        this.sv.setEncuesta("VIOLENCIA");
+        dataView datav = new dataView();
+        datav.setVisible(true);
+    }//GEN-LAST:event_btn_ViolenciaSurvActionPerformed
 
     /**
      * @param args the command line arguments
@@ -143,13 +160,14 @@ public class surveyTypes extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new surveyTypes().setVisible(true);
+                
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Button button1;
-    private java.awt.Button button2;
+    private java.awt.Button btn_DesarrolloSurv;
+    private java.awt.Button btn_ViolenciaSurv;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

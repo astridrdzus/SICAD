@@ -448,12 +448,12 @@ public class dataView extends javax.swing.JFrame {
         try{
             //Connection con = null;
             //con = getConnection();
-            surveyData sv = new surveyData();
-            sv.setEncuesta("desarrollo");
+            surveyTypes  surveyTypeView = new surveyTypes();             
+            System.out.println(surveyTypeView.sv.getEncuesta());
             dataQueries dq = new dataQueries();
             
             
-            ctrlData controller = new ctrlData(sv,dq,this);
+            ctrlData controller = new ctrlData(surveyTypeView.sv,dq,this);
             controller.actionPerformed(evt);
             
         }catch(Exception e){
