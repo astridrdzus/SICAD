@@ -5,7 +5,7 @@
  */
 package app;
 
-import static databaseConnection.conexion.getConnection;
+import static databaseConnection.connect.getConnection;
 import java.awt.Component;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -19,29 +19,11 @@ import javax.swing.JFrame;
  * @author astri
  */
 public class mainMenu extends javax.swing.JFrame {
-    public static final String URL = "jdbc:mysql://localhost/SICAD";
-    public static final String USERNAME = "root";
-    public static final String PASSWORD = "";
-    
-    
+
     /**
      * Creates new form mainMenu
      */
-    public static Connection getConnection(){
-    Connection con = null;
-    try{
-        //Class.forName("com.myslq.jdbc.Driver");
-        con = (Connection) DriverManager.getConnection(URL, USERNAME, PASSWORD);
-        System.out.println("Database conecction successfull");
-        //JOptionPane.showMessageDialog(null,"Conexion exitosa");
-
-    } catch(Exception e){
-        System.out.println(e);
-        //JOptionPane.showMessageDialog(null, "Error "+e);
-
-    }
-    return con;
-    }
+   
     public mainMenu() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -57,6 +39,7 @@ public class mainMenu extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenu1 = new javax.swing.JMenu();
+        jPanel1 = new javax.swing.JPanel();
         panel_prinicipal = new javax.swing.JPanel();
         btnBusqueda1 = new java.awt.Button();
         btnCapture = new java.awt.Button();
@@ -67,6 +50,7 @@ public class mainMenu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setPreferredSize(new java.awt.Dimension(850, 600));
 
         btnBusqueda1.setBackground(new java.awt.Color(153, 153, 255));
         btnBusqueda1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -84,6 +68,11 @@ public class mainMenu extends javax.swing.JFrame {
         btnCapture.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         btnCapture.setLabel("Capturar");
         btnCapture.setName(""); // NOI18N
+        btnCapture.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCaptureActionPerformed(evt);
+            }
+        });
 
         btnBusqueda.setBackground(new java.awt.Color(153, 255, 153));
         btnBusqueda.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -101,13 +90,12 @@ public class mainMenu extends javax.swing.JFrame {
         panel_prinicipalLayout.setHorizontalGroup(
             panel_prinicipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_prinicipalLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnCapture, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21)
-                .addComponent(btnBusqueda1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(23, 23, 23)
-                .addComponent(btnBusqueda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(197, 197, 197))
+                .addComponent(btnCapture, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addComponent(btnBusqueda1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34)
+                .addComponent(btnBusqueda, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29))
         );
         panel_prinicipalLayout.setVerticalGroup(
             panel_prinicipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -123,28 +111,41 @@ public class mainMenu extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         jLabel1.setText("S I C A D");
 
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panel_prinicipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(182, 182, 182)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(panel_prinicipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(29, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(68, 68, 68)
-                        .addComponent(panel_prinicipal, javax.swing.GroupLayout.PREFERRED_SIZE, 496, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(200, 200, 200)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(72, Short.MAX_VALUE))
+                .addGap(122, 122, 122)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(128, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(65, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(panel_prinicipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(113, 113, 113))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(55, 55, 55)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(107, Short.MAX_VALUE))
         );
 
         pack();
@@ -157,6 +158,13 @@ public class mainMenu extends javax.swing.JFrame {
     private void btnBusqueda1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBusqueda1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBusqueda1ActionPerformed
+
+    private void btnCaptureActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCaptureActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);                 //Disapears the view
+        surveyTypes surv = new surveyTypes();
+        surv.setVisible(true);                  //Appears survey Types view
+    }//GEN-LAST:event_btnCaptureActionPerformed
 
     /**
      * @param args the command line arguments
@@ -184,7 +192,8 @@ public class mainMenu extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(mainMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        //************************************************************************************************************/
+        //Database connection
         try{
             Connection con = null;
             con = getConnection();
@@ -192,6 +201,8 @@ public class mainMenu extends javax.swing.JFrame {
         }catch(Exception e){
             System.out.println(e);
         }
+        
+        //*************************************************************************************************************/
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -206,6 +217,7 @@ public class mainMenu extends javax.swing.JFrame {
     private java.awt.Button btnCapture;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel panel_prinicipal;
     // End of variables declaration//GEN-END:variables
 }
