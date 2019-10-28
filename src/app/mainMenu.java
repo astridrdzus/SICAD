@@ -5,7 +5,7 @@
  */
 package app;
 
-import static app.conexion.getConnection;
+import static databaseConnection.conexion.getConnection;
 import java.awt.Component;
 import java.sql.Connection;
 import java.sql.DriverManager;
