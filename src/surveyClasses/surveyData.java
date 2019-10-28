@@ -16,13 +16,23 @@ public class surveyData {
     private String nivel;
     private String sistema;
     private String turno;
+    private String modalidad;
     private String antiguedad;
     private String sexo;
-    private int edad;
+    private String edad;
     private String anios_servicio;
     private String nombre;
     private String fecha;
+    
+    
+    public int getFolio() {
+        return folio;
+    }
 
+    public void setFolio(int folio) {
+        this.folio = folio;
+    }
+    
     public String getEncuesta() {
         return encuesta;
     }
@@ -58,6 +68,14 @@ public class surveyData {
     public String getTurno() {
         return turno;
     }
+    
+    public String getModalidad() {
+        return modalidad;
+    }
+
+    public void setModalidad(String modalidad) {
+        this.modalidad = modalidad;
+    }
 
     public void setTurno(String turno) {
         this.turno = turno;
@@ -79,11 +97,11 @@ public class surveyData {
         this.sexo = sexo;
     }
 
-    public int getEdad() {
+    public String getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
+    public void setEdad(String edad) {
         this.edad = edad;
     }
 
@@ -111,11 +129,7 @@ public class surveyData {
         this.fecha = fecha;
     }
 
-    public int getFolio() {
-        return folio;
-    }
 
-    public void setFolio(int folio) {
-        this.folio = folio;
-    }
+
+
 }

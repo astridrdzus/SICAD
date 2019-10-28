@@ -5,6 +5,7 @@
  */
 package app;
 import static databaseConnection.connect.getConnection;
+import java.sql.Connection;
 
 /**
  *
@@ -41,7 +42,7 @@ public class dataView extends javax.swing.JFrame {
         cbox_modalidad = new javax.swing.JComboBox<>();
         L_antiguedad = new javax.swing.JLabel();
         cbox_antiguedad = new javax.swing.JComboBox<>();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        cbox_municipio = new javax.swing.JComboBox<>();
         L_datosEsc = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -63,9 +64,9 @@ public class dataView extends javax.swing.JFrame {
         btn_SaveData = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         L_surveyType = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(850, 600));
 
         jPanel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
@@ -112,11 +113,11 @@ public class dataView extends javax.swing.JFrame {
             }
         });
 
-        jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--SELECCIONE--", "1.-Abalá", "2.-Acancéh", "3.-Baca", "4.-Bokobá", "5.-Buctzotz", "6.-Cacalchén", "7.-Calotmul", "8.-Cansahcab", "9.-Cantamayec", "10.-Celestún", "11.-Cenotillo", "12.-Conkal", "13.-Cuncunul", "14.-Cuzamá", "15.-Chacsinkín", "16.-Chankom", "17.-Chapab", "18.-Chemax", "19.-Chicxulub Pueblo", "20.-Chichimilá", "21.-Chikindzonot", "22.-Chocholá", "23.-Chumayel", "24.-Dzan", "25.-Dzemul", "26.-Dzidzantún", "27.-Dzilam de Bravo", "28.-Dzlilam González", "29.-Dzitás", "30.-Dzoncauich", "31.-Espita", "32.-Halachó", "33.-Hocabá", "34.-Hoctún", "35.-Homún", "36.-Huhi", "37.-Hununcmá", "38.-Ixil", "39.-Izamal", "40.-Kanasín", "41.-Kantunil", "42.-Kaua", "43.-Kinchil", "44.-Kopomá", "45.-Mama", "46.-Maní", "47.-Maxcanú", "48.-Mayapán", "49.-Mérida", "50.-Mocochá", "51.-Motul", "52.-Muna", "53.-Muxupip", "54.-Opichén", "55.-Oxkutzcab", "56.-Panabá", "57.-Peto", "58.-Progreso", "59.-Quintana Roo", "60.-Río Lagartos", "61.-Sacalum", "62.-Samahil", "63.-Sanahcat", "64.-San Felipe", "65.-Santa Elena", "66.-Seyé", "67.-Sinanché", "68.-Sotuta", "69.-Sucilá", "70.-Sudzal", "71.-Suma de Hidalgo", "72.-Tahdziú", "73.-Tahmek", "74.-Teabo", "75.-Tecóh", "76.-Tekal de Venegas", "77.-Tekantó", "78.-Tekax", "79.-Tekit", "80.-Tekom", "81.-Telchac Pueblo", "82.-Telchac Puerto", "83.-Temax", "84.-Temozón", "85.-Tepakán", "86.-Tetiz", "87.-Teya", "88.-Ticul", "89.-Timucuy", "90.-Tinum", "91.-Tixcacalcupul", "92.-Tixkokob", "93.-Tixméhuac", "94.-Tixpéhual", "95.-Tizimín", "96.-Tunkás", "97.-Tzucacab", "98.-Uayma", "99.-Ucu", "100.-Umán", "101.-Valladolid", "102.-Xocchel", "103.-Yaxcabá", "104.-Yaxkukul", "105.-Yobain" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        cbox_municipio.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cbox_municipio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--SELECCIONE--", "1.-Abalá", "2.-Acancéh", "3.-Baca", "4.-Bokobá", "5.-Buctzotz", "6.-Cacalchén", "7.-Calotmul", "8.-Cansahcab", "9.-Cantamayec", "10.-Celestún", "11.-Cenotillo", "12.-Conkal", "13.-Cuncunul", "14.-Cuzamá", "15.-Chacsinkín", "16.-Chankom", "17.-Chapab", "18.-Chemax", "19.-Chicxulub Pueblo", "20.-Chichimilá", "21.-Chikindzonot", "22.-Chocholá", "23.-Chumayel", "24.-Dzan", "25.-Dzemul", "26.-Dzidzantún", "27.-Dzilam de Bravo", "28.-Dzlilam González", "29.-Dzitás", "30.-Dzoncauich", "31.-Espita", "32.-Halachó", "33.-Hocabá", "34.-Hoctún", "35.-Homún", "36.-Huhi", "37.-Hununcmá", "38.-Ixil", "39.-Izamal", "40.-Kanasín", "41.-Kantunil", "42.-Kaua", "43.-Kinchil", "44.-Kopomá", "45.-Mama", "46.-Maní", "47.-Maxcanú", "48.-Mayapán", "49.-Mérida", "50.-Mocochá", "51.-Motul", "52.-Muna", "53.-Muxupip", "54.-Opichén", "55.-Oxkutzcab", "56.-Panabá", "57.-Peto", "58.-Progreso", "59.-Quintana Roo", "60.-Río Lagartos", "61.-Sacalum", "62.-Samahil", "63.-Sanahcat", "64.-San Felipe", "65.-Santa Elena", "66.-Seyé", "67.-Sinanché", "68.-Sotuta", "69.-Sucilá", "70.-Sudzal", "71.-Suma de Hidalgo", "72.-Tahdziú", "73.-Tahmek", "74.-Teabo", "75.-Tecóh", "76.-Tekal de Venegas", "77.-Tekantó", "78.-Tekax", "79.-Tekit", "80.-Tekom", "81.-Telchac Pueblo", "82.-Telchac Puerto", "83.-Temax", "84.-Temozón", "85.-Tepakán", "86.-Tetiz", "87.-Teya", "88.-Ticul", "89.-Timucuy", "90.-Tinum", "91.-Tixcacalcupul", "92.-Tixkokob", "93.-Tixméhuac", "94.-Tixpéhual", "95.-Tizimín", "96.-Tunkás", "97.-Tzucacab", "98.-Uayma", "99.-Ucu", "100.-Umán", "101.-Valladolid", "102.-Xocchel", "103.-Yaxcabá", "104.-Yaxkukul", "105.-Yobain" }));
+        cbox_municipio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                cbox_municipioActionPerformed(evt);
             }
         });
 
@@ -217,7 +218,7 @@ public class dataView extends javax.swing.JFrame {
                             .addComponent(cbox_sistema, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(cbox_nivel, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(L_datosEsc, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, 213, Short.MAX_VALUE)
+                            .addComponent(cbox_municipio, javax.swing.GroupLayout.Alignment.LEADING, 0, 213, Short.MAX_VALUE)
                             .addComponent(cbox_modalidad, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(L_antiguedad)
@@ -240,7 +241,7 @@ public class dataView extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(L_municipio)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(cbox_municipio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(L_nivel)
@@ -347,6 +348,13 @@ public class dataView extends javax.swing.JFrame {
         L_surveyType.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         L_surveyType.setText("Encuesta: ");
 
+        jTextField1.setEditable(false);
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -354,13 +362,17 @@ public class dataView extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(31, 31, 31)
                 .addComponent(L_surveyType)
-                .addContainerGap(273, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(L_surveyType)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(L_surveyType)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -369,34 +381,36 @@ public class dataView extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(64, 64, 64)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(64, 64, 64)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(220, 220, 220)
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(68, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(198, 198, 198))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(109, 109, 109))
+                        .addGap(115, 115, 115))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(179, 179, 179))))
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(197, 197, 197))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(36, 36, 36)
+                .addGap(24, 24, 24)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 317, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(77, Short.MAX_VALUE))
+                .addContainerGap(89, Short.MAX_VALUE))
         );
 
         pack();
@@ -414,9 +428,9 @@ public class dataView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cbox_aniosServicioActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void cbox_municipioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbox_municipioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_cbox_municipioActionPerformed
 
     private void btn_backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_backActionPerformed
         // TODO add your handling code here:
@@ -429,11 +443,17 @@ public class dataView extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         try{
+            Connection con = null;
+            con = getConnection();
             
         }catch(Exception e){
             
         }
     }//GEN-LAST:event_btn_SaveDataActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -513,18 +533,18 @@ public class dataView extends javax.swing.JFrame {
     private javax.swing.JLabel L_sistema;
     private javax.swing.JLabel L_surveyType;
     private javax.swing.JLabel L_turno;
-    private javax.swing.JButton btn_SaveData;
+    public javax.swing.JButton btn_SaveData;
     private javax.swing.JButton btn_back;
     private javax.swing.JButton btn_next;
     public javax.swing.JComboBox<String> cbox_aniosServicio;
     public javax.swing.JComboBox<String> cbox_antiguedad;
     public javax.swing.JComboBox<String> cbox_edad;
     public javax.swing.JComboBox<String> cbox_modalidad;
+    public javax.swing.JComboBox<String> cbox_municipio;
     public javax.swing.JComboBox<String> cbox_nivel;
     public javax.swing.JComboBox<String> cbox_sexo;
     public javax.swing.JComboBox<String> cbox_sistema;
     public javax.swing.JComboBox<String> cbox_turno;
-    public javax.swing.JComboBox<String> jComboBox1;
     public com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -535,6 +555,7 @@ public class dataView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JTextField jTextField1;
     public javax.swing.JTextField txt_encuestador;
     // End of variables declaration//GEN-END:variables
 }
