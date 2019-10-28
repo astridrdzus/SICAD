@@ -10,7 +10,7 @@ package surveyClasses;
  * @author astri
  */
 public class surveyData {
-    private int folio;
+    private String folio;
     private String encuesta;
     private String municipio;
     private String nivel;
@@ -25,11 +25,11 @@ public class surveyData {
     private String fecha;
     
     
-    public int getFolio() {
+    public String getFolio() {
         return folio;
     }
 
-    public void setFolio(int folio) {
+    public void setFolio(String folio) {
         this.folio = folio;
     }
     

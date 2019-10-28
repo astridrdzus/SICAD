@@ -35,7 +35,8 @@ public class ctrlData implements ActionListener{
     public void actionPerformed(ActionEvent e){
         System.out.println("Button pushed");
         if(e.getSource() == dataFrm.btn_SaveData){
-            sv.setFolio(folioCont);
+            
+            sv.setFolio(Integer.toString(folioCont));
             System.out.println(sv.getFolio());
             
             System.out.println(sv.getEncuesta());
@@ -75,7 +76,11 @@ public class ctrlData implements ActionListener{
             
             System.out.println("Datos guardados");
             
-            if(dq.create(sv)){
+            boolean flag = dq.create(sv);
+            System.out.println(flag);
+            
+            //if(dq.create(sv)){
+            if(flag){
                 JOptionPane.showMessageDialog(null, "Datos guardados");
                 folioCont++;
             }else{

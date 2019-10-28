@@ -22,12 +22,12 @@ public class dataQueries extends connect{
         PreparedStatement ps = null;
         Connection con = getConnection();
         
-        String sql = "INSERT INTO datos_escuela (folio, encuesta, municipio, nivel, fecha, sistema, turno,modalidad"
+        String sql = "INSERT INTO datos_escuela (folio, encuesta, municipio, nivel, fecha, sistema, turno,modalidad,"
                 + "antiguedad, sexo, edad, anios_servicio, nombre ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
         
         try{
             ps = con.prepareStatement(sql);
-            ps.setInt(1, sv.getFolio());
+            ps.setString(1, sv.getFolio());
             ps.setString(2, sv.getEncuesta());
             ps.setString(3, sv.getMunicipio());
             ps.setString(4, sv.getNivel());
@@ -40,7 +40,9 @@ public class dataQueries extends connect{
             ps.setString(11, sv.getEdad());
             ps.setString(12, sv.getAnios_servicio());
             ps.setString(13, sv.getNombre());
+            System.out.println(ps);
             ps.execute();
+           
             return true;
             
         }catch(SQLException e){
@@ -65,12 +67,12 @@ public class dataQueries extends connect{
         
         try{
             ps = con.prepareStatement(sql);
-            ps.setInt(1, sv.getFolio());
+            ps.setString(1, sv.getFolio());
             
             rs= ps.executeQuery();
             
             if(rs.next()){
-                sv.setFolio(Integer.parseInt(rs.getString("folio")));
+                sv.setFolio(rs.getString("folio"));
                 sv.setEncuesta(rs.getString("encuesta"));
                 sv.setMunicipio(rs.getString("municipio"));
                 sv.setNivel(rs.getString("nivel"));
@@ -122,7 +124,7 @@ public class dataQueries extends connect{
             ps.setString(10, sv.getEdad());
             ps.setString(11, sv.getAnios_servicio());
             ps.setString(12, sv.getNombre());
-            ps.setInt(13, sv.getFolio());
+            ps.setString(13, sv.getFolio());
             ps.execute();
             return true;
             
@@ -147,7 +149,7 @@ public class dataQueries extends connect{
         
         try{
             ps = con.prepareStatement(sql);
-            ps.setInt(1, sv.getFolio());
+            ps.setString(1, sv.getFolio());
             ps.execute();
             return true;
             
