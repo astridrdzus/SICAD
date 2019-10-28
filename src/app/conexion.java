@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
 /**
@@ -16,9 +17,9 @@ import javax.swing.JOptionPane;
  * @author astri
  */
 public class conexion extends javax.swing.JFrame {
-    public static final String URL = "jdbc:mysql://localhost:3306/SICAD";
-    public static final String USERNAME = "'root@'localhost'";
-    public static final String PASSWORD = "1234";
+    public static final String URL = "jdbc:mysql://localhost/SICAD";
+    public static final String USERNAME = "root";
+    public static final String PASSWORD = "";
 
     /**
      * Creates new form conexion
@@ -94,12 +95,13 @@ public class conexion extends javax.swing.JFrame {
     public static Connection getConnection(){
         Connection con = null;
         try{
-            //Class.forName("com.mysql.cj.jdbc.Driver");
+            //Class.forName("com.myslq.jdbc.Driver");
             con = (Connection) DriverManager.getConnection(URL, USERNAME, PASSWORD);
             JOptionPane.showMessageDialog(null,"Conexion exitosa");
             
         } catch(Exception e){
             System.out.println(e);
+            JOptionPane.showMessageDialog(null, "Error "+e);
             
         }
         return con;

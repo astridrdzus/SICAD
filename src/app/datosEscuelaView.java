@@ -9,12 +9,12 @@ package app;
  *
  * @author astri
  */
-public class datosView extends javax.swing.JFrame {
+public class datosEscuelaView extends javax.swing.JFrame {
 
     /**
      * Creates new form datosEscuelaView
      */
-    public datosView() {
+    public datosEscuelaView() {
         initComponents();
     }
 
@@ -48,7 +48,7 @@ public class datosView extends javax.swing.JFrame {
         L_sexo = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        cbox_edad = new javax.swing.JComboBox<>();
         cbox_aniosServicio = new javax.swing.JComboBox<>();
         jPanel3 = new javax.swing.JPanel();
         L_Encuestador = new javax.swing.JLabel();
@@ -105,6 +105,11 @@ public class datosView extends javax.swing.JFrame {
 
         jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--SELECCIONE--", "1.-Abalá", "2.-Acancéh", "3.-Baca", "4.-Bokobá", "5.-Buctzotz", "6.-Cacalchén", "7.-Calotmul", "8.-Cansahcab", "9.-Cantamayec", "10.-Celestún", "11.-Cenotillo", "12.-Conkal", "13.-Cuncunul", "14.-Cuzamá", "15.-Chacsinkín", "16.-Chankom", "17.-Chapab", "18.-Chemax", "19.-Chicxulub Pueblo", "20.-Chichimilá", "21.-Chikindzonot", "22.-Chocholá", "23.-Chumayel", "24.-Dzan", "25.-Dzemul", "26.-Dzidzantún", "27.-Dzilam de Bravo", "28.-Dzlilam González", "29.-Dzitás", "30.-Dzoncauich", "31.-Espita", "32.-Halachó", "33.-Hocabá", "34.-Hoctún", "35.-Homún", "36.-Huhi", "37.-Hununcmá", "38.-Ixil", "39.-Izamal", "40.-Kanasín", "41.-Kantunil", "42.-Kaua", "43.-Kinchil", "44.-Kopomá", "45.-Mama", "46.-Maní", "47.-Maxcanú", "48.-Mayapán", "49.-Mérida", "50.-Mocochá", "51.-Motul", "52.-Muna", "53.-Muxupip", "54.-Opichén", "55.-Oxkutzcab", "56.-Panabá", "57.-Peto", "58.-Progreso", "59.-Quintana Roo", "60.-Río Lagartos", "61.-Sacalum", "62.-Samahil", "63.-Sanahcat", "64.-San Felipe", "65.-Santa Elena", "66.-Seyé", "67.-Sinanché", "68.-Sotuta", "69.-Sucilá", "70.-Sudzal", "71.-Suma de Hidalgo", "72.-Tahdziú", "73.-Tahmek", "74.-Teabo", "75.-Tecóh", "76.-Tekal de Venegas", "77.-Tekantó", "78.-Tekax", "79.-Tekit", "80.-Tekom", "81.-Telchac Pueblo", "82.-Telchac Puerto", "83.-Temax", "84.-Temozón", "85.-Tepakán", "86.-Tetiz", "87.-Teya", "88.-Ticul", "89.-Timucuy", "90.-Tinum", "91.-Tixcacalcupul", "92.-Tixkokob", "93.-Tixméhuac", "94.-Tixpéhual", "95.-Tizimín", "96.-Tunkás", "97.-Tzucacab", "98.-Uayma", "99.-Ucu", "100.-Umán", "101.-Valladolid", "102.-Xocchel", "103.-Yaxcabá", "104.-Yaxkukul", "105.-Yobain" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
 
         L_datosEsc.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         L_datosEsc.setText("Datos de la Escuela");
@@ -127,8 +132,8 @@ public class datosView extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText("como director (a):");
 
-        jComboBox2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--SELECCIONE--", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110" }));
+        cbox_edad.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cbox_edad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--SELECCIONE--", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110" }));
 
         cbox_aniosServicio.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         cbox_aniosServicio.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--SELECCIONE--", "De 0 a 5 años", "De 6 a 10 años", "De 11 a 15 años", "De 16 a 20 años", "Más de 20 años" }));
@@ -151,7 +156,7 @@ public class datosView extends javax.swing.JFrame {
                     .addComponent(L_edad))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbox_edad, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cbox_sexo, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cbox_aniosServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(35, 35, 35))
@@ -172,7 +177,7 @@ public class datosView extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(L_edad)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cbox_edad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(17, 17, 17)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -325,6 +330,10 @@ public class datosView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cbox_aniosServicioActionPerformed
 
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -342,21 +351,27 @@ public class datosView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(datosView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(datosEscuelaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(datosView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(datosEscuelaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(datosView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(datosEscuelaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(datosView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(datosEscuelaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new datosView().setVisible(true);
+                new datosEscuelaView().setVisible(true);
             }
         });
     }
@@ -374,13 +389,13 @@ public class datosView extends javax.swing.JFrame {
     private javax.swing.JLabel L_turno;
     private javax.swing.JComboBox<String> cbox_aniosServicio;
     private javax.swing.JComboBox<String> cbox_antiguedad;
+    private javax.swing.JComboBox<String> cbox_edad;
     private javax.swing.JComboBox<String> cbox_modalidad;
     private javax.swing.JComboBox<String> cbox_nivel;
     private javax.swing.JComboBox<String> cbox_sexo;
     private javax.swing.JComboBox<String> cbox_sistema;
     private javax.swing.JComboBox<String> cbox_turno;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
