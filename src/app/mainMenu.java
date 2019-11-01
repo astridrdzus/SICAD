@@ -50,7 +50,7 @@ public class mainMenu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setPreferredSize(new java.awt.Dimension(1000, 750));
+        setPreferredSize(new java.awt.Dimension(1200, 750));
 
         jPanel1.setPreferredSize(new java.awt.Dimension(600, 300));
 
