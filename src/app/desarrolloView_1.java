@@ -9,12 +9,12 @@ package app;
  *
  * @author astri
  */
-public class desarrolloView extends javax.swing.JFrame {
+public class desarrolloView_1 extends javax.swing.JFrame {
 
     /**
      * Creates new form desarrolloView_0
      */
-    public desarrolloView() {
+    public desarrolloView_1() {
         initComponents();
         this.setLocationRelativeTo(null);
         
@@ -158,9 +158,10 @@ public class desarrolloView extends javax.swing.JFrame {
         rbtn_Dp34_Regular = new javax.swing.JRadioButton();
         rbtn_Dp34_Mucho = new javax.swing.JRadioButton();
         L_Dp34 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        pnl_Dopp1 = new javax.swing.JPanel();
         btn_DAtras = new javax.swing.JButton();
         btn_DSiguiente = new javax.swing.JButton();
+        btn_DGuardar = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -1014,24 +1015,30 @@ public class desarrolloView extends javax.swing.JFrame {
         btn_DSiguiente.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn_DSiguiente.setText("Siguiente");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        btn_DGuardar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn_DGuardar.setText("Guardar");
+
+        javax.swing.GroupLayout pnl_Dopp1Layout = new javax.swing.GroupLayout(pnl_Dopp1);
+        pnl_Dopp1.setLayout(pnl_Dopp1Layout);
+        pnl_Dopp1Layout.setHorizontalGroup(
+            pnl_Dopp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_Dopp1Layout.createSequentialGroup()
                 .addGap(114, 114, 114)
                 .addComponent(btn_DAtras)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 224, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
+                .addComponent(btn_DGuardar)
+                .addGap(71, 71, 71)
                 .addComponent(btn_DSiguiente)
                 .addGap(111, 111, 111))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        pnl_Dopp1Layout.setVerticalGroup(
+            pnl_Dopp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_Dopp1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(pnl_Dopp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_DAtras)
-                    .addComponent(btn_DSiguiente))
+                    .addComponent(btn_DSiguiente)
+                    .addComponent(btn_DGuardar))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
@@ -1046,11 +1053,11 @@ public class desarrolloView extends javax.swing.JFrame {
                         .addComponent(pnl_Dp1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(pnl_Dp2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(pnl_Dp3, javax.swing.GroupLayout.PREFERRED_SIZE, 982, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(60, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(221, 221, 221))
+                .addComponent(pnl_Dopp1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(194, 194, 194))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1062,7 +1069,7 @@ public class desarrolloView extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnl_Dp3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnl_Dopp1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1080,8 +1087,8 @@ public class desarrolloView extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 759, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 774, Short.MAX_VALUE))
         );
 
         pack();
@@ -1244,6 +1251,7 @@ public class desarrolloView extends javax.swing.JFrame {
     private javax.swing.JLabel L_p38;
     private javax.swing.JLabel L_p39;
     private javax.swing.JButton btn_DAtras;
+    private javax.swing.JButton btn_DGuardar;
     private javax.swing.JButton btn_DSiguiente;
     private javax.swing.JCheckBox checkB_Inv_Dp1;
     private javax.swing.JCheckBox checkB_Inv_Dp21;
@@ -1254,11 +1262,11 @@ public class desarrolloView extends javax.swing.JFrame {
     private javax.swing.JCheckBox checkB_Inv_Dp33;
     private javax.swing.JCheckBox checkB_Inv_Dp34;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JPanel pnl_Dopp1;
     private javax.swing.JPanel pnl_Dp1;
     private javax.swing.JPanel pnl_Dp2;
     private javax.swing.JPanel pnl_Dp21;
