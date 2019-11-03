@@ -44,17 +44,24 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="tab_pnl_Dparte2" alignment="0" pref="1100" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="tab_pnl_Dparte1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="tab_pnl_Dparte2" alignment="0" pref="782" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="tab_pnl_Dparte1" min="-2" pref="848" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JTabbedPane" name="tab_pnl_Dparte2">
+    <Container class="javax.swing.JTabbedPane" name="tab_pnl_Dparte1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -1484,12 +1491,14 @@
                           <Component id="pnl_Dp6" min="-2" max="-2" attributes="0"/>
                           <Component id="pnl_Dp5" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="71" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="pnl_Dop_p2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="304" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1500,9 +1509,12 @@
                       <Component id="pnl_Dp5" min="-2" pref="285" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="pnl_Dp6" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="pnl_Dop_p2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="68" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="pnl_Dop_p2" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jPanel5" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1519,7 +1531,7 @@
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="L_Dp3" min="-2" pref="929" max="-2" attributes="0"/>
+                          <Component id="L_Dp4_1" min="-2" pref="929" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -1528,7 +1540,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="L_Dp3" min="-2" pref="17" max="-2" attributes="0"/>
+                          <Component id="L_Dp4_1" min="-2" pref="17" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
                           <Component id="pnl_Dr5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="224" max="-2" attributes="0"/>
@@ -1537,7 +1549,7 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="L_Dp3">
+                <Component class="javax.swing.JLabel" name="L_Dp4_1">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="14" style="1"/>
@@ -1610,9 +1622,9 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_p24" min="-2" pref="182" max="-2" attributes="0"/>
+                                  <Component id="L_Dp41" min="-2" pref="182" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="185" max="-2" attributes="0"/>
-                                  <Component id="pnl_Dr24" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pnl_Dr41" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -1623,31 +1635,31 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Component id="L_p24" max="32767" attributes="0"/>
+                                          <Component id="L_Dp41" max="32767" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="pnl_Dr24" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="pnl_Dr41" alignment="1" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Container class="javax.swing.JPanel" name="pnl_Dr24">
+                        <Container class="javax.swing.JPanel" name="pnl_Dr41">
 
                           <Layout>
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="rbtn_Dp21_Mucho1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp41_Mucho" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp21_Regular1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp41_Regular" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp21_Poco1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp41_Poco" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp21_Nada1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp41_Nada" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace pref="100" max="32767" attributes="0"/>
-                                      <Component id="checkB_Inv_Dp24" min="-2" max="-2" attributes="0"/>
+                                      <Component id="checkB_Inv_Dp41" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -1657,13 +1669,13 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="rbtn_Dp21_Mucho1" max="32767" attributes="0"/>
+                                          <Component id="rbtn_Dp41_Mucho" max="32767" attributes="0"/>
                                           <Group type="102" attributes="0">
                                               <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="rbtn_Dp21_Regular1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="rbtn_Dp21_Poco1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="rbtn_Dp21_Nada1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="checkB_Inv_Dp24" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="rbtn_Dp41_Regular" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="rbtn_Dp41_Poco" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="rbtn_Dp41_Nada" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="checkB_Inv_Dp41" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           </Group>
@@ -1674,7 +1686,7 @@
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp21_Mucho1">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp41_Mucho">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -1682,10 +1694,10 @@
                                 <Property name="text" type="java.lang.String" value="Mucho"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp21_Mucho1ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp41_MuchoActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp21_Regular1">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp41_Regular">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -1693,10 +1705,10 @@
                                 <Property name="text" type="java.lang.String" value="Regular"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp21_Regular1ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp41_RegularActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp21_Poco1">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp41_Poco">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -1704,7 +1716,7 @@
                                 <Property name="text" type="java.lang.String" value="Poco"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp21_Nada1">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp41_Nada">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -1712,7 +1724,7 @@
                                 <Property name="text" type="java.lang.String" value="Nada"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp24">
+                            <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp41">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -1723,12 +1735,12 @@
                                 <Property name="text" type="java.lang.String" value="Invalidar pregunta"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp24ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp41ActionPerformed"/>
                               </Events>
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Component class="javax.swing.JLabel" name="L_p24">
+                        <Component class="javax.swing.JLabel" name="L_Dp41">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="14" style="0"/>
@@ -1745,37 +1757,37 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_p26" min="-2" pref="243" max="-2" attributes="0"/>
+                                  <Component id="L_Dp42" min="-2" pref="243" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
-                                  <Component id="pnl_Dr25" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pnl_Dr42" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="L_p26" alignment="0" max="32767" attributes="0"/>
-                              <Component id="pnl_Dr25" alignment="0" max="32767" attributes="0"/>
+                              <Component id="L_Dp42" alignment="0" max="32767" attributes="0"/>
+                              <Component id="pnl_Dr42" alignment="0" max="32767" attributes="0"/>
                           </Group>
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Container class="javax.swing.JPanel" name="pnl_Dr25">
+                        <Container class="javax.swing.JPanel" name="pnl_Dr42">
 
                           <Layout>
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp22_Mucho1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp42_Mucho" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp22_Regular1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp42_Regular" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp22_Poco1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp42_Poco" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp22_Nada1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp42_Nada" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
-                                      <Component id="checkB_Inv_Dp25" min="-2" max="-2" attributes="0"/>
+                                      <Component id="checkB_Inv_Dp42" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                               </Group>
@@ -1785,11 +1797,11 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="rbtn_Dp22_Mucho1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtn_Dp22_Regular1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtn_Dp22_Poco1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtn_Dp22_Nada1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="checkB_Inv_Dp25" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtn_Dp42_Mucho" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtn_Dp42_Regular" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtn_Dp42_Poco" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtn_Dp42_Nada" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="checkB_Inv_Dp42" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
@@ -1797,7 +1809,7 @@
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp22_Mucho1">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp42_Mucho">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -1805,10 +1817,10 @@
                                 <Property name="text" type="java.lang.String" value="Mucho"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp22_Mucho1ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp42_MuchoActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp22_Regular1">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp42_Regular">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -1816,10 +1828,10 @@
                                 <Property name="text" type="java.lang.String" value="Regular"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp22_Regular1ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp42_RegularActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp22_Poco1">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp42_Poco">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -1827,7 +1839,7 @@
                                 <Property name="text" type="java.lang.String" value="Poco"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp22_Nada1">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp42_Nada">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -1835,7 +1847,7 @@
                                 <Property name="text" type="java.lang.String" value="Nada"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp25">
+                            <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp42">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -1846,12 +1858,12 @@
                                 <Property name="text" type="java.lang.String" value="Invalidar pregunta"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp25ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp42ActionPerformed"/>
                               </Events>
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Component class="javax.swing.JLabel" name="L_p26">
+                        <Component class="javax.swing.JLabel" name="L_Dp42">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="14" style="0"/>
@@ -1868,9 +1880,9 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_p27" min="-2" pref="270" max="-2" attributes="0"/>
+                                  <Component id="L_Dp43" min="-2" pref="270" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
-                                  <Component id="pnl_Dr26" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pnl_Dr43" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -1879,33 +1891,33 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_p27" min="-2" max="-2" attributes="0"/>
+                                  <Component id="L_Dp43" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="pnl_Dr26" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pnl_Dr43" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Container class="javax.swing.JPanel" name="pnl_Dr26">
+                        <Container class="javax.swing.JPanel" name="pnl_Dr43">
 
                           <Layout>
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp23_Mucho1" max="32767" attributes="0"/>
+                                      <Component id="rbtn_Dp43_Mucho" max="32767" attributes="0"/>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp23_Regular1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp43_Regular" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp23_Poco1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp43_Poco" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp23_Nada1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp43_Nada" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
-                                      <Component id="checkB_Inv_Dp26" min="-2" max="-2" attributes="0"/>
+                                      <Component id="checkB_Inv_Dp43" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -1917,14 +1929,14 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="rbtn_Dp23_Regular1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="rbtn_Dp23_Poco1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="rbtn_Dp23_Nada1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="checkB_Inv_Dp26" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="rbtn_Dp43_Regular" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="rbtn_Dp43_Poco" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="rbtn_Dp43_Nada" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="checkB_Inv_Dp43" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           </Group>
-                                          <Component id="rbtn_Dp23_Mucho1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="rbtn_Dp43_Mucho" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
@@ -1932,7 +1944,7 @@
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp23_Mucho1">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp43_Mucho">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -1940,10 +1952,10 @@
                                 <Property name="text" type="java.lang.String" value="Mucho"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp23_Mucho1ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp43_MuchoActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp23_Regular1">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp43_Regular">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -1951,10 +1963,10 @@
                                 <Property name="text" type="java.lang.String" value="Regular"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp23_Regular1ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp43_RegularActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp23_Poco1">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp43_Poco">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -1962,7 +1974,7 @@
                                 <Property name="text" type="java.lang.String" value="Poco"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp23_Nada1">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp43_Nada">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -1970,7 +1982,7 @@
                                 <Property name="text" type="java.lang.String" value="Nada"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp26">
+                            <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp43">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -1981,12 +1993,12 @@
                                 <Property name="text" type="java.lang.String" value="Invalidar pregunta"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp26ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp43ActionPerformed"/>
                               </Events>
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Component class="javax.swing.JLabel" name="L_p27">
+                        <Component class="javax.swing.JLabel" name="L_Dp43">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="14" style="0"/>
@@ -2011,9 +2023,9 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_p29" min="-2" pref="270" max="-2" attributes="0"/>
+                                  <Component id="L_Dp44" min="-2" pref="270" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
-                                  <Component id="pnl_Dr27" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pnl_Dr44" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -2022,33 +2034,33 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_p29" min="-2" max="-2" attributes="0"/>
+                                  <Component id="L_Dp44" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="pnl_Dr27" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pnl_Dr44" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Container class="javax.swing.JPanel" name="pnl_Dr27">
+                        <Container class="javax.swing.JPanel" name="pnl_Dr44">
 
                           <Layout>
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp23_Mucho2" max="32767" attributes="0"/>
+                                      <Component id="rbtn_Dp44_Mucho" max="32767" attributes="0"/>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp23_Regular2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp44_Regular" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp23_Poco2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp44_Poco" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp23_Nada2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp44_Nada" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
-                                      <Component id="checkB_Inv_Dp27" min="-2" max="-2" attributes="0"/>
+                                      <Component id="checkB_Inv_Dp44" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -2060,14 +2072,14 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="rbtn_Dp23_Regular2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="rbtn_Dp23_Poco2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="rbtn_Dp23_Nada2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="checkB_Inv_Dp27" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="rbtn_Dp44_Regular" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="rbtn_Dp44_Poco" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="rbtn_Dp44_Nada" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="checkB_Inv_Dp44" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           </Group>
-                                          <Component id="rbtn_Dp23_Mucho2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="rbtn_Dp44_Mucho" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
@@ -2075,7 +2087,7 @@
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp23_Mucho2">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp44_Mucho">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -2083,10 +2095,10 @@
                                 <Property name="text" type="java.lang.String" value="Mucho"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp23_Mucho2ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp44_MuchoActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp23_Regular2">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp44_Regular">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -2094,10 +2106,10 @@
                                 <Property name="text" type="java.lang.String" value="Regular"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp23_Regular2ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp44_RegularActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp23_Poco2">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp44_Poco">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -2105,7 +2117,7 @@
                                 <Property name="text" type="java.lang.String" value="Poco"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp23_Nada2">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp44_Nada">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -2113,7 +2125,7 @@
                                 <Property name="text" type="java.lang.String" value="Nada"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp27">
+                            <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp44">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -2124,12 +2136,12 @@
                                 <Property name="text" type="java.lang.String" value="Invalidar pregunta"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp27ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp44ActionPerformed"/>
                               </Events>
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Component class="javax.swing.JLabel" name="L_p29">
+                        <Component class="javax.swing.JLabel" name="L_Dp44">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="14" style="0"/>
@@ -2146,9 +2158,9 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_p30" min="-2" pref="270" max="-2" attributes="0"/>
+                                  <Component id="L_Dp45" min="-2" pref="270" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
-                                  <Component id="pnl_Dr28" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pnl_Dr45" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -2157,33 +2169,33 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_p30" min="-2" max="-2" attributes="0"/>
+                                  <Component id="L_Dp45" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="pnl_Dr28" min="-2" max="-2" attributes="0"/>
+                                  <Component id="pnl_Dr45" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Container class="javax.swing.JPanel" name="pnl_Dr28">
+                        <Container class="javax.swing.JPanel" name="pnl_Dr45">
 
                           <Layout>
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp23_Mucho3" max="32767" attributes="0"/>
+                                      <Component id="rbtn_Dp45_Mucho" max="32767" attributes="0"/>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp23_Regular3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp45_Regular" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp23_Poco3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp45_Poco" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="rbtn_Dp23_Nada3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="rbtn_Dp45_Nada" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
-                                      <Component id="checkB_Inv_Dp28" min="-2" max="-2" attributes="0"/>
+                                      <Component id="checkB_Inv_Dp45" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -2195,14 +2207,14 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="rbtn_Dp23_Regular3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="rbtn_Dp23_Poco3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="rbtn_Dp23_Nada3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="checkB_Inv_Dp28" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="rbtn_Dp45_Regular" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="rbtn_Dp45_Poco" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="rbtn_Dp45_Nada" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="checkB_Inv_Dp45" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           </Group>
-                                          <Component id="rbtn_Dp23_Mucho3" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="rbtn_Dp45_Mucho" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
@@ -2210,7 +2222,7 @@
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp23_Mucho3">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp45_Mucho">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -2218,10 +2230,10 @@
                                 <Property name="text" type="java.lang.String" value="Mucho"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp23_Mucho3ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp45_MuchoActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp23_Regular3">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp45_Regular">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -2229,10 +2241,10 @@
                                 <Property name="text" type="java.lang.String" value="Regular"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp23_Regular3ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp45_RegularActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp23_Poco3">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp45_Poco">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -2240,7 +2252,7 @@
                                 <Property name="text" type="java.lang.String" value="Poco"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp23_Nada3">
+                            <Component class="javax.swing.JRadioButton" name="rbtn_Dp45_Nada">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -2248,7 +2260,7 @@
                                 <Property name="text" type="java.lang.String" value="Nada"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp28">
+                            <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp45">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="14" style="0"/>
@@ -2259,12 +2271,12 @@
                                 <Property name="text" type="java.lang.String" value="Invalidar pregunta"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp28ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp45ActionPerformed"/>
                               </Events>
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Component class="javax.swing.JLabel" name="L_p30">
+                        <Component class="javax.swing.JLabel" name="L_Dp45">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="14" style="0"/>
@@ -2287,16 +2299,16 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_Dp35" min="-2" pref="910" max="-2" attributes="0"/>
+                                  <Component id="L_Dp51" min="-2" pref="910" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                  <Component id="L_Dp36" min="-2" pref="878" max="-2" attributes="0"/>
+                                  <Component id="L_Dp52" min="-2" pref="878" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="pnl_Dr6" min="-2" pref="959" max="-2" attributes="0"/>
+                                      <Component id="pnl_Dp5_container" min="-2" max="-2" attributes="0"/>
                                       <Component id="pnl_Dp40" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
@@ -2309,20 +2321,20 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" max="-2" attributes="0"/>
-                          <Component id="L_Dp35" min="-2" pref="17" max="-2" attributes="0"/>
+                          <Component id="L_Dp51" min="-2" pref="17" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="L_Dp36" min="-2" pref="17" max="-2" attributes="0"/>
+                          <Component id="L_Dp52" min="-2" pref="17" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="pnl_Dp40" min="-2" pref="40" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                          <Component id="pnl_Dr6" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="pnl_Dp5_container" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="16" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="L_Dp35">
+                <Component class="javax.swing.JLabel" name="L_Dp51">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="14" style="1"/>
@@ -2330,21 +2342,23 @@
                     <Property name="text" type="java.lang.String" value="5. En orden de importancia del 1 al 5, siendo el 1 m&#xe1;s importante, mencione cu&#xe1;les son los apoyos que por parte de la Secretar&#xed;a de"/>
                   </Properties>
                 </Component>
-                <Container class="javax.swing.JPanel" name="pnl_Dr6">
+                <Container class="javax.swing.JPanel" name="pnl_Dp5_container">
 
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="pnl_Dr39" alignment="0" max="32767" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="pnl_Dp39" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="pnl_Dp38" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="pnl_Dp37" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="pnl_Dp43" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="pnl_Dp38" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="pnl_Dp37" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="pnl_Dr40" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="9" max="32767" attributes="0"/>
                           </Group>
-                          <Component id="pnl_Dr40" alignment="0" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -2355,7 +2369,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="pnl_Dp38" min="-2" pref="34" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="pnl_Dp39" min="-2" max="-2" attributes="0"/>
+                              <Component id="pnl_Dp43" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="pnl_Dr39" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -2373,7 +2387,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_p40" min="-2" pref="272" max="-2" attributes="0"/>
+                                  <Component id="L_p51" min="-2" pref="272" max="-2" attributes="0"/>
                                   <EmptySpace pref="141" max="32767" attributes="0"/>
                                   <Component id="pnl_Dr32" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -2385,7 +2399,7 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="L_p40" max="32767" attributes="0"/>
+                                      <Component id="L_p51" max="32767" attributes="0"/>
                                       <Component id="pnl_Dr32" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -2400,9 +2414,9 @@
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="187" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="194" max="-2" attributes="0"/>
                                       <Component id="cb_Dp51" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace pref="201" max="32767" attributes="0"/>
+                                      <EmptySpace pref="194" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -2441,7 +2455,7 @@
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Component class="javax.swing.JLabel" name="L_p40">
+                        <Component class="javax.swing.JLabel" name="L_p51">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="14" style="0"/>
@@ -2458,7 +2472,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_p41" min="-2" pref="250" max="-2" attributes="0"/>
+                                  <Component id="L_p52" min="-2" pref="250" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="pnl_Dr7" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -2471,7 +2485,7 @@
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="pnl_Dr7" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="L_p41" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
+                                      <Component id="L_p52" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
@@ -2479,7 +2493,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JLabel" name="L_p41">
+                        <Component class="javax.swing.JLabel" name="L_p52">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="14" style="0"/>
@@ -2493,9 +2507,9 @@
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="180" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="187" max="-2" attributes="0"/>
                                       <Component id="cb_Dp52" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace pref="202" max="32767" attributes="0"/>
+                                      <EmptySpace pref="195" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -2536,14 +2550,14 @@
                         </Container>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JPanel" name="pnl_Dp39">
+                    <Container class="javax.swing.JPanel" name="pnl_Dp43">
 
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_p43" min="-2" pref="309" max="-2" attributes="0"/>
+                                  <Component id="L_p53" min="-2" pref="309" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="pnl_Dr34" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -2554,7 +2568,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_p43" min="-2" max="-2" attributes="0"/>
+                                  <Component id="L_p53" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                               <Component id="pnl_Dr34" alignment="1" max="32767" attributes="0"/>
@@ -2562,7 +2576,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JLabel" name="L_p43">
+                        <Component class="javax.swing.JLabel" name="L_p53">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="14" style="0"/>
@@ -2576,9 +2590,9 @@
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="181" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="189" max="-2" attributes="0"/>
                                       <Component id="cb_Dp53" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace pref="202" max="32767" attributes="0"/>
+                                      <EmptySpace pref="194" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -2626,7 +2640,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_p44" min="-2" pref="249" max="-2" attributes="0"/>
+                                  <Component id="L_p54" min="-2" pref="249" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -2637,7 +2651,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="L_p44" min="-2" pref="46" max="-2" attributes="0"/>
+                                      <Component id="L_p54" min="-2" pref="46" max="-2" attributes="0"/>
                                       <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -2646,7 +2660,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JLabel" name="L_p44">
+                        <Component class="javax.swing.JLabel" name="L_p54">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="14" style="0"/>
@@ -2660,9 +2674,9 @@
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="146" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="170" max="-2" attributes="0"/>
                                       <Component id="cb_Dp54" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace pref="226" max="32767" attributes="0"/>
+                                      <EmptySpace pref="202" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -2711,27 +2725,27 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_p45" min="-2" pref="482" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="L_p55" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+                                  <Component id="cb_Dp55" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace pref="164" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
-                                      <Component id="L_p45" min="-2" pref="25" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="L_p55" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Component id="cb_Dp55" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="0" pref="1" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JLabel" name="L_p45">
+                        <Component class="javax.swing.JLabel" name="L_p55">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="14" style="0"/>
@@ -2739,58 +2753,34 @@
                             <Property name="text" type="java.lang.String" value="Acompa&#xf1;amiento al personal directivo y docente para la implementaci&#xf3;n del Programa."/>
                           </Properties>
                         </Component>
-                        <Container class="javax.swing.JPanel" name="jPanel5">
-
-                          <Layout>
-                            <DimensionLayout dim="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
-                                      <Component id="cb_Dp55" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace pref="225" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                            </DimensionLayout>
-                            <DimensionLayout dim="1">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="cb_Dp55" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                            </DimensionLayout>
-                          </Layout>
-                          <SubComponents>
-                            <Component class="javax.swing.JComboBox" name="cb_Dp55">
-                              <Properties>
-                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                  <Font name="Tahoma" size="14" style="0"/>
-                                </Property>
-                                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                                  <StringArray count="6">
-                                    <StringItem index="0" value="--SELECCIONE--"/>
-                                    <StringItem index="1" value="1"/>
-                                    <StringItem index="2" value="2"/>
-                                    <StringItem index="3" value="3"/>
-                                    <StringItem index="4" value="4"/>
-                                    <StringItem index="5" value="5"/>
-                                  </StringArray>
-                                </Property>
-                              </Properties>
-                              <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cb_Dp55ActionPerformed"/>
-                              </Events>
-                              <AuxValues>
-                                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                              </AuxValues>
-                            </Component>
-                          </SubComponents>
-                        </Container>
+                        <Component class="javax.swing.JComboBox" name="cb_Dp55">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="14" style="0"/>
+                            </Property>
+                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                              <StringArray count="6">
+                                <StringItem index="0" value="--SELECCIONE--"/>
+                                <StringItem index="1" value="1"/>
+                                <StringItem index="2" value="2"/>
+                                <StringItem index="3" value="3"/>
+                                <StringItem index="4" value="4"/>
+                                <StringItem index="5" value="5"/>
+                              </StringArray>
+                            </Property>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cb_Dp55ActionPerformed"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                          </AuxValues>
+                        </Component>
                       </SubComponents>
                     </Container>
                   </SubComponents>
                 </Container>
-                <Component class="javax.swing.JLabel" name="L_Dp36">
+                <Component class="javax.swing.JLabel" name="L_Dp52">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="14" style="1"/>
@@ -2805,10 +2795,10 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="pnl_Dr35" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="pnl_DLp5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
                               <Component id="checkB_Inv_Dp40" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -2820,41 +2810,42 @@
                               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="pnl_Dr35" min="-2" max="-2" attributes="0"/>
+                              <Component id="pnl_DLp5" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Container class="javax.swing.JPanel" name="pnl_Dr35">
+                    <Container class="javax.swing.JPanel" name="pnl_DLp5">
 
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="L_p42" min="-2" pref="272" max="-2" attributes="0"/>
+                                  <Component id="L_p5_tipo" min="-2" pref="272" max="-2" attributes="0"/>
                                   <EmptySpace pref="347" max="32767" attributes="0"/>
-                                  <Component id="L_p46" min="-2" pref="88" max="-2" attributes="0"/>
+                                  <Component id="L_p5_Valor" min="-2" pref="88" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="L_p46" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                                      <Component id="L_p42" alignment="3" max="32767" attributes="0"/>
-                                  </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="L_p5_tipo" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="L_p5_Valor" min="-2" pref="29" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JLabel" name="L_p46">
+                        <Component class="javax.swing.JLabel" name="L_p5_Valor">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="14" style="0"/>
@@ -2862,7 +2853,7 @@
                             <Property name="text" type="java.lang.String" value="  VALOR "/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JLabel" name="L_p42">
+                        <Component class="javax.swing.JLabel" name="L_p5_tipo">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="14" style="0"/>
@@ -2950,6 +2941,86 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_DGuardar1ActionPerformed"/>
                   </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel5">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="256" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="23" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel6">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Parte 3">
+                <Property name="tabTitle" type="java.lang.String" value="Parte 3"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
+                              <Component id="jLabel1" min="-2" pref="154" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
+                              <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="793" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                      <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="620" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Observaciones: "/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea1">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
