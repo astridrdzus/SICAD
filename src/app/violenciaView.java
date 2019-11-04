@@ -184,6 +184,36 @@ public class violenciaView extends javax.swing.JFrame {
         L_p41 = new javax.swing.JLabel();
         L_p42 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
+        pnl_Dp1 = new javax.swing.JPanel();
+        L_Dp11 = new javax.swing.JLabel();
+        pnl_r1D = new javax.swing.JPanel();
+        rbtn_2016_2017 = new javax.swing.JRadioButton();
+        rbn_2017_2018 = new javax.swing.JRadioButton();
+        rbn_2018_2019 = new javax.swing.JRadioButton();
+        rbn_descono = new javax.swing.JRadioButton();
+        checkB_Inv_Dp1 = new javax.swing.JCheckBox();
+        pnl_Dop_p2 = new javax.swing.JPanel();
+        btn_DAtras1 = new javax.swing.JButton();
+        btn_DSiguiente1 = new javax.swing.JButton();
+        btn_DGuardar1 = new javax.swing.JButton();
+        pnl_Dp4 = new javax.swing.JPanel();
+        L_Dp13 = new javax.swing.JLabel();
+        pnl_r1D1 = new javax.swing.JPanel();
+        rbtn_2016_2018 = new javax.swing.JRadioButton();
+        rbn_2017_2019 = new javax.swing.JRadioButton();
+        rbn_2018_2020 = new javax.swing.JRadioButton();
+        rbn_descono1 = new javax.swing.JRadioButton();
+        checkB_Inv_Dp2 = new javax.swing.JCheckBox();
+        pnl_Dp5 = new javax.swing.JPanel();
+        L_Dp15 = new javax.swing.JLabel();
+        pnl_r1D2 = new javax.swing.JPanel();
+        rbtn_2016_2019 = new javax.swing.JRadioButton();
+        rbn_2017_2020 = new javax.swing.JRadioButton();
+        rbn_2018_2021 = new javax.swing.JRadioButton();
+        rbn_descono2 = new javax.swing.JRadioButton();
+        checkB_Inv_Dp3 = new javax.swing.JCheckBox();
+        jPanel6 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
         pnl_Dp6 = new javax.swing.JPanel();
         L_Dp51 = new javax.swing.JLabel();
         pnl_Dp5_container = new javax.swing.JPanel();
@@ -212,21 +242,6 @@ public class violenciaView extends javax.swing.JFrame {
         L_p5_Valor = new javax.swing.JLabel();
         L_p5_tipo = new javax.swing.JLabel();
         checkB_Inv_Dp40 = new javax.swing.JCheckBox();
-        pnl_Dop_p2 = new javax.swing.JPanel();
-        btn_DAtras1 = new javax.swing.JButton();
-        btn_DSiguiente1 = new javax.swing.JButton();
-        btn_DGuardar1 = new javax.swing.JButton();
-        pnl_Dp1 = new javax.swing.JPanel();
-        L_Dp11 = new javax.swing.JLabel();
-        pnl_r1D = new javax.swing.JPanel();
-        rbtn_2016_2017 = new javax.swing.JRadioButton();
-        rbn_2017_2018 = new javax.swing.JRadioButton();
-        rbn_2018_2019 = new javax.swing.JRadioButton();
-        rbn_descono = new javax.swing.JRadioButton();
-        checkB_Inv_Dp1 = new javax.swing.JCheckBox();
-        L_Dp12 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
-        jPanel7 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         btn_save_D = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -1325,6 +1340,353 @@ public class violenciaView extends javax.swing.JFrame {
 
         jPanel2.setPreferredSize(new java.awt.Dimension(1000, 750));
 
+        L_Dp11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        L_Dp11.setText("3. En el último año, ¿cuántos casos de violencia o maltrato de los padres, madres, tutores o familiares cercanos de los alumnos se han presentado?");
+
+        rbtn_2016_2017.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        rbtn_2016_2017.setText("Entre 1 y 5");
+        rbtn_2016_2017.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_2016_2017ActionPerformed(evt);
+            }
+        });
+
+        rbn_2017_2018.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        rbn_2017_2018.setText("Entre 5 y 10");
+        rbn_2017_2018.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbn_2017_2018ActionPerformed(evt);
+            }
+        });
+
+        rbn_2018_2019.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        rbn_2018_2019.setText("Más de 10");
+        rbn_2018_2019.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbn_2018_2019ActionPerformed(evt);
+            }
+        });
+
+        rbn_descono.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        rbn_descono.setText("No se han presentado casos");
+
+        checkB_Inv_Dp1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        checkB_Inv_Dp1.setForeground(new java.awt.Color(255, 0, 0));
+        checkB_Inv_Dp1.setText("Invalidar pregunta");
+        checkB_Inv_Dp1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkB_Inv_Dp1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnl_r1DLayout = new javax.swing.GroupLayout(pnl_r1D);
+        pnl_r1D.setLayout(pnl_r1DLayout);
+        pnl_r1DLayout.setHorizontalGroup(
+            pnl_r1DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_r1DLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(rbtn_2016_2017)
+                .addGap(49, 49, 49)
+                .addComponent(rbn_2017_2018)
+                .addGap(90, 90, 90)
+                .addComponent(rbn_2018_2019)
+                .addGap(90, 90, 90)
+                .addComponent(rbn_descono)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
+                .addComponent(checkB_Inv_Dp1, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        pnl_r1DLayout.setVerticalGroup(
+            pnl_r1DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_r1DLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnl_r1DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(rbn_descono, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(rbn_2018_2019, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(rbn_2017_2018, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(rbtn_2016_2017, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(checkB_Inv_Dp1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout pnl_Dp1Layout = new javax.swing.GroupLayout(pnl_Dp1);
+        pnl_Dp1.setLayout(pnl_Dp1Layout);
+        pnl_Dp1Layout.setHorizontalGroup(
+            pnl_Dp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_Dp1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(pnl_r1D, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
+            .addGroup(pnl_Dp1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(L_Dp11, javax.swing.GroupLayout.DEFAULT_SIZE, 1006, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        pnl_Dp1Layout.setVerticalGroup(
+            pnl_Dp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_Dp1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(L_Dp11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnl_r1D, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        btn_DAtras1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn_DAtras1.setText("Atrás");
+        btn_DAtras1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_DAtras1ActionPerformed(evt);
+            }
+        });
+
+        btn_DSiguiente1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn_DSiguiente1.setText("Siguiente");
+
+        btn_DGuardar1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn_DGuardar1.setText("Guardar");
+        btn_DGuardar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_DGuardar1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnl_Dop_p2Layout = new javax.swing.GroupLayout(pnl_Dop_p2);
+        pnl_Dop_p2.setLayout(pnl_Dop_p2Layout);
+        pnl_Dop_p2Layout.setHorizontalGroup(
+            pnl_Dop_p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_Dop_p2Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(btn_DAtras1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(btn_DGuardar1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(btn_DSiguiente1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(41, Short.MAX_VALUE))
+        );
+        pnl_Dop_p2Layout.setVerticalGroup(
+            pnl_Dop_p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_Dop_p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(btn_DGuardar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btn_DAtras1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btn_DSiguiente1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        L_Dp13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        L_Dp13.setText("4. En el último año, ¿cuántos casos de abuso sexual de padres, madres, tutores o familiares cercanos de los alumnos se han presentado?");
+
+        rbtn_2016_2018.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        rbtn_2016_2018.setText("Entre 1 y 5");
+        rbtn_2016_2018.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_2016_2018ActionPerformed(evt);
+            }
+        });
+
+        rbn_2017_2019.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        rbn_2017_2019.setText("Entre 5 y 10");
+        rbn_2017_2019.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbn_2017_2019ActionPerformed(evt);
+            }
+        });
+
+        rbn_2018_2020.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        rbn_2018_2020.setText("Más de 10");
+
+        rbn_descono1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        rbn_descono1.setText("No se han presentado casos");
+
+        checkB_Inv_Dp2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        checkB_Inv_Dp2.setForeground(new java.awt.Color(255, 0, 0));
+        checkB_Inv_Dp2.setText("Invalidar pregunta");
+        checkB_Inv_Dp2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkB_Inv_Dp2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnl_r1D1Layout = new javax.swing.GroupLayout(pnl_r1D1);
+        pnl_r1D1.setLayout(pnl_r1D1Layout);
+        pnl_r1D1Layout.setHorizontalGroup(
+            pnl_r1D1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_r1D1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(rbtn_2016_2018)
+                .addGap(63, 63, 63)
+                .addComponent(rbn_2017_2019)
+                .addGap(86, 86, 86)
+                .addComponent(rbn_2018_2020)
+                .addGap(85, 85, 85)
+                .addComponent(rbn_descono1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
+                .addComponent(checkB_Inv_Dp2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        pnl_r1D1Layout.setVerticalGroup(
+            pnl_r1D1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_r1D1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(rbtn_2016_2018, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(rbn_2017_2019, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(rbn_2018_2020, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(rbn_descono1, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(checkB_Inv_Dp2, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout pnl_Dp4Layout = new javax.swing.GroupLayout(pnl_Dp4);
+        pnl_Dp4.setLayout(pnl_Dp4Layout);
+        pnl_Dp4Layout.setHorizontalGroup(
+            pnl_Dp4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_Dp4Layout.createSequentialGroup()
+                .addComponent(L_Dp13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(pnl_Dp4Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(pnl_r1D1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(23, Short.MAX_VALUE))
+        );
+        pnl_Dp4Layout.setVerticalGroup(
+            pnl_Dp4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_Dp4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(L_Dp13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(pnl_r1D1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        L_Dp15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        L_Dp15.setText("5. En el último año, ¿cuántos casos de embarazos de niñas o adolescentes se han presentado?");
+
+        rbtn_2016_2019.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        rbtn_2016_2019.setText("Entre 1 y 5");
+        rbtn_2016_2019.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_2016_2019ActionPerformed(evt);
+            }
+        });
+
+        rbn_2017_2020.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        rbn_2017_2020.setText("Entre 5 y 10");
+        rbn_2017_2020.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbn_2017_2020ActionPerformed(evt);
+            }
+        });
+
+        rbn_2018_2021.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        rbn_2018_2021.setText("Más de 10");
+
+        rbn_descono2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        rbn_descono2.setText("No se han presentado casos");
+
+        checkB_Inv_Dp3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        checkB_Inv_Dp3.setForeground(new java.awt.Color(255, 0, 0));
+        checkB_Inv_Dp3.setText("Invalidar pregunta");
+        checkB_Inv_Dp3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkB_Inv_Dp3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnl_r1D2Layout = new javax.swing.GroupLayout(pnl_r1D2);
+        pnl_r1D2.setLayout(pnl_r1D2Layout);
+        pnl_r1D2Layout.setHorizontalGroup(
+            pnl_r1D2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_r1D2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(rbtn_2016_2019)
+                .addGap(71, 71, 71)
+                .addComponent(rbn_2017_2020)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
+                .addComponent(rbn_2018_2021)
+                .addGap(82, 82, 82)
+                .addComponent(rbn_descono2)
+                .addGap(89, 89, 89)
+                .addComponent(checkB_Inv_Dp3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        pnl_r1D2Layout.setVerticalGroup(
+            pnl_r1D2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_r1D2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnl_r1D2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbtn_2016_2019, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rbn_2017_2020, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rbn_2018_2021, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rbn_descono2, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(checkB_Inv_Dp3, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout pnl_Dp5Layout = new javax.swing.GroupLayout(pnl_Dp5);
+        pnl_Dp5.setLayout(pnl_Dp5Layout);
+        pnl_Dp5Layout.setHorizontalGroup(
+            pnl_Dp5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_Dp5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnl_Dp5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnl_Dp5Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(pnl_r1D2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(L_Dp15, javax.swing.GroupLayout.PREFERRED_SIZE, 808, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(34, Short.MAX_VALUE))
+        );
+        pnl_Dp5Layout.setVerticalGroup(
+            pnl_Dp5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_Dp5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(L_Dp15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnl_r1D2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(pnl_Dp1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(pnl_Dp4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(pnl_Dp5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(286, 286, 286)
+                        .addComponent(pnl_Dop_p2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(32, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pnl_Dp1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnl_Dp4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnl_Dp5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(257, 257, 257)
+                .addComponent(pnl_Dop_p2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        tab_pnl_Dparte1.addTab("Parte 2", jPanel2);
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 507, Short.MAX_VALUE)
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 59, Short.MAX_VALUE)
+        );
+
         L_Dp51.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         L_Dp51.setText("5. En orden de importancia del 1 al 5, siendo el 1 más importante, mencione cuáles son los apoyos que por parte de la Secretaría de");
 
@@ -1640,213 +2002,6 @@ public class violenciaView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        btn_DAtras1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btn_DAtras1.setText("Atrás");
-        btn_DAtras1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_DAtras1ActionPerformed(evt);
-            }
-        });
-
-        btn_DSiguiente1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btn_DSiguiente1.setText("Siguiente");
-
-        btn_DGuardar1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btn_DGuardar1.setText("Guardar");
-        btn_DGuardar1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_DGuardar1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout pnl_Dop_p2Layout = new javax.swing.GroupLayout(pnl_Dop_p2);
-        pnl_Dop_p2.setLayout(pnl_Dop_p2Layout);
-        pnl_Dop_p2Layout.setHorizontalGroup(
-            pnl_Dop_p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_Dop_p2Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(btn_DAtras1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
-                .addComponent(btn_DGuardar1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
-                .addComponent(btn_DSiguiente1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(41, Short.MAX_VALUE))
-        );
-        pnl_Dop_p2Layout.setVerticalGroup(
-            pnl_Dop_p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_Dop_p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(btn_DGuardar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btn_DAtras1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btn_DSiguiente1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout pnl_Dp6Layout = new javax.swing.GroupLayout(pnl_Dp6);
-        pnl_Dp6.setLayout(pnl_Dp6Layout);
-        pnl_Dp6Layout.setHorizontalGroup(
-            pnl_Dp6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_Dp6Layout.createSequentialGroup()
-                .addGroup(pnl_Dp6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnl_Dp6Layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addGroup(pnl_Dp6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(pnl_Dp5_container, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(pnl_Dp40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(pnl_Dp6Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(L_Dp51, javax.swing.GroupLayout.PREFERRED_SIZE, 910, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnl_Dp6Layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(L_Dp52, javax.swing.GroupLayout.PREFERRED_SIZE, 878, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_Dp6Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(pnl_Dop_p2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(181, 181, 181))
-        );
-        pnl_Dp6Layout.setVerticalGroup(
-            pnl_Dp6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_Dp6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(L_Dp51, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(L_Dp52, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pnl_Dp40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pnl_Dp5_container, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
-                .addComponent(pnl_Dop_p2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        L_Dp11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        L_Dp11.setText("1. Señale el ciclo escolar en que su escuela ha estado adscrita al Programa Nacional de Convivencia Escolar (puede");
-
-        rbtn_2016_2017.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        rbtn_2016_2017.setText("2016 - 2017");
-        rbtn_2016_2017.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rbtn_2016_2017ActionPerformed(evt);
-            }
-        });
-
-        rbn_2017_2018.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        rbn_2017_2018.setText("2017 - 2018");
-        rbn_2017_2018.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rbn_2017_2018ActionPerformed(evt);
-            }
-        });
-
-        rbn_2018_2019.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        rbn_2018_2019.setText("2018-2019");
-
-        rbn_descono.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        rbn_descono.setText("Lo desconozco");
-
-        checkB_Inv_Dp1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        checkB_Inv_Dp1.setForeground(new java.awt.Color(255, 0, 0));
-        checkB_Inv_Dp1.setText("Invalidar pregunta");
-        checkB_Inv_Dp1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkB_Inv_Dp1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout pnl_r1DLayout = new javax.swing.GroupLayout(pnl_r1D);
-        pnl_r1D.setLayout(pnl_r1DLayout);
-        pnl_r1DLayout.setHorizontalGroup(
-            pnl_r1DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_r1DLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(rbtn_2016_2017)
-                .addGap(49, 49, 49)
-                .addComponent(rbn_2017_2018)
-                .addGap(90, 90, 90)
-                .addComponent(rbn_2018_2019)
-                .addGap(90, 90, 90)
-                .addComponent(rbn_descono)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
-                .addComponent(checkB_Inv_Dp1, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        pnl_r1DLayout.setVerticalGroup(
-            pnl_r1DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_r1DLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnl_r1DLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(rbtn_2016_2017)
-                    .addComponent(rbn_2017_2018)
-                    .addComponent(rbn_2018_2019)
-                    .addComponent(rbn_descono)
-                    .addComponent(checkB_Inv_Dp1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        L_Dp12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        L_Dp12.setText("mencionar más de uno):");
-
-        javax.swing.GroupLayout pnl_Dp1Layout = new javax.swing.GroupLayout(pnl_Dp1);
-        pnl_Dp1.setLayout(pnl_Dp1Layout);
-        pnl_Dp1Layout.setHorizontalGroup(
-            pnl_Dp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_Dp1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnl_Dp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(L_Dp11, javax.swing.GroupLayout.PREFERRED_SIZE, 808, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(pnl_Dp1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(L_Dp12)))
-                .addContainerGap(188, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_Dp1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(pnl_r1D, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36))
-        );
-        pnl_Dp1Layout.setVerticalGroup(
-            pnl_Dp1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_Dp1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(L_Dp11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(L_Dp12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(pnl_r1D, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(pnl_Dp6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnl_Dp1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(938, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(pnl_Dp1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pnl_Dp6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(149, 149, 149))
-        );
-
-        tab_pnl_Dparte1.addTab("Parte 2", jPanel2);
-
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 507, Short.MAX_VALUE)
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 59, Short.MAX_VALUE)
-        );
-
         btn_save_D.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn_save_D.setText("Guardar");
         btn_save_D.addActionListener(new java.awt.event.ActionListener() {
@@ -1867,20 +2022,58 @@ public class violenciaView extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(394, 394, 394)
-                        .addComponent(btn_save_D))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(51, 51, 51)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 794, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(60, 60, 60))
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 733, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(349, 349, 349)
+                        .addComponent(btn_save_D)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btn_save_D)
+                .addGap(63, 63, 63))
+        );
+
+        javax.swing.GroupLayout pnl_Dp6Layout = new javax.swing.GroupLayout(pnl_Dp6);
+        pnl_Dp6.setLayout(pnl_Dp6Layout);
+        pnl_Dp6Layout.setHorizontalGroup(
+            pnl_Dp6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_Dp6Layout.createSequentialGroup()
+                .addGroup(pnl_Dp6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnl_Dp6Layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addGroup(pnl_Dp6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(pnl_Dp5_container, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(pnl_Dp40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(pnl_Dp6Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(L_Dp51, javax.swing.GroupLayout.PREFERRED_SIZE, 910, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnl_Dp6Layout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(L_Dp52, javax.swing.GroupLayout.PREFERRED_SIZE, 878, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnl_Dp6Layout.createSequentialGroup()
+                        .addGap(58, 58, 58)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        pnl_Dp6Layout.setVerticalGroup(
+            pnl_Dp6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_Dp6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(L_Dp51, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(L_Dp52, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnl_Dp40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnl_Dp5_container, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -1889,23 +2082,23 @@ public class violenciaView extends javax.swing.JFrame {
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(963, 963, 963)
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(80, 80, 80)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(484, Short.MAX_VALUE))
+                .addGap(46, 46, 46)
+                .addComponent(pnl_Dp6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(415, Short.MAX_VALUE))
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(pnl_Dp6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(228, Short.MAX_VALUE))
         );
 
         tab_pnl_Dparte1.addTab("Parte 3", jPanel6);
@@ -1914,7 +2107,9 @@ public class violenciaView extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(tab_pnl_Dparte1)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(tab_pnl_Dparte1, javax.swing.GroupLayout.PREFERRED_SIZE, 1073, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2104,6 +2299,34 @@ public class violenciaView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_checkB_Inv_Vp25ActionPerformed
 
+    private void rbtn_2016_2018ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_2016_2018ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbtn_2016_2018ActionPerformed
+
+    private void rbn_2017_2019ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbn_2017_2019ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbn_2017_2019ActionPerformed
+
+    private void checkB_Inv_Dp2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_checkB_Inv_Dp2ActionPerformed
+
+    private void rbtn_2016_2019ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_2016_2019ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbtn_2016_2019ActionPerformed
+
+    private void rbn_2017_2020ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbn_2017_2020ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbn_2017_2020ActionPerformed
+
+    private void checkB_Inv_Dp3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_checkB_Inv_Dp3ActionPerformed
+
+    private void rbn_2018_2019ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbn_2018_2019ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rbn_2018_2019ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2144,7 +2367,8 @@ public class violenciaView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel L_Dp11;
-    private javax.swing.JLabel L_Dp12;
+    private javax.swing.JLabel L_Dp13;
+    private javax.swing.JLabel L_Dp15;
     private javax.swing.JLabel L_Dp51;
     private javax.swing.JLabel L_Dp52;
     private javax.swing.JLabel L_Vp1;
@@ -2187,6 +2411,8 @@ public class violenciaView extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cb_Dp54;
     private javax.swing.JComboBox<String> cb_Dp55;
     private javax.swing.JCheckBox checkB_Inv_Dp1;
+    private javax.swing.JCheckBox checkB_Inv_Dp2;
+    private javax.swing.JCheckBox checkB_Inv_Dp3;
     private javax.swing.JCheckBox checkB_Inv_Dp40;
     private javax.swing.JCheckBox checkB_Inv_Vp11;
     private javax.swing.JCheckBox checkB_Inv_Vp12;
@@ -2223,9 +2449,11 @@ public class violenciaView extends javax.swing.JFrame {
     private javax.swing.JPanel pnl_Dp37;
     private javax.swing.JPanel pnl_Dp38;
     private javax.swing.JPanel pnl_Dp39;
+    private javax.swing.JPanel pnl_Dp4;
     private javax.swing.JPanel pnl_Dp40;
     private javax.swing.JPanel pnl_Dp41;
     private javax.swing.JPanel pnl_Dp43;
+    private javax.swing.JPanel pnl_Dp5;
     private javax.swing.JPanel pnl_Dp5_container;
     private javax.swing.JPanel pnl_Dp6;
     private javax.swing.JPanel pnl_Dr2;
@@ -2246,9 +2474,17 @@ public class violenciaView extends javax.swing.JFrame {
     private javax.swing.JPanel pnl_Dr6;
     private javax.swing.JPanel pnl_Dr7;
     private javax.swing.JPanel pnl_r1D;
+    private javax.swing.JPanel pnl_r1D1;
+    private javax.swing.JPanel pnl_r1D2;
     private javax.swing.JRadioButton rbn_2017_2018;
+    private javax.swing.JRadioButton rbn_2017_2019;
+    private javax.swing.JRadioButton rbn_2017_2020;
     private javax.swing.JRadioButton rbn_2018_2019;
+    private javax.swing.JRadioButton rbn_2018_2020;
+    private javax.swing.JRadioButton rbn_2018_2021;
     private javax.swing.JRadioButton rbn_descono;
+    private javax.swing.JRadioButton rbn_descono1;
+    private javax.swing.JRadioButton rbn_descono2;
     private javax.swing.ButtonGroup rbtnG_Dp1;
     private javax.swing.ButtonGroup rbtnG_Dp21;
     private javax.swing.ButtonGroup rbtnG_Dp22;
@@ -2258,6 +2494,8 @@ public class violenciaView extends javax.swing.JFrame {
     private javax.swing.ButtonGroup rbtnG_Dp33;
     private javax.swing.ButtonGroup rbtnG_Dp34;
     private javax.swing.JRadioButton rbtn_2016_2017;
+    private javax.swing.JRadioButton rbtn_2016_2018;
+    private javax.swing.JRadioButton rbtn_2016_2019;
     private javax.swing.JRadioButton rbtn_Dp22_Mucho;
     private javax.swing.JRadioButton rbtn_Dp22_Mucho1;
     private javax.swing.JRadioButton rbtn_Dp22_Mucho2;
