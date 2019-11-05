@@ -10,6 +10,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Set;
 import java.sql.ResultSet;
+import surveyClasses.desarrolloSurvey;
 
 /**
  *
@@ -54,6 +55,53 @@ public class dataQueries extends connect{
     
     
     public boolean create( surveyData sv){
+        
+        PreparedStatement ps = null;
+        Connection con = getConnection();
+        
+        String sql = "INSERT INTO datos_escuela (folio, encuesta, municipio, nivel, fecha, sistema, turno,modalidad,"
+                + "antiguedad, sexo, edad, anios_servicio, nombre, archivo ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        
+        System.out.println("before try catch");
+        try{
+            ps = con.prepareStatement(sql);
+            ps.setString(1, sv.getFolio());
+            ps.setString(2, sv.getEncuesta());
+            ps.setString(3, sv.getMunicipio());
+            ps.setString(4, sv.getNivel());
+            ps.setString(5, sv.getFecha());
+            ps.setString(6, sv.getSistema());
+            ps.setString(7, sv.getTurno());
+            ps.setString(8, sv.getModalidad());
+            ps.setString(9, sv.getAntiguedad());
+            ps.setString(10, sv.getSexo());
+            ps.setString(11, sv.getEdad());
+            ps.setString(12, sv.getAnios_servicio());
+            ps.setString(13, sv.getNombre());
+            System.out.println("before");
+            System.out.println("archivo ps : "+sv.getArchivo());
+            ps.setBinaryStream(14, sv.getArchivo());
+            System.out.println(ps);
+            ps.execute();
+            
+            /*Closing the conexion to not overload the memory*/
+            con.close();
+            return true;
+            
+        }catch(SQLException e){
+            System.out.println("no se insertaron los datos");
+            System.err.println(e);
+            return false;
+        }finally{
+            try{
+                con.close();
+            }catch(SQLException e){
+                System.err.println(e);
+            }
+        }
+    }
+    
+    public boolean createDes( desarrolloSurvey sv){
         
         PreparedStatement ps = null;
         Connection con = getConnection();
