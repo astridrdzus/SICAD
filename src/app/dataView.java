@@ -7,7 +7,9 @@ package app;
 import controller.ctrlData;
 import static databaseConnection.connect.getConnection;
 import databaseConnection.dataQueries;
+import java.io.File;
 import java.sql.Connection;
+import javax.swing.JFileChooser;
 import surveyClasses.surveyData;
 
 /**
@@ -80,8 +82,8 @@ public class dataView extends javax.swing.JFrame {
         encuesta_label = new java.awt.Label();
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        txtf_filepath = new javax.swing.JTextField();
+        btn_openfile = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -548,14 +550,19 @@ public class dataView extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("Encuesta escaneda: ");
 
-        jTextField1.setText("Seleccione archivo");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txtf_filepath.setText("Seleccione archivo");
+        txtf_filepath.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txtf_filepathActionPerformed(evt);
             }
         });
 
-        jButton1.setText("...");
+        btn_openfile.setText("...");
+        btn_openfile.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_openfileActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -565,9 +572,9 @@ public class dataView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel5)
                 .addGap(18, 18, 18)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtf_filepath, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
-                .addComponent(jButton1)
+                .addComponent(btn_openfile)
                 .addContainerGap(108, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -576,8 +583,8 @@ public class dataView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
+                    .addComponent(txtf_filepath, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn_openfile))
                 .addContainerGap(38, Short.MAX_VALUE))
         );
 
@@ -666,9 +673,9 @@ public class dataView extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btn_SaveDataActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txtf_filepathActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtf_filepathActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txtf_filepathActionPerformed
 
     private void txt_encuestadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_encuestadorActionPerformed
         // TODO add your handling code here:
@@ -688,6 +695,19 @@ public class dataView extends javax.swing.JFrame {
             vioView.setVisible(true);
         }
     }//GEN-LAST:event_btn_nextActionPerformed
+
+    private void btn_openfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_openfileActionPerformed
+        // TODO add your handling code here:
+        JFileChooser chooser = new JFileChooser();
+        chooser.setCurrentDirectory(new File("C:/Users/astri/Documents/encuestas_escaneadas"));
+        chooser.showOpenDialog(null);
+        File f = chooser.getSelectedFile();
+        String filepath = f.getAbsolutePath();
+        String filename = f.getName();
+        System.out.println("filename: "+filename);
+        txtf_filepath.setText(filepath);
+        
+    }//GEN-LAST:event_btn_openfileActionPerformed
 
     /**
      * @param args the command line arguments
@@ -771,6 +791,7 @@ public class dataView extends javax.swing.JFrame {
     public javax.swing.JButton btn_SaveData;
     private javax.swing.JButton btn_back;
     private javax.swing.JButton btn_next;
+    private javax.swing.JButton btn_openfile;
     public javax.swing.JComboBox<String> cbox_aniosServicio;
     public javax.swing.JComboBox<String> cbox_antiguedad;
     public javax.swing.JComboBox<String> cbox_edad;
@@ -781,7 +802,6 @@ public class dataView extends javax.swing.JFrame {
     public javax.swing.JComboBox<String> cbox_sistema;
     public javax.swing.JComboBox<String> cbox_turno;
     public java.awt.Label encuesta_label;
-    private javax.swing.JButton jButton1;
     public com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -793,7 +813,6 @@ public class dataView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JPanel panel_Municipio;
     private javax.swing.JPanel panel_antiguedad;
     private javax.swing.JPanel panel_datosDirec;
@@ -803,5 +822,6 @@ public class dataView extends javax.swing.JFrame {
     private javax.swing.JPanel panel_sistema;
     private javax.swing.JPanel panel_turno;
     public javax.swing.JTextField txt_encuestador;
+    private javax.swing.JTextField txtf_filepath;
     // End of variables declaration//GEN-END:variables
 }
