@@ -650,11 +650,11 @@ public class dataView extends javax.swing.JFrame {
             //surveyTypes  surveyTypeView = new surveyTypes();             
             //System.out.println(surveyTypeView.sv.getEncuesta());
             dataQueries dq = new dataQueries();
-            
-            
             ctrlData controller = new ctrlData(this.sv,dq,this, this.folio);
             controller.actionPerformed(evt);
+            
             this.folio++;
+            //Deactive button after clicking 
             this.btn_SaveData.setEnabled(false);
             
         }catch(Exception e){

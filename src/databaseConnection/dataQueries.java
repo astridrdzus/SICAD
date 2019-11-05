@@ -17,6 +17,33 @@ import java.sql.ResultSet;
  */
 public class dataQueries extends connect{
     
+    public void getLastID(){
+        int lastID=0;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        Connection con = getConnection();
+        
+        String sql= "SELECT MAX(id) FROM datos_escuela";
+        try{
+            ps = con.prepareStatement(sql);
+            rs = ps.executeQuery();
+            System.out.println("Result set: "+ rs.getString("id"));
+            
+        }catch(SQLException e){
+            System.err.println(e);
+            
+        }finally{
+            try{
+                con.close();
+            }catch(SQLException e){
+                System.err.println(e);
+            }
+        }
+        
+        //return n; 
+    }
+    
+    
     public boolean create( surveyData sv){
         
         PreparedStatement ps = null;

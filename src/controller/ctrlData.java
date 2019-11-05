@@ -32,6 +32,7 @@ public class ctrlData implements ActionListener{
         
     }
     
+    
     @Override
     public void actionPerformed(ActionEvent e){
         System.out.println("Button pushed");
@@ -79,6 +80,7 @@ public class ctrlData implements ActionListener{
             System.out.println("Datos guardados");
             
             boolean flag = dq.create(sv);
+            dq.getLastID();
             System.out.println(flag);
             
             //if(dq.create(sv)){
