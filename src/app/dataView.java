@@ -8,7 +8,11 @@ import controller.ctrlData;
 import static databaseConnection.connect.getConnection;
 import databaseConnection.dataQueries;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.sql.Connection;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFileChooser;
 import surveyClasses.surveyData;
 
@@ -557,7 +561,7 @@ public class dataView extends javax.swing.JFrame {
             }
         });
 
-        btn_openfile.setText("...");
+        btn_openfile.setText("Adjuntar archivo");
         btn_openfile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_openfileActionPerformed(evt);
@@ -609,7 +613,7 @@ public class dataView extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 858, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 320, Short.MAX_VALUE))
+                .addGap(0, 252, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -661,6 +665,7 @@ public class dataView extends javax.swing.JFrame {
             //System.out.println(surveyTypeView.sv.getEncuesta());
             dataQueries dq = new dataQueries();
             ctrlData controller = new ctrlData(this.sv,dq,this);
+            System.out.println("Before calling controller");
             controller.actionPerformed(evt);
             controller.insert_Data();
             
@@ -698,6 +703,8 @@ public class dataView extends javax.swing.JFrame {
 
     private void btn_openfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_openfileActionPerformed
         // TODO add your handling code here:
+        
+        //Getting the file path and name to convert it to fileinputStream
         JFileChooser chooser = new JFileChooser();
         chooser.setCurrentDirectory(new File("C:/Users/astri/Documents/encuestas_escaneadas"));
         chooser.showOpenDialog(null);
@@ -706,6 +713,13 @@ public class dataView extends javax.swing.JFrame {
         String filename = f.getName();
         System.out.println("filename: "+filename);
         txtf_filepath.setText(filepath);
+        try {
+            FileInputStream input = new FileInputStream(filepath);
+            sv.setArchivo(input);
+            System.out.println("sv.getArchivo"+ sv.getArchivo());
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(dataView.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
     }//GEN-LAST:event_btn_openfileActionPerformed
 

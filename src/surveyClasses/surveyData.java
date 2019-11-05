@@ -5,6 +5,8 @@
  */
 package surveyClasses;
 
+import java.io.FileInputStream;
+
 /**
  *
  * @author astri
@@ -23,7 +25,16 @@ public class surveyData {
     private String anios_servicio;
     private String nombre;
     private String fecha;
-    
+    private FileInputStream archivo;
+
+    public FileInputStream getArchivo() {
+        return archivo;
+    }
+
+    public void setArchivo(FileInputStream archivo) {
+        this.archivo = archivo;
+    }
+
     
     public String getFolio() {
         return folio;

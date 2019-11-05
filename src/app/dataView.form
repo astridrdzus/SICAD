@@ -47,7 +47,7 @@
                       <Component id="jPanel1" min="-2" pref="858" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="0" pref="320" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="252" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -1159,7 +1159,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="btn_openfile">
           <Properties>
-            <Property name="text" type="java.lang.String" value="..."/>
+            <Property name="text" type="java.lang.String" value="Adjuntar archivo"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_openfileActionPerformed"/>

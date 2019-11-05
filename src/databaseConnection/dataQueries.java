@@ -59,8 +59,9 @@ public class dataQueries extends connect{
         Connection con = getConnection();
         
         String sql = "INSERT INTO datos_escuela (folio, encuesta, municipio, nivel, fecha, sistema, turno,modalidad,"
-                + "antiguedad, sexo, edad, anios_servicio, nombre ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
+                + "antiguedad, sexo, edad, anios_servicio, nombre, archivo ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         
+        System.out.println("before try catch");
         try{
             ps = con.prepareStatement(sql);
             ps.setString(1, sv.getFolio());
@@ -76,6 +77,9 @@ public class dataQueries extends connect{
             ps.setString(11, sv.getEdad());
             ps.setString(12, sv.getAnios_servicio());
             ps.setString(13, sv.getNombre());
+            System.out.println("before");
+            System.out.println("archivo ps : "+sv.getArchivo());
+            ps.setBinaryStream(14, sv.getArchivo());
             System.out.println(ps);
             ps.execute();
             
@@ -84,6 +88,7 @@ public class dataQueries extends connect{
             return true;
             
         }catch(SQLException e){
+            System.out.println("no se insertaron los datos");
             System.err.println(e);
             return false;
         }finally{

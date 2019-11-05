@@ -10,6 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 import surveyClasses.surveyData;
+import java.sql.SQLException;
 
 /**
  *
@@ -33,7 +34,7 @@ public class ctrlData implements ActionListener{
     
     @Override
     public void actionPerformed(ActionEvent e){
-        System.out.println("Button pushed");
+        //System.out.println("Button pushed");
         if(e.getSource() == dataFrm.btn_SaveData){
             
             /*sv.setFolio(Integer.toString(folioCont));
@@ -41,6 +42,7 @@ public class ctrlData implements ActionListener{
             
             String preFolio = sv.getFolio();
             sv.setFolio(calculateFolio(preFolio));
+            System.out.println("folio calculated");
             
             //System.out.println(sv.getEncuesta());
             dataFrm.encuesta_label.setText(sv.getEncuesta());
@@ -78,33 +80,28 @@ public class ctrlData implements ActionListener{
             sv.setFecha(dataFrm.jDateChooser1.getDate().toString());
             //System.out.println(sv.getFecha());
             
-            //System.out.println("Datos guardados");
-            
-            /*
-            boolean flag = dq.create(sv);
-            dq.getLastID();
-            System.out.println(flag);
-            
-            //if(dq.create(sv)){
-            if(flag){
-                JOptionPane.showMessageDialog(null, "Datos guardados");
-            }else{
-                JOptionPane.showMessageDialog(null, "Error al guardar");
-            }
-            */
+            System.out.println(sv.getArchivo());
+
         }
     }
     
     public String calculateFolio(String preFolio){
-        int nFolio= dq.getLastID();
-        preFolio = preFolio+ Integer.toString(nFolio);
-        return preFolio;
+        try{
+            int nFolio= dq.getLastID();
+            preFolio = preFolio+ Integer.toString(nFolio);
+            return preFolio;
+            
+        }catch (Exception e){
+            System.err.println(e);
+            preFolio = preFolio+ Integer.toString(0);
+            return preFolio;
+        }
+        
     }
-    
     
     public void insert_Data(){
         boolean flag = dq.create(this.sv);
-            dq.getLastID();
+            //dq.getLastID();
             System.out.println(flag);
             
             //if(dq.create(sv)){
