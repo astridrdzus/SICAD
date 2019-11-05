@@ -1391,7 +1391,7 @@ public class violenciaView extends javax.swing.JFrame {
 
         jScrollPane1.setViewportView(jPanel1);
 
-        tab_pnl_Dparte1.addTab("Parte 1", jScrollPane1);
+        tab_pnl_Dparte1.addTab("VIOLENCIA_Parte 1", jScrollPane1);
 
         jPanel2.setPreferredSize(new java.awt.Dimension(1000, 750));
 
@@ -2439,7 +2439,7 @@ public class violenciaView extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        tab_pnl_Dparte1.addTab("Parte 2", jPanel2);
+        tab_pnl_Dparte1.addTab("VIOLENCIA_Parte 2", jPanel2);
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -2523,7 +2523,7 @@ public class violenciaView extends javax.swing.JFrame {
                 .addContainerGap(581, Short.MAX_VALUE))
         );
 
-        tab_pnl_Dparte1.addTab("Parte 3", jPanel6);
+        tab_pnl_Dparte1.addTab("VIOLENCIA_Parte 3", jPanel6);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

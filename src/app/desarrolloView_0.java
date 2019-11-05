@@ -1161,7 +1161,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
         jScrollPane1.setViewportView(jPanel1);
 
-        tab_pnl_Dparte1.addTab("Parte 1", jScrollPane1);
+        tab_pnl_Dparte1.addTab("DESARROLLO_Parte 1", jScrollPane1);
 
         jPanel2.setPreferredSize(new java.awt.Dimension(1000, 750));
 
@@ -1980,11 +1980,12 @@ public class desarrolloView_0 extends javax.swing.JFrame {
         pnl_Dp40Layout.setVerticalGroup(
             pnl_Dp40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dp40Layout.createSequentialGroup()
-                .addComponent(pnl_DLp5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addGroup(pnl_Dp40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pnl_DLp5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, Short.MAX_VALUE)
+                    .addGroup(pnl_Dp40Layout.createSequentialGroup()
+                        .addComponent(checkB_Inv_Dp40)
+                        .addGap(0, 2, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(pnl_Dp40Layout.createSequentialGroup()
-                .addComponent(checkB_Inv_Dp40)
-                .addContainerGap(13, Short.MAX_VALUE))
         );
 
         btn_DAtras1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -2086,7 +2087,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
                 .addGap(30, 30, 30))
         );
 
-        tab_pnl_Dparte1.addTab("Parte 2", jPanel2);
+        tab_pnl_Dparte1.addTab("DESARROLLO_Parte 2", jPanel2);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("Observaciones: ");
@@ -2149,7 +2150,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
                 .addContainerGap(375, Short.MAX_VALUE))
         );
 
-        tab_pnl_Dparte1.addTab("Parte 3", jPanel6);
+        tab_pnl_Dparte1.addTab("DESARROLLO_Parte 3", jPanel6);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
