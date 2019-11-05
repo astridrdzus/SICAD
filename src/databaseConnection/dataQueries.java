@@ -17,17 +17,26 @@ import java.sql.ResultSet;
  */
 public class dataQueries extends connect{
     
-    public void getLastID(){
+    public int getLastID(){
         int lastID=0;
+        String lastRowID= null;
         PreparedStatement ps = null;
         ResultSet rs = null;
         Connection con = getConnection();
         
-        String sql= "SELECT MAX(id) FROM datos_escuela";
+        String sql= "SELECT * FROM datos_escuela ORDER BY id DESC";
         try{
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
-            System.out.println("Result set: "+ rs.getString("id"));
+            if(rs.next()){
+                lastRowID = rs.getString("id");
+            }
+            System.out.println(lastRowID);
+            lastID = Integer.parseInt(lastRowID);
+            
+            
+            //lastID = Integer.parseInt(rs.getString("id"));
+            //System.out.println("Result set: "+ Integer.toString(lastID));
             
         }catch(SQLException e){
             System.err.println(e);
@@ -40,7 +49,7 @@ public class dataQueries extends connect{
             }
         }
         
-        //return n; 
+        return lastID; 
     }
     
     
@@ -69,7 +78,9 @@ public class dataQueries extends connect{
             ps.setString(13, sv.getNombre());
             System.out.println(ps);
             ps.execute();
-           
+            
+            /*Closing the conexion to not overload the memory*/
+            con.close();
             return true;
             
         }catch(SQLException e){

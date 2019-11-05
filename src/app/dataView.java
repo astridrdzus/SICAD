@@ -16,7 +16,6 @@ import surveyClasses.surveyData;
  */
 public class dataView extends javax.swing.JFrame {
     public surveyData sv = new surveyData();
-    public int folio= 0;
     /**
      * Creates new form datosEscuelaView
      */
@@ -85,7 +84,6 @@ public class dataView extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1000, 750));
 
         jPanel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
@@ -472,6 +470,11 @@ public class dataView extends javax.swing.JFrame {
 
         btn_next.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn_next.setText("Siguiente");
+        btn_next.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_nextActionPerformed(evt);
+            }
+        });
 
         btn_back.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn_back.setText("Regresar");
@@ -650,10 +653,11 @@ public class dataView extends javax.swing.JFrame {
             //surveyTypes  surveyTypeView = new surveyTypes();             
             //System.out.println(surveyTypeView.sv.getEncuesta());
             dataQueries dq = new dataQueries();
-            ctrlData controller = new ctrlData(this.sv,dq,this, this.folio);
+            ctrlData controller = new ctrlData(this.sv,dq,this);
             controller.actionPerformed(evt);
+            controller.insert_Data();
             
-            this.folio++;
+            
             //Deactive button after clicking 
             this.btn_SaveData.setEnabled(false);
             
@@ -669,6 +673,21 @@ public class dataView extends javax.swing.JFrame {
     private void txt_encuestadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_encuestadorActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_encuestadorActionPerformed
+
+    private void btn_nextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_nextActionPerformed
+        // TODO add your handling code here:
+        
+        if (sv.getEncuesta().equals("DESARROLLO")){
+            this.setVisible(false);
+            desarrolloView_0 desView = new desarrolloView_0();
+            desView.setVisible(true);
+            
+        }else if (sv.getEncuesta().equals("VIOLENCIA")){
+            this.setVisible(false);
+            violenciaView vioView = new violenciaView();
+            vioView.setVisible(true);
+        }
+    }//GEN-LAST:event_btn_nextActionPerformed
 
     /**
      * @param args the command line arguments

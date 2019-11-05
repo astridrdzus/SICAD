@@ -141,12 +141,15 @@ public class surveyTypes extends javax.swing.JFrame {
     private void btn_ViolenciaSurvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ViolenciaSurvActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
-        this.sv.setEncuesta("VIOLENCIA");
-        System.out.println("survey type: " +this.sv.getEncuesta());
-        dataView datav = new dataView();
-        datav.sv = this.sv;
-        datav.encuesta_label.setText(this.sv.getEncuesta());
-        datav.setVisible(true);
+        surveyData svD  = new surveyData();
+        //Creating a new surveyData for Desarrollo Survey
+        svD.setEncuesta("VIOLENCIA");
+        svD.setFolio("V_");
+        
+        dataView dataViewD = new dataView();
+        dataViewD.sv = svD;
+        dataViewD.encuesta_label.setText(dataViewD.sv.getEncuesta());
+        dataViewD.setVisible(true);
     }//GEN-LAST:event_btn_ViolenciaSurvActionPerformed
 
     /**

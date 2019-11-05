@@ -20,13 +20,11 @@ public class ctrlData implements ActionListener{
     private surveyData sv;
     private dataQueries dq;
     private dataView dataFrm;
-    public int folioCont;
     
-    public ctrlData(surveyData sv, dataQueries dq, dataView dataFrm, int folioCont){
+    public ctrlData(surveyData sv, dataQueries dq, dataView dataFrm){
         this.sv = sv;
         this.dq = dq;
         this.dataFrm = dataFrm;
-        this.folioCont = folioCont;
         this.dataFrm.btn_SaveData.addActionListener(this);
         
         
@@ -38,47 +36,51 @@ public class ctrlData implements ActionListener{
         System.out.println("Button pushed");
         if(e.getSource() == dataFrm.btn_SaveData){
             
-            sv.setFolio(Integer.toString(folioCont));
-            System.out.println(sv.getFolio());
+            /*sv.setFolio(Integer.toString(folioCont));
+            System.out.println(sv.getFolio());*/
             
-            System.out.println(sv.getEncuesta());
+            String preFolio = sv.getFolio();
+            sv.setFolio(calculateFolio(preFolio));
+            
+            //System.out.println(sv.getEncuesta());
             dataFrm.encuesta_label.setText(sv.getEncuesta());
             
             sv.setMunicipio(dataFrm.cbox_municipio.getSelectedItem().toString());
-            System.out.println(sv.getMunicipio());
+            //System.out.println(sv.getMunicipio());
             
             sv.setNivel(dataFrm.cbox_nivel.getSelectedItem().toString());
-            System.out.println(sv.getNivel());
+            //System.out.println(sv.getNivel());
             
             sv.setSistema(dataFrm.cbox_sistema.getSelectedItem().toString());
-            System.out.println(sv.getSistema());
+            //System.out.println(sv.getSistema());
             
             sv.setTurno(dataFrm.cbox_turno.getSelectedItem().toString());
-            System.out.println(sv.getTurno());
+            //System.out.println(sv.getTurno());
             
             sv.setModalidad(dataFrm.cbox_modalidad.getSelectedItem().toString());
-            System.out.println(sv.getModalidad());
+            //System.out.println(sv.getModalidad());
             
             sv.setAntiguedad(dataFrm.cbox_antiguedad.getSelectedItem().toString());
-            System.out.println(sv.getAntiguedad());
+            //System.out.println(sv.getAntiguedad());
             
             sv.setSexo(dataFrm.cbox_sexo.getSelectedItem().toString());
-            System.out.println(sv.getSexo());
+            //System.out.println(sv.getSexo());
             
             sv.setEdad(dataFrm.cbox_edad.getSelectedItem().toString());
-            System.out.println(sv.getEdad());
+            //System.out.println(sv.getEdad());
             
             sv.setAnios_servicio(dataFrm.cbox_aniosServicio.getSelectedItem().toString());
-            System.out.println(sv.getAnios_servicio());
+            //System.out.println(sv.getAnios_servicio());
             
             sv.setNombre(dataFrm.txt_encuestador.getText());
-            System.out.println(sv.getNombre());
+            //System.out.println(sv.getNombre());
             
             sv.setFecha(dataFrm.jDateChooser1.getDate().toString());
-            System.out.println(sv.getFecha());
+            //System.out.println(sv.getFecha());
             
-            System.out.println("Datos guardados");
+            //System.out.println("Datos guardados");
             
+            /*
             boolean flag = dq.create(sv);
             dq.getLastID();
             System.out.println(flag);
@@ -89,7 +91,32 @@ public class ctrlData implements ActionListener{
             }else{
                 JOptionPane.showMessageDialog(null, "Error al guardar");
             }
+            */
         }
+    }
+    
+    public String calculateFolio(String preFolio){
+        int nFolio= dq.getLastID();
+        preFolio = preFolio+ Integer.toString(nFolio);
+        return preFolio;
+    }
+    
+    
+    public void insert_Data(){
+        boolean flag = dq.create(this.sv);
+            dq.getLastID();
+            System.out.println(flag);
+            
+            //if(dq.create(sv)){
+            if(flag){
+                JOptionPane.showMessageDialog(null, "Datos guardados");
+            }else{
+                JOptionPane.showMessageDialog(null, "Error al guardar");
+            }
+    }
+    
+    public String returnSurveyViewType(){
+        return sv.getEncuesta();
     }
 
     
