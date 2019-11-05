@@ -10,6 +10,7 @@ package surveyClasses;
  * @author astri
  */
 public class desarrolloSurvey {
+    public String folio;
     public String Dp1;
     public String Dp21;
     public String Dp22;
@@ -29,7 +30,15 @@ public class desarrolloSurvey {
     public String Dp54;
     public String Dp55;
     public String DpObs;
+    
 
+    public String getFolio() {
+        return folio;
+    }
+
+    public void setFolio(String folio) {
+        this.folio = folio;
+    }
     public String getDp1() {
         return Dp1;
     }
