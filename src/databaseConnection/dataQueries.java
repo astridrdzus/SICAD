@@ -106,8 +106,8 @@ public class dataQueries extends connect{
         PreparedStatement ps = null;
         Connection con = getConnection();
         
-        String sql = "INSERT INTO escuesta_desarrollo (folio, p1, p21, p22, p23, p31, p32, p33, p34, p41, p42, p43 "
-                + "p44, p45, p51, p53, p54, p55, observaciones ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO encuesta_desarrollo (folio, p1, p21, p22, p23, p31, p32, p33, p34, p41, p42, p43, "
+                + "p44, p45, p51, p52, p53, p54, p55, observaciones ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         
         System.out.println("before try catch");
         try{

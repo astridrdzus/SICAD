@@ -85,9 +85,11 @@ public class ctrlDesarrollo implements ActionListener{
             //System.out.println(sv.getFecha());
             
             System.out.println(sv.getArchivo());
-            */
-        }
+            
+        }*/
     }
+    
+    
     /*
     public String calculateFolio(String preFolio){
         try{
@@ -102,9 +104,10 @@ public class ctrlDesarrollo implements ActionListener{
         }
         
     }
-    
+    */
+        
     public void insert_Data(){
-        boolean flag = dq.create(this.sv);
+        boolean flag = dq.createDes(this.dsv);
             //dq.getLastID();
             System.out.println(flag);
             
@@ -115,12 +118,8 @@ public class ctrlDesarrollo implements ActionListener{
                 JOptionPane.showMessageDialog(null, "Error al guardar");
             }
     }
-    
-    public String returnSurveyViewType(){
-        return sv.getEncuesta();
-    }
+
     
     
     
 }
-*/

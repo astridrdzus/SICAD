@@ -14,6 +14,7 @@ import java.sql.Connection;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
+import surveyClasses.desarrolloSurvey;
 import surveyClasses.surveyData;
 
 /**
@@ -22,6 +23,8 @@ import surveyClasses.surveyData;
  */
 public class dataView extends javax.swing.JFrame {
     public surveyData sv = new surveyData();
+    public desarrolloSurvey dsv = new desarrolloSurvey();
+    public String folio = null;
     /**
      * Creates new form datosEscuelaView
      */
@@ -668,6 +671,8 @@ public class dataView extends javax.swing.JFrame {
             System.out.println("Before calling controller");
             controller.actionPerformed(evt);
             controller.insert_Data();
+            folio = controller.getLastFolio();
+            
             
             
             //Deactive button after clicking 
@@ -692,6 +697,7 @@ public class dataView extends javax.swing.JFrame {
         if (sv.getEncuesta().equals("DESARROLLO")){
             this.setVisible(false);
             desarrolloView_0 desView = new desarrolloView_0();
+            desView.dsv.setFolio(folio);
             desView.setVisible(true);
             
         }else if (sv.getEncuesta().equals("VIOLENCIA")){

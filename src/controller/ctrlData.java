@@ -21,6 +21,15 @@ public class ctrlData implements ActionListener{
     private surveyData sv;
     private dataQueries dq;
     private dataView dataFrm;
+    public String lastFolio;
+
+    public String getLastFolio() {
+        return lastFolio;
+    }
+
+    public void setLastFolio(String lastFolio) {
+        this.lastFolio = lastFolio;
+    }
     
     public ctrlData(surveyData sv, dataQueries dq, dataView dataFrm){
         this.sv = sv;
@@ -42,6 +51,7 @@ public class ctrlData implements ActionListener{
             
             String preFolio = sv.getFolio();
             sv.setFolio(calculateFolio(preFolio));
+            this.setLastFolio(sv.getFolio());
             System.out.println("folio calculated");
             
             //System.out.println(sv.getEncuesta());

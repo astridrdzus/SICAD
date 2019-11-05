@@ -1237,9 +1237,19 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
         rbtn_Dp41_Poco.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp41_Poco.setText("Poco");
+        rbtn_Dp41_Poco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp41_PocoActionPerformed(evt);
+            }
+        });
 
         rbtn_Dp41_Nada.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp41_Nada.setText("Nada");
+        rbtn_Dp41_Nada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp41_NadaActionPerformed(evt);
+            }
+        });
 
         checkB_Inv_Dp41.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         checkB_Inv_Dp41.setForeground(new java.awt.Color(255, 0, 0));
@@ -1325,9 +1335,19 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
         rbtn_Dp42_Poco.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp42_Poco.setText("Poco");
+        rbtn_Dp42_Poco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp42_PocoActionPerformed(evt);
+            }
+        });
 
         rbtn_Dp42_Nada.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp42_Nada.setText("Nada");
+        rbtn_Dp42_Nada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp42_NadaActionPerformed(evt);
+            }
+        });
 
         checkB_Inv_Dp42.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         checkB_Inv_Dp42.setForeground(new java.awt.Color(255, 0, 0));
@@ -1406,9 +1426,19 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
         rbtn_Dp43_Poco.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp43_Poco.setText("Poco");
+        rbtn_Dp43_Poco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp43_PocoActionPerformed(evt);
+            }
+        });
 
         rbtn_Dp43_Nada.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp43_Nada.setText("Nada");
+        rbtn_Dp43_Nada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp43_NadaActionPerformed(evt);
+            }
+        });
 
         checkB_Inv_Dp43.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         checkB_Inv_Dp43.setForeground(new java.awt.Color(255, 0, 0));
@@ -1498,9 +1528,19 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
         rbtn_Dp44_Poco.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp44_Poco.setText("Poco");
+        rbtn_Dp44_Poco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp44_PocoActionPerformed(evt);
+            }
+        });
 
         rbtn_Dp44_Nada.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp44_Nada.setText("Nada");
+        rbtn_Dp44_Nada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp44_NadaActionPerformed(evt);
+            }
+        });
 
         checkB_Inv_Dp44.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         checkB_Inv_Dp44.setForeground(new java.awt.Color(255, 0, 0));
@@ -1587,9 +1627,19 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
         rbtn_Dp45_Poco.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp45_Poco.setText("Poco");
+        rbtn_Dp45_Poco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp45_PocoActionPerformed(evt);
+            }
+        });
 
         rbtn_Dp45_Nada.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp45_Nada.setText("Nada");
+        rbtn_Dp45_Nada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp45_NadaActionPerformed(evt);
+            }
+        });
 
         checkB_Inv_Dp45.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         checkB_Inv_Dp45.setForeground(new java.awt.Color(255, 0, 0));
@@ -2179,30 +2229,42 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
     private void checkB_Inv_Dp40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp40ActionPerformed
         // TODO add your handling code here:
+        dsv.setDp51("INVALIDAR");
+        dsv.setDp52("INVALIDAR");
+        dsv.setDp53("INVALIDAR");
+        dsv.setDp54("INVALIDAR");
+        dsv.setDp55("INVALIDAR");
     }//GEN-LAST:event_checkB_Inv_Dp40ActionPerformed
 
     private void cb_Dp55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_Dp55ActionPerformed
         // TODO add your handling code here:
+        dsv.setDp55(cb_Dp55.getSelectedItem().toString());
     }//GEN-LAST:event_cb_Dp55ActionPerformed
 
     private void cb_Dp54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_Dp54ActionPerformed
         // TODO add your handling code here:
+        dsv.setDp54(cb_Dp54.getSelectedItem().toString());
     }//GEN-LAST:event_cb_Dp54ActionPerformed
 
     private void cb_Dp53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_Dp53ActionPerformed
         // TODO add your handling code here:
+        dsv.setDp53(cb_Dp53.getSelectedItem().toString());
     }//GEN-LAST:event_cb_Dp53ActionPerformed
 
     private void cb_Dp52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_Dp52ActionPerformed
         // TODO add your handling code here:
+        dsv.setDp52(cb_Dp52.getSelectedItem().toString());
     }//GEN-LAST:event_cb_Dp52ActionPerformed
 
     private void cb_Dp51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_Dp51ActionPerformed
         // TODO add your handling code here:
+        dsv.setDp51(cb_Dp51.getSelectedItem().toString());
     }//GEN-LAST:event_cb_Dp51ActionPerformed
 
     private void checkB_Inv_Dp45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp45ActionPerformed
         // TODO add your handling code here:
+        rbtnG_Dp45.clearSelection();
+        dsv.setDp45("INVALIDAR");
     }//GEN-LAST:event_checkB_Inv_Dp45ActionPerformed
 
     private void rbtn_Dp45_RegularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp45_RegularActionPerformed
@@ -2217,6 +2279,8 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
     private void checkB_Inv_Dp44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp44ActionPerformed
         // TODO add your handling code here:
+        rbtnG_Dp44.clearSelection();
+        dsv.setDp44("INVALIDAR");
     }//GEN-LAST:event_checkB_Inv_Dp44ActionPerformed
 
     private void rbtn_Dp44_RegularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp44_RegularActionPerformed
@@ -2231,6 +2295,8 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
     private void checkB_Inv_Dp43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp43ActionPerformed
         // TODO add your handling code here:
+        rbtnG_Dp43.clearSelection();
+        dsv.setDp43("INVALIDAR");
     }//GEN-LAST:event_checkB_Inv_Dp43ActionPerformed
 
     private void rbtn_Dp43_RegularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp43_RegularActionPerformed
@@ -2245,6 +2311,8 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
     private void checkB_Inv_Dp42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp42ActionPerformed
         // TODO add your handling code here:
+        rbtnG_Dp42.clearSelection();
+        dsv.setDp42("INVALIDAR");
     }//GEN-LAST:event_checkB_Inv_Dp42ActionPerformed
 
     private void rbtn_Dp42_RegularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp42_RegularActionPerformed
@@ -2259,6 +2327,8 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
     private void checkB_Inv_Dp41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp41ActionPerformed
         // TODO add your handling code here:
+        rbtnG_Dp41.clearSelection();
+        dsv.setDp41("INVALIDAR");
     }//GEN-LAST:event_checkB_Inv_Dp41ActionPerformed
 
     private void rbtn_Dp41_RegularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp41_RegularActionPerformed
@@ -2410,9 +2480,14 @@ public class desarrolloView_0 extends javax.swing.JFrame {
     private void btn_save_DActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_save_DActionPerformed
         // TODO add your handling code here:
         dataQueries dq = new dataQueries();
-        System.out.println(dsv.getDp1());
+       // dsv.setFolio(dq.getLastFolio());
+        System.out.println("folio: "+dsv.getFolio());
+        //System.out.println(dsv.getDp1());
+        dsv.setDpObs(txtA_Dp6.getText());
         //dsv.setDp1(rbtnG_Dp1.toString());
-        ctrlDesarrollo ctrDes = new ctrlDesarrollo(this.dsv,dq,this);
+        ctrlDesarrollo ctrlDes = new ctrlDesarrollo(this.dsv,dq,this);
+        ctrlDes.insert_Data();
+        this.btn_save_D.setEnabled(false);
     }//GEN-LAST:event_btn_save_DActionPerformed
 
     private void rbtn_Dp1_2018_2019ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp1_2018_2019ActionPerformed
@@ -2489,6 +2564,56 @@ public class desarrolloView_0 extends javax.swing.JFrame {
         // TODO add your handling code here:
         dsv.setDp34("Nada");
     }//GEN-LAST:event_rbtn_Dp34_NadaActionPerformed
+
+    private void rbtn_Dp41_PocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp41_PocoActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp41("Poco");
+    }//GEN-LAST:event_rbtn_Dp41_PocoActionPerformed
+
+    private void rbtn_Dp42_PocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp42_PocoActionPerformed
+        // TODO add your handling code here:
+         dsv.setDp42("Poco");
+    }//GEN-LAST:event_rbtn_Dp42_PocoActionPerformed
+
+    private void rbtn_Dp43_PocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp43_PocoActionPerformed
+        // TODO add your handling code here:
+         dsv.setDp43("Poco");
+    }//GEN-LAST:event_rbtn_Dp43_PocoActionPerformed
+
+    private void rbtn_Dp44_PocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp44_PocoActionPerformed
+        // TODO add your handling code here:
+         dsv.setDp44("Poco");
+    }//GEN-LAST:event_rbtn_Dp44_PocoActionPerformed
+
+    private void rbtn_Dp45_PocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp45_PocoActionPerformed
+        // TODO add your handling code here:
+         dsv.setDp45("Poco");
+    }//GEN-LAST:event_rbtn_Dp45_PocoActionPerformed
+
+    private void rbtn_Dp41_NadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp41_NadaActionPerformed
+        // TODO add your handling code here:
+         dsv.setDp41("Nada");
+    }//GEN-LAST:event_rbtn_Dp41_NadaActionPerformed
+
+    private void rbtn_Dp42_NadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp42_NadaActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp42("Nada");
+    }//GEN-LAST:event_rbtn_Dp42_NadaActionPerformed
+
+    private void rbtn_Dp43_NadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp43_NadaActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp43("Nada");
+    }//GEN-LAST:event_rbtn_Dp43_NadaActionPerformed
+
+    private void rbtn_Dp44_NadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp44_NadaActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp44("Nada");
+    }//GEN-LAST:event_rbtn_Dp44_NadaActionPerformed
+
+    private void rbtn_Dp45_NadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp45_NadaActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp45("Nada");
+    }//GEN-LAST:event_rbtn_Dp45_NadaActionPerformed
 
     /**
      * @param args the command line arguments
