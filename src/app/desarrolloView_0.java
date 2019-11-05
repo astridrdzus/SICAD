@@ -163,7 +163,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
         rbtn_Dp31_Regular1 = new javax.swing.JRadioButton();
         rbtn_Dp31_Poco1 = new javax.swing.JRadioButton();
         rbtn_Dp31_Nada1 = new javax.swing.JRadioButton();
-        checkB_Inv_Dp35 = new javax.swing.JCheckBox();
+        checkB_Inv_Dp31 = new javax.swing.JCheckBox();
         L_p35 = new javax.swing.JLabel();
         pnl_Dp35 = new javax.swing.JPanel();
         L_p36 = new javax.swing.JLabel();
@@ -172,7 +172,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
         rbtn_Dp32_Regular1 = new javax.swing.JRadioButton();
         rbtn_Dp32_Poco1 = new javax.swing.JRadioButton();
         rbtn_Dp32_Nada1 = new javax.swing.JRadioButton();
-        checkB_Inv_Dp36 = new javax.swing.JCheckBox();
+        checkB_Inv_Dp32 = new javax.swing.JCheckBox();
         L_p39 = new javax.swing.JLabel();
         pnl_Dp36 = new javax.swing.JPanel();
         L_p33_2 = new javax.swing.JLabel();
@@ -182,7 +182,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
         rbtn_Dp33_Regular1 = new javax.swing.JRadioButton();
         rbtn_Dp33_Poco1 = new javax.swing.JRadioButton();
         rbtn_Dp33_Nada1 = new javax.swing.JRadioButton();
-        checkB_Inv_Dp37 = new javax.swing.JCheckBox();
+        checkB_Inv_Dp33 = new javax.swing.JCheckBox();
         pnl_Dr38 = new javax.swing.JPanel();
         L_p38 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
@@ -301,9 +301,19 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
         rbtn_Dp1_2018_2019.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp1_2018_2019.setText("2018-2019");
+        rbtn_Dp1_2018_2019.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp1_2018_2019ActionPerformed(evt);
+            }
+        });
 
         rbtn_Dp1_lodesco.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp1_lodesco.setText("Lo desconozco");
+        rbtn_Dp1_lodesco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp1_lodescoActionPerformed(evt);
+            }
+        });
 
         checkB_Inv_Dp1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         checkB_Inv_Dp1.setForeground(new java.awt.Color(255, 0, 0));
@@ -396,9 +406,19 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
         rbtn_Dp21_Poco.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp21_Poco.setText("Poco");
+        rbtn_Dp21_Poco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp21_PocoActionPerformed(evt);
+            }
+        });
 
         rbtn_Dp21_Nada.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp21_Nada.setText("Nada");
+        rbtn_Dp21_Nada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp21_NadaActionPerformed(evt);
+            }
+        });
 
         checkB_Inv_Dp21.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         checkB_Inv_Dp21.setForeground(new java.awt.Color(255, 0, 0));
@@ -481,9 +501,19 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
         rbtn_Dp22_Poco.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp22_Poco.setText("Poco");
+        rbtn_Dp22_Poco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp22_PocoActionPerformed(evt);
+            }
+        });
 
         rbtn_Dp22_Nada.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp22_Nada.setText("Nada");
+        rbtn_Dp22_Nada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp22_NadaActionPerformed(evt);
+            }
+        });
 
         checkB_Inv_Dp22.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         checkB_Inv_Dp22.setForeground(new java.awt.Color(255, 0, 0));
@@ -562,9 +592,19 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
         rbtn_Dp23_Poco.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp23_Poco.setText("Poco");
+        rbtn_Dp23_Poco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp23_PocoActionPerformed(evt);
+            }
+        });
 
         rbtn_Dp23_Nada.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp23_Nada.setText("Nada");
+        rbtn_Dp23_Nada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp23_NadaActionPerformed(evt);
+            }
+        });
 
         checkB_Inv_Dp23.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         checkB_Inv_Dp23.setForeground(new java.awt.Color(255, 0, 0));
@@ -707,16 +747,26 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
         rbtn_Dp31_Poco1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp31_Poco1.setText("Poco");
+        rbtn_Dp31_Poco1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp31_Poco1ActionPerformed(evt);
+            }
+        });
 
         rbtn_Dp31_Nada1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp31_Nada1.setText("Nada");
-
-        checkB_Inv_Dp35.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        checkB_Inv_Dp35.setForeground(new java.awt.Color(255, 0, 0));
-        checkB_Inv_Dp35.setText("Invalidar pregunta");
-        checkB_Inv_Dp35.addActionListener(new java.awt.event.ActionListener() {
+        rbtn_Dp31_Nada1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkB_Inv_Dp35ActionPerformed(evt);
+                rbtn_Dp31_Nada1ActionPerformed(evt);
+            }
+        });
+
+        checkB_Inv_Dp31.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        checkB_Inv_Dp31.setForeground(new java.awt.Color(255, 0, 0));
+        checkB_Inv_Dp31.setText("Invalidar pregunta");
+        checkB_Inv_Dp31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkB_Inv_Dp31ActionPerformed(evt);
             }
         });
 
@@ -734,7 +784,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addComponent(rbtn_Dp31_Nada1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
-                .addComponent(checkB_Inv_Dp35)
+                .addComponent(checkB_Inv_Dp31)
                 .addContainerGap())
         );
         pnl_Dr31Layout.setVerticalGroup(
@@ -746,7 +796,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
                     .addComponent(rbtn_Dp31_Regular1)
                     .addComponent(rbtn_Dp31_Poco1)
                     .addComponent(rbtn_Dp31_Nada1)
-                    .addComponent(checkB_Inv_Dp35))
+                    .addComponent(checkB_Inv_Dp31))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -805,13 +855,18 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
         rbtn_Dp32_Nada1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp32_Nada1.setText("Nada");
-
-        checkB_Inv_Dp36.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        checkB_Inv_Dp36.setForeground(new java.awt.Color(255, 0, 0));
-        checkB_Inv_Dp36.setText("Invalidar pregunta");
-        checkB_Inv_Dp36.addActionListener(new java.awt.event.ActionListener() {
+        rbtn_Dp32_Nada1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkB_Inv_Dp36ActionPerformed(evt);
+                rbtn_Dp32_Nada1ActionPerformed(evt);
+            }
+        });
+
+        checkB_Inv_Dp32.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        checkB_Inv_Dp32.setForeground(new java.awt.Color(255, 0, 0));
+        checkB_Inv_Dp32.setText("Invalidar pregunta");
+        checkB_Inv_Dp32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkB_Inv_Dp32ActionPerformed(evt);
             }
         });
 
@@ -829,7 +884,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addComponent(rbtn_Dp32_Nada1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
-                .addComponent(checkB_Inv_Dp36)
+                .addComponent(checkB_Inv_Dp32)
                 .addContainerGap())
         );
         pnl_Dr3Layout.setVerticalGroup(
@@ -841,7 +896,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
                     .addComponent(rbtn_Dp32_Regular1)
                     .addComponent(rbtn_Dp32_Poco1)
                     .addComponent(rbtn_Dp32_Nada1)
-                    .addComponent(checkB_Inv_Dp36))
+                    .addComponent(checkB_Inv_Dp32))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -898,16 +953,26 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
         rbtn_Dp33_Poco1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp33_Poco1.setText("Poco");
+        rbtn_Dp33_Poco1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp33_Poco1ActionPerformed(evt);
+            }
+        });
 
         rbtn_Dp33_Nada1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp33_Nada1.setText("Nada");
-
-        checkB_Inv_Dp37.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        checkB_Inv_Dp37.setForeground(new java.awt.Color(255, 0, 0));
-        checkB_Inv_Dp37.setText("Invalidar pregunta");
-        checkB_Inv_Dp37.addActionListener(new java.awt.event.ActionListener() {
+        rbtn_Dp33_Nada1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                checkB_Inv_Dp37ActionPerformed(evt);
+                rbtn_Dp33_Nada1ActionPerformed(evt);
+            }
+        });
+
+        checkB_Inv_Dp33.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        checkB_Inv_Dp33.setForeground(new java.awt.Color(255, 0, 0));
+        checkB_Inv_Dp33.setText("Invalidar pregunta");
+        checkB_Inv_Dp33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkB_Inv_Dp33ActionPerformed(evt);
             }
         });
 
@@ -925,7 +990,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addComponent(rbtn_Dp33_Nada1)
                 .addGap(100, 100, 100)
-                .addComponent(checkB_Inv_Dp37)
+                .addComponent(checkB_Inv_Dp33)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnl_Dr33Layout.setVerticalGroup(
@@ -937,7 +1002,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
                     .addComponent(rbtn_Dp33_Regular1)
                     .addComponent(rbtn_Dp33_Poco1)
                     .addComponent(rbtn_Dp33_Nada1)
-                    .addComponent(checkB_Inv_Dp37))
+                    .addComponent(checkB_Inv_Dp33))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -982,9 +1047,19 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
         rbtn_Dp34_Nada.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp34_Nada.setText("Nada");
+        rbtn_Dp34_Nada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp34_NadaActionPerformed(evt);
+            }
+        });
 
         rbtn_Dp34_Poco.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp34_Poco.setText("Poco");
+        rbtn_Dp34_Poco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rbtn_Dp34_PocoActionPerformed(evt);
+            }
+        });
 
         rbtn_Dp34_Regular.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rbtn_Dp34_Regular.setText("Regular");
@@ -2132,10 +2207,12 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
     private void rbtn_Dp45_RegularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp45_RegularActionPerformed
         // TODO add your handling code here:
+        dsv.setDp45("Regular");
     }//GEN-LAST:event_rbtn_Dp45_RegularActionPerformed
 
     private void rbtn_Dp45_MuchoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp45_MuchoActionPerformed
         // TODO add your handling code here:
+        dsv.setDp45("Mucho");
     }//GEN-LAST:event_rbtn_Dp45_MuchoActionPerformed
 
     private void checkB_Inv_Dp44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp44ActionPerformed
@@ -2144,10 +2221,12 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
     private void rbtn_Dp44_RegularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp44_RegularActionPerformed
         // TODO add your handling code here:
+        dsv.setDp44("Regular");
     }//GEN-LAST:event_rbtn_Dp44_RegularActionPerformed
 
     private void rbtn_Dp44_MuchoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp44_MuchoActionPerformed
         // TODO add your handling code here:
+        dsv.setDp44("Mucho");
     }//GEN-LAST:event_rbtn_Dp44_MuchoActionPerformed
 
     private void checkB_Inv_Dp43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp43ActionPerformed
@@ -2156,10 +2235,12 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
     private void rbtn_Dp43_RegularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp43_RegularActionPerformed
         // TODO add your handling code here:
+        dsv.setDp43("Regular");
     }//GEN-LAST:event_rbtn_Dp43_RegularActionPerformed
 
     private void rbtn_Dp43_MuchoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp43_MuchoActionPerformed
         // TODO add your handling code here:
+        dsv.setDp43("Mucho");
     }//GEN-LAST:event_rbtn_Dp43_MuchoActionPerformed
 
     private void checkB_Inv_Dp42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp42ActionPerformed
@@ -2168,10 +2249,12 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
     private void rbtn_Dp42_RegularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp42_RegularActionPerformed
         // TODO add your handling code here:
+        dsv.setDp42("Regular");
     }//GEN-LAST:event_rbtn_Dp42_RegularActionPerformed
 
     private void rbtn_Dp42_MuchoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp42_MuchoActionPerformed
         // TODO add your handling code here:
+        dsv.setDp42("Mucho");
     }//GEN-LAST:event_rbtn_Dp42_MuchoActionPerformed
 
     private void checkB_Inv_Dp41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp41ActionPerformed
@@ -2180,117 +2263,232 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
     private void rbtn_Dp41_RegularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp41_RegularActionPerformed
         // TODO add your handling code here:
+        dsv.setDp41("Regular");
     }//GEN-LAST:event_rbtn_Dp41_RegularActionPerformed
 
     private void rbtn_Dp41_MuchoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp41_MuchoActionPerformed
         // TODO add your handling code here:
+        dsv.setDp41("Mucho");
     }//GEN-LAST:event_rbtn_Dp41_MuchoActionPerformed
 
     private void rbtn_Dp34_MuchoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp34_MuchoActionPerformed
         // TODO add your handling code here:
+        dsv.setDp34("Mucho");
+        
     }//GEN-LAST:event_rbtn_Dp34_MuchoActionPerformed
 
     private void rbtn_Dp34_RegularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp34_RegularActionPerformed
         // TODO add your handling code here:
+        dsv.setDp34("Regular");
     }//GEN-LAST:event_rbtn_Dp34_RegularActionPerformed
 
     private void checkB_Inv_Dp34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp34ActionPerformed
         // TODO add your handling code here:
+        rbtnG_Dp34.clearSelection();
+         dsv.setDp34("INVALIDAR");
     }//GEN-LAST:event_checkB_Inv_Dp34ActionPerformed
 
-    private void checkB_Inv_Dp37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp37ActionPerformed
+    private void checkB_Inv_Dp33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp33ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_checkB_Inv_Dp37ActionPerformed
+        rbtnG_Dp33.clearSelection();
+         dsv.setDp33("INVALIDAR");
+    }//GEN-LAST:event_checkB_Inv_Dp33ActionPerformed
 
     private void rbtn_Dp33_Regular1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp33_Regular1ActionPerformed
         // TODO add your handling code here:
+        dsv.setDp33("Regular");
     }//GEN-LAST:event_rbtn_Dp33_Regular1ActionPerformed
 
     private void rbtn_Dp33_Mucho1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp33_Mucho1ActionPerformed
         // TODO add your handling code here:
+        dsv.setDp33("Mucho");
     }//GEN-LAST:event_rbtn_Dp33_Mucho1ActionPerformed
 
-    private void checkB_Inv_Dp36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp36ActionPerformed
+    private void checkB_Inv_Dp32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp32ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_checkB_Inv_Dp36ActionPerformed
+        rbtnG_Dp32.clearSelection();
+         dsv.setDp32("INVALIDAR");
+    }//GEN-LAST:event_checkB_Inv_Dp32ActionPerformed
 
     private void rbtn_Dp32_Poco1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp32_Poco1ActionPerformed
         // TODO add your handling code here:
+        dsv.setDp32("Poco");
     }//GEN-LAST:event_rbtn_Dp32_Poco1ActionPerformed
 
     private void rbtn_Dp32_Regular1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp32_Regular1ActionPerformed
         // TODO add your handling code here:
+        dsv.setDp32("Regular");
     }//GEN-LAST:event_rbtn_Dp32_Regular1ActionPerformed
 
     private void rbtn_Dp32_Mucho1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp32_Mucho1ActionPerformed
         // TODO add your handling code here:
+        dsv.setDp32("Mucho");
     }//GEN-LAST:event_rbtn_Dp32_Mucho1ActionPerformed
 
-    private void checkB_Inv_Dp35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp35ActionPerformed
+    private void checkB_Inv_Dp31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp31ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_checkB_Inv_Dp35ActionPerformed
+        rbtnG_Dp31.clearSelection();
+         dsv.setDp31("INVALIDAR");
+    }//GEN-LAST:event_checkB_Inv_Dp31ActionPerformed
 
     private void rbtn_Dp31_Regular1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp31_Regular1ActionPerformed
         // TODO add your handling code here:
+        dsv.setDp31("Regular");
     }//GEN-LAST:event_rbtn_Dp31_Regular1ActionPerformed
 
     private void rbtn_Dp31_Mucho1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp31_Mucho1ActionPerformed
         // TODO add your handling code here:
+        dsv.setDp31("Mucho");
     }//GEN-LAST:event_rbtn_Dp31_Mucho1ActionPerformed
 
     private void checkB_Inv_Dp23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp23ActionPerformed
         // TODO add your handling code here:
+        rbtnG_Dp23.clearSelection();
+         dsv.setDp23("INVALIDAR");
     }//GEN-LAST:event_checkB_Inv_Dp23ActionPerformed
 
     private void rbtn_Dp23_RegularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp23_RegularActionPerformed
         // TODO add your handling code here:
+        dsv.setDp23("Regular");
     }//GEN-LAST:event_rbtn_Dp23_RegularActionPerformed
 
     private void rbtn_Dp23_MuchoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp23_MuchoActionPerformed
         // TODO add your handling code here:
+        dsv.setDp23("Mucho");
     }//GEN-LAST:event_rbtn_Dp23_MuchoActionPerformed
 
     private void checkB_Inv_Dp22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp22ActionPerformed
         // TODO add your handling code here:
+        rbtnG_Dp22.clearSelection();
+         dsv.setDp22("INVALIDAR");
     }//GEN-LAST:event_checkB_Inv_Dp22ActionPerformed
 
     private void rbtn_Dp22_RegularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp22_RegularActionPerformed
-        // TODO add your handling code here:
+           // TODO add your handling code here:
+        dsv.setDp22("Regular");
     }//GEN-LAST:event_rbtn_Dp22_RegularActionPerformed
 
     private void rbtn_Dp22_MuchoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp22_MuchoActionPerformed
         // TODO add your handling code here:
+        dsv.setDp22("Mucho");
     }//GEN-LAST:event_rbtn_Dp22_MuchoActionPerformed
 
     private void checkB_Inv_Dp21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp21ActionPerformed
         // TODO add your handling code here:
+        rbtnG_Dp21.clearSelection();
+        dsv.setDp21("INVALIDAR");
     }//GEN-LAST:event_checkB_Inv_Dp21ActionPerformed
 
     private void rbtn_Dp21_RegularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp21_RegularActionPerformed
         // TODO add your handling code here:
+        dsv.setDp21("Regular");
     }//GEN-LAST:event_rbtn_Dp21_RegularActionPerformed
 
     private void rbtn_Dp21_MuchoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp21_MuchoActionPerformed
         // TODO add your handling code here:
+        dsv.setDp21("Mucho");
     }//GEN-LAST:event_rbtn_Dp21_MuchoActionPerformed
 
     private void checkB_Inv_Dp1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Dp1ActionPerformed
         // TODO add your handling code here:
+         rbtnG_Dp1.clearSelection();
+         dsv.setDp1("INVALIDAR");
     }//GEN-LAST:event_checkB_Inv_Dp1ActionPerformed
 
     private void rbtn_Dp1_2017_2018ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp1_2017_2018ActionPerformed
         // TODO add your handling code here:
+       dsv.setDp1("2017-2018");
+       
+        
     }//GEN-LAST:event_rbtn_Dp1_2017_2018ActionPerformed
 
     private void rbtn_Dp1_2016_2017ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp1_2016_2017ActionPerformed
         // TODO add your handling code here:
+        dsv.setDp1("2016-2017");
     }//GEN-LAST:event_rbtn_Dp1_2016_2017ActionPerformed
 
     private void btn_save_DActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_save_DActionPerformed
         // TODO add your handling code here:
         dataQueries dq = new dataQueries();
+        System.out.println(dsv.getDp1());
+        //dsv.setDp1(rbtnG_Dp1.toString());
         ctrlDesarrollo ctrDes = new ctrlDesarrollo(this.dsv,dq,this);
     }//GEN-LAST:event_btn_save_DActionPerformed
+
+    private void rbtn_Dp1_2018_2019ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp1_2018_2019ActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp1("2018-2019");
+    }//GEN-LAST:event_rbtn_Dp1_2018_2019ActionPerformed
+
+    private void rbtn_Dp1_lodescoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp1_lodescoActionPerformed
+        // TODO add your handling code here:
+         dsv.setDp1("Lo desconozco");
+    }//GEN-LAST:event_rbtn_Dp1_lodescoActionPerformed
+
+    private void rbtn_Dp21_PocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp21_PocoActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp21("Poco");
+    }//GEN-LAST:event_rbtn_Dp21_PocoActionPerformed
+
+    private void rbtn_Dp21_NadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp21_NadaActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp21("Nada");
+    }//GEN-LAST:event_rbtn_Dp21_NadaActionPerformed
+
+    private void rbtn_Dp22_PocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp22_PocoActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp22("Poco");
+    }//GEN-LAST:event_rbtn_Dp22_PocoActionPerformed
+
+    private void rbtn_Dp23_PocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp23_PocoActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp23("Poco");
+    }//GEN-LAST:event_rbtn_Dp23_PocoActionPerformed
+
+    private void rbtn_Dp22_NadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp22_NadaActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp22("Nada");
+    }//GEN-LAST:event_rbtn_Dp22_NadaActionPerformed
+
+    private void rbtn_Dp23_NadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp23_NadaActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp23("Nada");
+    }//GEN-LAST:event_rbtn_Dp23_NadaActionPerformed
+
+    private void rbtn_Dp31_Poco1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp31_Poco1ActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp31("Poco");
+    }//GEN-LAST:event_rbtn_Dp31_Poco1ActionPerformed
+
+    private void rbtn_Dp33_Poco1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp33_Poco1ActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp33("Poco");
+    }//GEN-LAST:event_rbtn_Dp33_Poco1ActionPerformed
+
+    private void rbtn_Dp34_PocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp34_PocoActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp34("Poco");
+    }//GEN-LAST:event_rbtn_Dp34_PocoActionPerformed
+
+    private void rbtn_Dp31_Nada1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp31_Nada1ActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp31("Nada");
+    }//GEN-LAST:event_rbtn_Dp31_Nada1ActionPerformed
+
+    private void rbtn_Dp32_Nada1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp32_Nada1ActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp32("Nada");
+    }//GEN-LAST:event_rbtn_Dp32_Nada1ActionPerformed
+
+    private void rbtn_Dp33_Nada1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp33_Nada1ActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp33("Nada");
+    }//GEN-LAST:event_rbtn_Dp33_Nada1ActionPerformed
+
+    private void rbtn_Dp34_NadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Dp34_NadaActionPerformed
+        // TODO add your handling code here:
+        dsv.setDp34("Nada");
+    }//GEN-LAST:event_rbtn_Dp34_NadaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2370,10 +2568,10 @@ public class desarrolloView_0 extends javax.swing.JFrame {
     private javax.swing.JCheckBox checkB_Inv_Dp21;
     private javax.swing.JCheckBox checkB_Inv_Dp22;
     private javax.swing.JCheckBox checkB_Inv_Dp23;
+    private javax.swing.JCheckBox checkB_Inv_Dp31;
+    private javax.swing.JCheckBox checkB_Inv_Dp32;
+    private javax.swing.JCheckBox checkB_Inv_Dp33;
     private javax.swing.JCheckBox checkB_Inv_Dp34;
-    private javax.swing.JCheckBox checkB_Inv_Dp35;
-    private javax.swing.JCheckBox checkB_Inv_Dp36;
-    private javax.swing.JCheckBox checkB_Inv_Dp37;
     private javax.swing.JCheckBox checkB_Inv_Dp40;
     private javax.swing.JCheckBox checkB_Inv_Dp41;
     private javax.swing.JCheckBox checkB_Inv_Dp42;
@@ -2445,9 +2643,9 @@ public class desarrolloView_0 extends javax.swing.JFrame {
     private javax.swing.ButtonGroup rbtnG_Dp43;
     private javax.swing.ButtonGroup rbtnG_Dp44;
     private javax.swing.ButtonGroup rbtnG_Dp45;
-    private javax.swing.JRadioButton rbtn_Dp1_2016_2017;
-    private javax.swing.JRadioButton rbtn_Dp1_2017_2018;
-    private javax.swing.JRadioButton rbtn_Dp1_2018_2019;
+    public javax.swing.JRadioButton rbtn_Dp1_2016_2017;
+    public javax.swing.JRadioButton rbtn_Dp1_2017_2018;
+    public javax.swing.JRadioButton rbtn_Dp1_2018_2019;
     private javax.swing.JRadioButton rbtn_Dp1_lodesco;
     private javax.swing.JRadioButton rbtn_Dp21_Mucho;
     private javax.swing.JRadioButton rbtn_Dp21_Nada;

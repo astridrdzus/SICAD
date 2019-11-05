@@ -38,10 +38,11 @@ public class ctrlDesarrollo implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e){
         //System.out.println("Button pushed");
+        /*
         if(e.getSource() == dataFrm.btn_SaveData){
             
-            /*sv.setFolio(Integer.toString(folioCont));
-            System.out.println(sv.getFolio());*/
+            //sv.setFolio(Integer.toString(folioCont));
+            //System.out.println(sv.getFolio());
             
             String preFolio = sv.getFolio();
             sv.setFolio(calculateFolio(preFolio));
@@ -84,10 +85,10 @@ public class ctrlDesarrollo implements ActionListener{
             //System.out.println(sv.getFecha());
             
             System.out.println(sv.getArchivo());
-
+            */
         }
     }
-    
+    /*
     public String calculateFolio(String preFolio){
         try{
             int nFolio= dq.getLastID();
@@ -118,7 +119,8 @@ public class ctrlDesarrollo implements ActionListener{
     public String returnSurveyViewType(){
         return sv.getEncuesta();
     }
-
+    
     
     
 }
+*/

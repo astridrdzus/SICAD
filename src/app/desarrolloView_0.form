@@ -223,6 +223,9 @@
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp1_2016_2017ActionPerformed"/>
                           </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                          </AuxValues>
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbtn_Dp1_2017_2018">
                           <Properties>
@@ -234,6 +237,9 @@
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp1_2017_2018ActionPerformed"/>
                           </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                          </AuxValues>
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbtn_Dp1_2018_2019">
                           <Properties>
@@ -242,6 +248,12 @@
                             </Property>
                             <Property name="text" type="java.lang.String" value="2018-2019"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp1_2018_2019ActionPerformed"/>
+                          </Events>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                          </AuxValues>
                         </Component>
                         <Component class="javax.swing.JRadioButton" name="rbtn_Dp1_lodesco">
                           <Properties>
@@ -250,6 +262,9 @@
                             </Property>
                             <Property name="text" type="java.lang.String" value="Lo desconozco"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp1_lodescoActionPerformed"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp1">
                           <Properties>
@@ -440,6 +455,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Poco"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp21_PocoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Dp21_Nada">
                                   <Properties>
@@ -448,6 +466,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Nada"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp21_NadaActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp21">
                                   <Properties>
@@ -563,6 +584,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Poco"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp22_PocoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Dp22_Nada">
                                   <Properties>
@@ -571,6 +595,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Nada"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp22_NadaActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp22">
                                   <Properties>
@@ -703,6 +730,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Poco"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp23_PocoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Dp23_Nada">
                                   <Properties>
@@ -711,6 +741,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Nada"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp23_NadaActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp23">
                                   <Properties>
@@ -875,7 +908,7 @@
                                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                                           <Component id="rbtn_Dp31_Nada1" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace pref="100" max="32767" attributes="0"/>
-                                          <Component id="checkB_Inv_Dp35" min="-2" max="-2" attributes="0"/>
+                                          <Component id="checkB_Inv_Dp31" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -889,7 +922,7 @@
                                               <Component id="rbtn_Dp31_Regular1" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="rbtn_Dp31_Poco1" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="rbtn_Dp31_Nada1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="checkB_Inv_Dp35" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="checkB_Inv_Dp31" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="32767" attributes="0"/>
                                       </Group>
@@ -926,6 +959,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Poco"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp31_Poco1ActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Dp31_Nada1">
                                   <Properties>
@@ -934,8 +970,11 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Nada"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp31_Nada1ActionPerformed"/>
+                                  </Events>
                                 </Component>
-                                <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp35">
+                                <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp31">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="14" style="0"/>
@@ -946,7 +985,7 @@
                                     <Property name="text" type="java.lang.String" value="Invalidar pregunta"/>
                                   </Properties>
                                   <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp35ActionPerformed"/>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp31ActionPerformed"/>
                                   </Events>
                                 </Component>
                               </SubComponents>
@@ -1019,7 +1058,7 @@
                                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                                           <Component id="rbtn_Dp32_Nada1" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace pref="100" max="32767" attributes="0"/>
-                                          <Component id="checkB_Inv_Dp36" min="-2" max="-2" attributes="0"/>
+                                          <Component id="checkB_Inv_Dp32" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -1033,7 +1072,7 @@
                                               <Component id="rbtn_Dp32_Regular1" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="rbtn_Dp32_Poco1" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="rbtn_Dp32_Nada1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="checkB_Inv_Dp36" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="checkB_Inv_Dp32" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="32767" attributes="0"/>
                                       </Group>
@@ -1081,8 +1120,11 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Nada"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp32_Nada1ActionPerformed"/>
+                                  </Events>
                                 </Component>
-                                <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp36">
+                                <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp32">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="14" style="0"/>
@@ -1093,7 +1135,7 @@
                                     <Property name="text" type="java.lang.String" value="Invalidar pregunta"/>
                                   </Properties>
                                   <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp36ActionPerformed"/>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp32ActionPerformed"/>
                                   </Events>
                                 </Component>
                               </SubComponents>
@@ -1176,7 +1218,7 @@
                                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                                           <Component id="rbtn_Dp33_Nada1" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
-                                          <Component id="checkB_Inv_Dp37" min="-2" max="-2" attributes="0"/>
+                                          <Component id="checkB_Inv_Dp33" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -1190,7 +1232,7 @@
                                               <Component id="rbtn_Dp33_Regular1" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="rbtn_Dp33_Poco1" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="rbtn_Dp33_Nada1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="checkB_Inv_Dp37" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="checkB_Inv_Dp33" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="32767" attributes="0"/>
                                       </Group>
@@ -1227,6 +1269,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Poco"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp33_Poco1ActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Dp33_Nada1">
                                   <Properties>
@@ -1235,8 +1280,11 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Nada"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp33_Nada1ActionPerformed"/>
+                                  </Events>
                                 </Component>
-                                <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp37">
+                                <Component class="javax.swing.JCheckBox" name="checkB_Inv_Dp33">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="14" style="0"/>
@@ -1247,7 +1295,7 @@
                                     <Property name="text" type="java.lang.String" value="Invalidar pregunta"/>
                                   </Properties>
                                   <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp37ActionPerformed"/>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Dp33ActionPerformed"/>
                                   </Events>
                                 </Component>
                               </SubComponents>
@@ -1348,6 +1396,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Nada"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp34_NadaActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Dp34_Poco">
                                   <Properties>
@@ -1356,6 +1407,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Poco"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp34_PocoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Dp34_Regular">
                                   <Properties>
