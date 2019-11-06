@@ -71,7 +71,7 @@ public class busquedaView extends javax.swing.JFrame {
         return rs;
     }
     
-    public void show(){
+   /* public void show(){
         DefaultTableModel model = new DefaultTableModel();
         ctrlBusqueda ctrlb = new ctrlBusqueda();
         ResultSet rs = ctrlb.getTable("SELECT folio, fecha, municipio, encuesta, nivel FROM datos_escuela ");
@@ -88,7 +88,7 @@ public class busquedaView extends javax.swing.JFrame {
         }catch(Exception e){
             System.out.println(e);
         }
-    }
+    }*/
     /*
     /** This method is called from within the constructor to
      * initialize the form.
@@ -119,6 +119,7 @@ public class busquedaView extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         cbox_encuesta = new javax.swing.JComboBox<>();
         btn_buscar = new javax.swing.JButton();
+        btn_regresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -330,6 +331,14 @@ public class busquedaView extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        btn_regresar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn_regresar.setText("Regresar al menú principal");
+        btn_regresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_regresarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -341,7 +350,10 @@ public class busquedaView extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1005, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(100, 100, 100)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(490, 490, 490)
+                        .addComponent(btn_regresar)))
                 .addContainerGap(144, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -350,8 +362,10 @@ public class busquedaView extends javax.swing.JFrame {
                 .addGap(25, 25, 25)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(47, 47, 47)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(190, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 457, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btn_regresar, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(100, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -382,7 +396,7 @@ public class busquedaView extends javax.swing.JFrame {
 
     private void btn_buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_buscarActionPerformed
         // TODO add your handling code here:
-        String folio = null;
+        String folio = txt_folio.getText();
         String municipio = cbox_municipio.getSelectedItem().toString();
         String fecha = date_chooser.getDate().toString();
         String nivel = cbox_nivel.getSelectedItem().toString();
@@ -391,7 +405,9 @@ public class busquedaView extends javax.swing.JFrame {
         DefaultTableModel model = new DefaultTableModel();
         ctrlBusqueda ctrlb = new ctrlBusqueda();
         
-        ResultSet rs = ctrlb.getTable("SELECT folio, fecha, municipio, encuesta, nivel, archivo FROM datos_escuela WHERE ");
+        ResultSet rs = ctrlb.getTable("SELECT * FROM datos_escuela ( WHERE folio LIKE %"+folio+") OR "
+                + "(WHERE municipio LIKE %"+municipio+") OR (WHERE fecha LIKE %"+fecha+") OR (WHERE nivel LIKE %"+nivel+") OR"
+                        + "(WHERE encuesta LIKE%"+encuesta+")");
         model.addColumn("FOLIO");
         model.addColumn("FECHA");
         model.addColumn("MUNICIPIO");
@@ -411,6 +427,13 @@ public class busquedaView extends javax.swing.JFrame {
             System.out.println(e);
         }
     }//GEN-LAST:event_btn_buscarActionPerformed
+
+    private void btn_regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_regresarActionPerformed
+        // TODO add your handling code here:
+        mainMenu main = new mainMenu();
+        this.setVisible(false);
+        main.setVisible(true);
+    }//GEN-LAST:event_btn_regresarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -451,6 +474,7 @@ public class busquedaView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_buscar;
+    private javax.swing.JButton btn_regresar;
     public javax.swing.JComboBox<String> cbox_encuesta;
     public javax.swing.JComboBox<String> cbox_municipio;
     public javax.swing.JComboBox<String> cbox_nivel;

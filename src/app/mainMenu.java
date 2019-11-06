@@ -161,6 +161,7 @@ public class mainMenu extends javax.swing.JFrame {
     private void btn_BusquedaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_BusquedaActionPerformed
         // TODO add your handling code here:
         busquedaView busV = new busquedaView();
+        this.setVisible(false);
         busV.setVisible(true);
     }//GEN-LAST:event_btn_BusquedaActionPerformed
 

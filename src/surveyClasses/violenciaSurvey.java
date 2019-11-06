@@ -1,62 +1,79 @@
+package surveyClasses;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package surveyClasses;
 
 /**
  *
  * @author astri
  */
 public class violenciaSurvey {
-    public String folio;
-    public String Vp11;
-    public String Vp12;
-    public String Vp13;
-    public String Vp14;
-    public String Vp15;
-    public String Vp16;
-    public String Vp21;
-    public String Vp22;
-    public String Vp23;
-    public String Vp24;
-    public String Vp25;
-    public String Vp26;
-    public String Vp3;
-    public String Vp4;
-    public String Vp5;
-    public String Vp61nina;
-    public String Vp62nina;
-    public String Vp63nina;
-    public String Vp64nina;
-    public String Vp65nina;
-    public String Vp66nina;
-    public String Vp67nina;
-    public String Vp68nina;
-    public String Vp69nina;
-    public String Vp610nina;
-    public String Vp611nina;
-    public String Vp612nina;
-    public String Vp613nina;
-    public String Vp614nina;
-    public String Vp61nino;
-    public String Vp62nino;
-    public String Vp63nino;
-    public String Vp64nino;
-    public String Vp65nino;
-    public String Vp66nino;
-    public String Vp67nino;
-    public String Vp68nino;
-    public String Vp69nino;
-    public String Vp610nino;
-    public String Vp611nino;
-    public String Vp612nino;
-    public String Vp613nino;
-    public String Vp614nino;
-    public String Vp6otro;
-    public String Vobs;
+    private String folio;
+    private String Vp11;
+    private String Vp12;
+    private String Vp13;
+    private String Vp14;
+    private String Vp15;
+    private String Vp16;
+    private String Vp21;
+    private String Vp22;
+    private String Vp23;
+    private String Vp24;
+    private String Vp25;
+    private String Vp26;
+    private String Vp3;
+    private String Vp4;
+    private String Vp5;
+    private String Vp61nina = "false";
+    private String Vp62nina = "false";
+    private String Vp63nina = "false";
+    private String Vp64nina = "false";
+    private String Vp65nina = "false";
+    private String Vp66nina = "false";
+    private String Vp67nina = "false";
+    private String Vp68nina = "false";
+    private String Vp69nina = "false";
+    private String Vp610nina = "false";
+    private String Vp611nina = "false";
+    private String Vp612nina = "false";
+    private String Vp613nina = "false";
+    private String Vp614nina = "false";
+    private String Vp61nino = "false";
+    private String Vp62nino = "false";
+    private String Vp63nino = "false";
+    private String Vp64nino = "false";
+    private String Vp65nino = "false";
+    private String Vp66nino = "false";
+    private String Vp67nino = "false";
+    private String Vp68nino = "false";
+    private String Vp69nino = "false";
+    private String Vp610nino = "false";
+    private String Vp611nino = "false";
+    private String Vp612nino = "false";
+    private String Vp613nino = "false";
+    private String Vp614nino = "false";
+    private String Vp6otro = "false";
+    private String VpObs = "false";
 
+    public String getVp16() {
+        return Vp16;
+    }
+
+    public void setVp16(String Vp16) {
+        this.Vp16 = Vp16;
+    }
+
+    public String getVp26() {
+        return Vp26;
+    }
+
+    public void setVp26(String Vp26) {
+        this.Vp26 = Vp26;
+    }
+    
     public String getFolio() {
         return folio;
     }
@@ -105,16 +122,6 @@ public class violenciaSurvey {
         this.Vp15 = Vp15;
     }
 
-    public String getVp16() {
-        return Vp16;
-    }
-
-    public void setVp16(String Vp16) {
-        this.Vp16 = Vp16;
-    }
-    
-    
-
     public String getVp21() {
         return Vp21;
     }
@@ -155,14 +162,6 @@ public class violenciaSurvey {
         this.Vp25 = Vp25;
     }
 
-    public String getVp26() {
-        return Vp26;
-    }
-
-    public void setVp26(String Vp26) {
-        this.Vp26 = Vp26;
-    }
-    
     public String getVp3() {
         return Vp3;
     }
@@ -419,22 +418,17 @@ public class violenciaSurvey {
         this.Vp6otro = Vp6otro;
     }
 
-    public String getVobs() {
-        return Vobs;
+    public String getVpObs() {
+        return VpObs;
     }
 
-    public void setVobs(String Vobs) {
-        this.Vobs = Vobs;
+    public void setVpObs(String VpObs) {
+        this.VpObs = VpObs;
     }
     
     
 
-
-    
-
- 
-    
-    
+  
     
     
 }

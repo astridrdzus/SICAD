@@ -29,6 +29,10 @@ public class connect {
             //Class.forName("com.myslq.jdbc.Driver");
             con = (Connection) DriverManager.getConnection(URL, USERNAME, PASSWORD);
             System.out.println("CONECCTION ESTABLISHED");
+            System.out.println("URL: "+URL);
+            System.out.println("USERNAME: ´"+USERNAME);
+            System.out.println("PASSWORD "+ PASSWORD );
+            
             //JOptionPane.showMessageDialog(null,"Conexion exitosa");
             
         } catch(Exception e){

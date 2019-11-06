@@ -35,9 +35,9 @@ public class surveyTypes extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         btn_DesarrolloSurv = new java.awt.Button();
         btn_ViolenciaSurv = new java.awt.Button();
+        btn_regresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1000, 750));
 
         jPanel2.setPreferredSize(new java.awt.Dimension(600, 300));
 
@@ -90,13 +90,26 @@ public class surveyTypes extends javax.swing.JFrame {
 
         btn_ViolenciaSurv.getAccessibleContext().setAccessibleName("btn_Desarrollo");
 
+        btn_regresar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn_regresar.setText("Regresar al menú principal");
+        btn_regresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_regresarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(202, 202, 202)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(202, 202, 202)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(375, 375, 375)
+                        .addComponent(btn_regresar)))
                 .addContainerGap(231, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -104,7 +117,9 @@ public class surveyTypes extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(161, 161, 161)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(158, Short.MAX_VALUE))
+                .addGap(47, 47, 47)
+                .addComponent(btn_regresar)
+                .addContainerGap(86, Short.MAX_VALUE))
         );
 
         pack();
@@ -164,6 +179,13 @@ public class surveyTypes extends javax.swing.JFrame {
         dataViewD.setVisible(true);*/
     }//GEN-LAST:event_btn_ViolenciaSurvActionPerformed
 
+    private void btn_regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_regresarActionPerformed
+        // TODO add your handling code here:
+        mainMenu main = new mainMenu();
+        this.setVisible(false);
+        main.setVisible(true);
+    }//GEN-LAST:event_btn_regresarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -206,6 +228,7 @@ public class surveyTypes extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Button btn_DesarrolloSurv;
     private java.awt.Button btn_ViolenciaSurv;
+    private javax.swing.JButton btn_regresar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

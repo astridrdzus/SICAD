@@ -98,7 +98,7 @@ public class ctrlViolencia implements ActionListener {
             ps.setString(43, vsv.getVp613nino());
             ps.setString(44, vsv.getVp614nino());
             ps.setString(45, vsv.getVp6otro());
-            ps.setString(46, vsv.getVobs());
+            ps.setString(46, vsv.getVpObs());
             
             System.out.println(ps);
             ps.execute();

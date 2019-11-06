@@ -3143,7 +3143,7 @@ public class violenciaView extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         vsv.setVp6otro(txtA_Vp6otro.getText());
-        vsv.setVobs(txtA_Vpobs.getText());
+        vsv.setVpObs(txtA_Vpobs.getText());
         
         //System.out.println("pregunta 23: "+vsv.getVp23());
         //System.out.println("before calling the controller vio");
