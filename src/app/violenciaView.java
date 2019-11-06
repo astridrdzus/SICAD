@@ -2955,8 +2955,11 @@ public class violenciaView extends javax.swing.JFrame {
         
         vsv.setVp6otro(txtA_Vp6otro.getText());
         vsv.setVobs(txtA_Vpobs.getText());
-        System.out.println("before calling the controller vio");
-        System.out.println("actual folio: "+ vsv.getFolio());
+        
+        //System.out.println("pregunta 23: "+vsv.getVp23());
+        //System.out.println("before calling the controller vio");
+        //System.out.println("actual folio: "+ vsv.getFolio());
+        //System.out.println("pregunta 23: "+vsv.getVp23());
         ctrlViolencia ctrlVio = new ctrlViolencia(this.vsv);
         ctrlVio.insert_Data();
         this.btn_save_V.setEnabled(false);

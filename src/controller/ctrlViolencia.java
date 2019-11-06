@@ -121,6 +121,7 @@ public class ctrlViolencia implements ActionListener {
     }   
     public void insert_Data(){
         System.out.println("insert ");
+        System.out.println("pregunta23 "+vsv.getVp23());
         boolean flag = createVio(this.vsv);
             //dq.getLastID();
             System.out.println(flag);

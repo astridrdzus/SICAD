@@ -144,6 +144,7 @@ public class surveyTypes extends javax.swing.JFrame {
         this.sv.setEncuesta("VIOLENCIA");
         System.out.println("survey type: " +this.sv.getEncuesta());
         this.sv.setFolio("V_");
+        
         dataView datav = new dataView();
         datav.sv = this.sv;
         datav.encuesta_label.setText(datav.sv.getEncuesta());
