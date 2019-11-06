@@ -10,50 +10,52 @@ package surveyClasses;
  * @author astri
  */
 public class violenciaSurvey {
-    private String folio;
-    private String Vp11;
-    private String Vp12;
-    private String Vp13;
-    private String Vp14;
-    private String Vp15;
-    private String Vp21;
-    private String Vp22;
-    private String Vp23;
-    private String Vp24;
-    private String Vp25;
-    private String Vp3;
-    private String Vp4;
-    private String Vp5;
-    private String Vp61nina;
-    private String Vp62nina;
-    private String Vp63nina;
-    private String Vp64nina;
-    private String Vp65nina;
-    private String Vp66nina;
-    private String Vp67nina;
-    private String Vp68nina;
-    private String Vp69nina;
-    private String Vp610nina;
-    private String Vp611nina;
-    private String Vp612nina;
-    private String Vp613nina;
-    private String Vp614nina;
-    private String Vp61nino;
-    private String Vp62nino;
-    private String Vp63nino;
-    private String Vp64nino;
-    private String Vp65nino;
-    private String Vp66nino;
-    private String Vp67nino;
-    private String Vp68nino;
-    private String Vp69nino;
-    private String Vp610nino;
-    private String Vp611nino;
-    private String Vp612nino;
-    private String Vp613nino;
-    private String Vp614nino;
-    private String Vp6otro;
-    private String Vobs;
+    public String folio;
+    public String Vp11;
+    public String Vp12;
+    public String Vp13;
+    public String Vp14;
+    public String Vp15;
+    public String Vp16;
+    public String Vp21;
+    public String Vp22;
+    public String Vp23;
+    public String Vp24;
+    public String Vp25;
+    public String Vp26;
+    public String Vp3;
+    public String Vp4;
+    public String Vp5;
+    public String Vp61nina;
+    public String Vp62nina;
+    public String Vp63nina;
+    public String Vp64nina;
+    public String Vp65nina;
+    public String Vp66nina;
+    public String Vp67nina;
+    public String Vp68nina;
+    public String Vp69nina;
+    public String Vp610nina;
+    public String Vp611nina;
+    public String Vp612nina;
+    public String Vp613nina;
+    public String Vp614nina;
+    public String Vp61nino;
+    public String Vp62nino;
+    public String Vp63nino;
+    public String Vp64nino;
+    public String Vp65nino;
+    public String Vp66nino;
+    public String Vp67nino;
+    public String Vp68nino;
+    public String Vp69nino;
+    public String Vp610nino;
+    public String Vp611nino;
+    public String Vp612nino;
+    public String Vp613nino;
+    public String Vp614nino;
+    public String Vp6otro;
+    public String Vobs;
 
     public String getFolio() {
         return folio;
@@ -103,6 +105,16 @@ public class violenciaSurvey {
         this.Vp15 = Vp15;
     }
 
+    public String getVp16() {
+        return Vp16;
+    }
+
+    public void setVp16(String Vp16) {
+        this.Vp16 = Vp16;
+    }
+    
+    
+
     public String getVp21() {
         return Vp21;
     }
@@ -143,6 +155,14 @@ public class violenciaSurvey {
         this.Vp25 = Vp25;
     }
 
+    public String getVp26() {
+        return Vp26;
+    }
+
+    public void setVp26(String Vp26) {
+        this.Vp26 = Vp26;
+    }
+    
     public String getVp3() {
         return Vp3;
     }
