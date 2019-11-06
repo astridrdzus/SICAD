@@ -62,7 +62,7 @@ public class dataQueries extends connect{
         String sql = "INSERT INTO datos_escuela (folio, encuesta, municipio, nivel, fecha, sistema, turno,modalidad,"
                 + "antiguedad, sexo, edad, anios_servicio, nombre, archivo ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         
-        System.out.println("before try catch");
+        //System.out.println("before try catch");
         try{
             ps = con.prepareStatement(sql);
             ps.setString(1, sv.getFolio());

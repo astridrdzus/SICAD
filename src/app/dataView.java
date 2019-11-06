@@ -25,7 +25,7 @@ import surveyClasses.violenciaSurvey;
 public class dataView extends javax.swing.JFrame {
     public dataSurvey sv = new dataSurvey();
     public desarrolloSurvey dsv = new desarrolloSurvey();
-    public violenciaSurvey svs = new violenciaSurvey();
+    public violenciaSurvey vsv = new violenciaSurvey();
     public String folio = null;
     /**
      * Creates new form datosEscuelaView
@@ -670,10 +670,10 @@ public class dataView extends javax.swing.JFrame {
             //System.out.println(surveyTypeView.sv.getEncuesta());
             dataQueries dq = new dataQueries();
             ctrlData controller = new ctrlData(this.sv,dq,this);
-            System.out.println("Before calling controller");
+            //System.out.println("Before calling controller");
             controller.actionPerformed(evt);
-            controller.insert_Data();
             folio = controller.getLastFolio();
+            System.out.println("folio atribute: "+folio);
             
             
             

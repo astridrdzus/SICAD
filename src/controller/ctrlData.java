@@ -51,6 +51,7 @@ public class ctrlData implements ActionListener{
             
             String preFolio = sv.getFolio();
             sv.setFolio(calculateFolio(preFolio));
+            System.out.println("sv.setFolio: "+sv.getFolio());
             this.setLastFolio(sv.getFolio());
             System.out.println("folio calculated");
             
@@ -91,14 +92,29 @@ public class ctrlData implements ActionListener{
             //System.out.println(sv.getFecha());
             
             System.out.println(sv.getArchivo());
+            
+            
+            boolean flag = dq.create(sv);
+            //dq.getLastID();
+            System.out.println(flag);
+            
+            //if(dq.create(sv)){
+            if(flag){
+                JOptionPane.showMessageDialog(null, "Datos guardados");
+            }else{
+                JOptionPane.showMessageDialog(null, "Error al guardar");
+            }
 
         }
     }
     
     public String calculateFolio(String preFolio){
         try{
+            System.out.println("prefolio :"+preFolio);
             int nFolio= dq.getLastID();
+            System.out.println(Integer.toString(nFolio));
             preFolio = preFolio+ Integer.toString(nFolio);
+            System.out.println("postfolio: "+preFolio);
             return preFolio;
             
         }catch (Exception e){
@@ -109,18 +125,6 @@ public class ctrlData implements ActionListener{
         
     }
     
-    public void insert_Data(){
-        boolean flag = dq.create(this.sv);
-            //dq.getLastID();
-            System.out.println(flag);
-            
-            //if(dq.create(sv)){
-            if(flag){
-                JOptionPane.showMessageDialog(null, "Datos guardados");
-            }else{
-                JOptionPane.showMessageDialog(null, "Error al guardar");
-            }
-    }
     
     public String returnSurveyViewType(){
         return sv.getEncuesta();

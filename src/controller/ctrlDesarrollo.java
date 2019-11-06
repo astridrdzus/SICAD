@@ -21,7 +21,7 @@ import surveyClasses.desarrolloSurvey;
  *
  * @author astri
  */
-public class ctrlDesarrollo {
+public class ctrlDesarrollo implements ActionListener{
     
     private desarrolloSurvey  dsv;
     private dataQueries dq;
@@ -29,6 +29,10 @@ public class ctrlDesarrollo {
     public ctrlDesarrollo(desarrolloSurvey  dsv){
         this.dsv = dsv;  
   
+    }
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        //To change body of generated methods, choose Tools | Templates.
     }
     public boolean createDes( desarrolloSurvey dsv){
         
@@ -92,6 +96,8 @@ public class ctrlDesarrollo {
                 JOptionPane.showMessageDialog(null, "Error al guardar");
             }
     }
+
+
 
     
     

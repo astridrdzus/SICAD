@@ -112,19 +112,17 @@ public class surveyTypes extends javax.swing.JFrame {
     private void btn_DesarrolloSurvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_DesarrolloSurvActionPerformed
         // TODO add your handling code here:
         
-        /*
         this.setVisible(false);
         this.sv.setEncuesta("DESARROLLO");
         System.out.println("survey type: " +this.sv.getEncuesta());
         this.sv.setFolio("D_");
+        
         dataView datav = new dataView();
         datav.sv = this.sv;
         datav.encuesta_label.setText(datav.sv.getEncuesta());
         datav.setVisible(true);
-        */
-        
-        
-        
+       
+        /*
         this.setVisible(false);
         dataSurvey svD  = new dataSurvey();
         //Creating a new dataSurvey for Desarrollo Survey
@@ -135,12 +133,22 @@ public class surveyTypes extends javax.swing.JFrame {
         dataViewD.sv = svD;
         dataViewD.encuesta_label.setText(dataViewD.sv.getEncuesta());
         dataViewD.setVisible(true);
+        */
         
     }//GEN-LAST:event_btn_DesarrolloSurvActionPerformed
 
     private void btn_ViolenciaSurvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ViolenciaSurvActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
+        this.sv.setEncuesta("VIOLENCIA");
+        System.out.println("survey type: " +this.sv.getEncuesta());
+        this.sv.setFolio("V_");
+        dataView datav = new dataView();
+        datav.sv = this.sv;
+        datav.encuesta_label.setText(datav.sv.getEncuesta());
+        datav.setVisible(true);
+        
+        /*this.setVisible(false);
         dataSurvey svD  = new dataSurvey();
         //Creating a new dataSurvey for Desarrollo Survey
         svD.setEncuesta("VIOLENCIA");
@@ -149,7 +157,7 @@ public class surveyTypes extends javax.swing.JFrame {
         dataView dataViewD = new dataView();
         dataViewD.sv = svD;
         dataViewD.encuesta_label.setText(dataViewD.sv.getEncuesta());
-        dataViewD.setVisible(true);
+        dataViewD.setVisible(true);*/
     }//GEN-LAST:event_btn_ViolenciaSurvActionPerformed
 
     /**

@@ -2952,7 +2952,7 @@ public class violenciaView extends javax.swing.JFrame {
 
     private void btn_save_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_save_VActionPerformed
         // TODO add your handling code here:
-       
+        
         vsv.setVp6otro(txtA_Vp6otro.getText());
         vsv.setVobs(txtA_Vpobs.getText());
         System.out.println("before calling the controller vio");
