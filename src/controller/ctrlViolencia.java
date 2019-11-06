@@ -37,7 +37,11 @@ public class ctrlViolencia {
                 + "p61nina, p62nina, p63nina, p64nina, p65nina, p66nina, p67nina, p68nina, p69nina, p610nina, p611nina," //11
                 + "p612nina, p613nina, p614nina, p61nino, p62nino, p63nino, p64nino, p65nino, p66nino, p67nino, p68nino," //11
                 +"p69nino, p610nino, p611nino, p612nino, p613nino, p614nino,p6otro,observaciones) " //8
-                + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+                + "VALUES(?,?,?,?,?,?,?,?,?,?,"
+                       + "?,?,?,?,?,?,?,?,?,?,"
+                       + "?,?,?,?,?,?,?,?,?,?,"
+                       + "?,?,?,?,?,?,?,?,?,?,"
+                       + "?,?,?,?)";
         
     
         try{
@@ -80,12 +84,12 @@ public class ctrlViolencia {
             ps.setString(36, vsv.getVp68nino());
             ps.setString(37, vsv.getVp69nino());
             ps.setString(38, vsv.getVp610nino());
-            ps.setString(40, vsv.getVp611nino());
-            ps.setString(41, vsv.getVp612nino());
-            ps.setString(42, vsv.getVp613nino());
-            ps.setString(43, vsv.getVp614nino());
-            ps.setString(44, vsv.getVp6otro());
-            ps.setString(45, vsv.getVobs());
+            ps.setString(39, vsv.getVp611nino());
+            ps.setString(40, vsv.getVp612nino());
+            ps.setString(41, vsv.getVp613nino());
+            ps.setString(42, vsv.getVp614nino());
+            ps.setString(43, vsv.getVp6otro());
+            ps.setString(44, vsv.getVobs());
             
             System.out.println(ps);
             ps.execute();

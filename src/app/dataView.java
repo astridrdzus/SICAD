@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 import javax.swing.JFileChooser;
 import surveyClasses.desarrolloSurvey;
 import surveyClasses.dataSurvey;
+import surveyClasses.violenciaSurvey;
 
 /**
  *
@@ -24,6 +25,7 @@ import surveyClasses.dataSurvey;
 public class dataView extends javax.swing.JFrame {
     public dataSurvey sv = new dataSurvey();
     public desarrolloSurvey dsv = new desarrolloSurvey();
+    public violenciaSurvey svs = new violenciaSurvey();
     public String folio = null;
     /**
      * Creates new form datosEscuelaView
@@ -703,6 +705,7 @@ public class dataView extends javax.swing.JFrame {
         }else if (sv.getEncuesta().equals("VIOLENCIA")){
             this.setVisible(false);
             violenciaView vioView = new violenciaView();
+            vioView.vsv.setFolio(folio);
             vioView.setVisible(true);
         }
     }//GEN-LAST:event_btn_nextActionPerformed
