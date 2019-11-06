@@ -250,77 +250,77 @@ public class violenciaView extends javax.swing.JFrame {
         pnl_Dp5_container1 = new javax.swing.JPanel();
         pnl_Dp42 = new javax.swing.JPanel();
         pnl_Dr33 = new javax.swing.JPanel();
-        cbox_p61nina = new java.awt.Checkbox();
-        cbox_p61nino = new java.awt.Checkbox();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jCheckBox15 = new javax.swing.JCheckBox();
         L_p56 = new javax.swing.JLabel();
         pnl_Dp47 = new javax.swing.JPanel();
         pnl_Dr36 = new javax.swing.JPanel();
-        cbox_p62nina = new java.awt.Checkbox();
-        cbox_p62nino = new java.awt.Checkbox();
+        jCheckBox2 = new javax.swing.JCheckBox();
+        jCheckBox16 = new javax.swing.JCheckBox();
         L_p61 = new javax.swing.JLabel();
         pnl_Dp48 = new javax.swing.JPanel();
-        pnl_Dr37 = new javax.swing.JPanel();
-        cbox_p63nina = new java.awt.Checkbox();
-        cbox_p63nino = new java.awt.Checkbox();
         L_p62 = new javax.swing.JLabel();
         pnl_Dp50 = new javax.swing.JPanel();
         pnl_Dr43 = new javax.swing.JPanel();
-        cbox_p65nina = new java.awt.Checkbox();
-        cbox_p65nino = new java.awt.Checkbox();
+        jCheckBox5 = new javax.swing.JCheckBox();
+        jCheckBox19 = new javax.swing.JCheckBox();
         L_p64 = new javax.swing.JLabel();
         pnl_Dp49 = new javax.swing.JPanel();
         pnl_Dr38 = new javax.swing.JPanel();
-        cbox_p64nina = new java.awt.Checkbox();
-        cbox_p64nino = new java.awt.Checkbox();
+        jCheckBox4 = new javax.swing.JCheckBox();
+        jCheckBox18 = new javax.swing.JCheckBox();
         L_p63 = new javax.swing.JLabel();
         pnl_Dp51 = new javax.swing.JPanel();
         pnl_Dr44 = new javax.swing.JPanel();
-        cbox_p66nina = new java.awt.Checkbox();
-        cbox_p66nino = new java.awt.Checkbox();
+        jCheckBox6 = new javax.swing.JCheckBox();
+        jCheckBox20 = new javax.swing.JCheckBox();
         L_p65 = new javax.swing.JLabel();
         pnl_Dp52 = new javax.swing.JPanel();
         L_p66 = new javax.swing.JLabel();
         pnl_Dr45 = new javax.swing.JPanel();
-        cbox_p68nina = new java.awt.Checkbox();
-        cbox_p68nino = new java.awt.Checkbox();
+        jCheckBox8 = new javax.swing.JCheckBox();
+        jCheckBox22 = new javax.swing.JCheckBox();
         pnl_Dp53 = new javax.swing.JPanel();
-        pnl_Dr46 = new javax.swing.JPanel();
-        cbox_p67nina = new java.awt.Checkbox();
-        cbox_p67nino = new java.awt.Checkbox();
         L_p67 = new javax.swing.JLabel();
+        pnl_Dr46 = new javax.swing.JPanel();
+        jCheckBox7 = new javax.swing.JCheckBox();
+        jCheckBox21 = new javax.swing.JCheckBox();
         pnl_Dp54 = new javax.swing.JPanel();
         L_p68 = new javax.swing.JLabel();
         pnl_Dr47 = new javax.swing.JPanel();
-        cbox_p69nina = new java.awt.Checkbox();
-        cbox_p69nino = new java.awt.Checkbox();
+        jCheckBox9 = new javax.swing.JCheckBox();
+        jCheckBox23 = new javax.swing.JCheckBox();
         pnl_Dp55 = new javax.swing.JPanel();
         pnl_Dr48 = new javax.swing.JPanel();
-        cbox_p610nina = new java.awt.Checkbox();
-        cbox_p610nino = new java.awt.Checkbox();
+        jCheckBox10 = new javax.swing.JCheckBox();
+        jCheckBox24 = new javax.swing.JCheckBox();
         L_p69 = new javax.swing.JLabel();
         pnl_Dp56 = new javax.swing.JPanel();
         pnl_Dr49 = new javax.swing.JPanel();
-        cbox_p611nina = new java.awt.Checkbox();
-        cbox_p611nino = new java.awt.Checkbox();
+        jCheckBox11 = new javax.swing.JCheckBox();
+        jCheckBox25 = new javax.swing.JCheckBox();
         L_p70 = new javax.swing.JLabel();
         pnl_Dp57 = new javax.swing.JPanel();
         pnl_Dr50 = new javax.swing.JPanel();
-        cbox_p612nina = new java.awt.Checkbox();
-        cbox_p612nino = new java.awt.Checkbox();
+        jCheckBox12 = new javax.swing.JCheckBox();
+        jCheckBox26 = new javax.swing.JCheckBox();
         L_p71 = new javax.swing.JLabel();
         pnl_Dp58 = new javax.swing.JPanel();
         pnl_Dr51 = new javax.swing.JPanel();
-        cbox_p613nina = new java.awt.Checkbox();
-        cbox_p613nino = new java.awt.Checkbox();
+        jCheckBox14 = new javax.swing.JCheckBox();
+        jCheckBox27 = new javax.swing.JCheckBox();
         L_p72 = new javax.swing.JLabel();
         pnl_Dp59 = new javax.swing.JPanel();
         pnl_Dr52 = new javax.swing.JPanel();
-        cbox_p614nina = new java.awt.Checkbox();
-        cbox_p614nino = new java.awt.Checkbox();
+        jCheckBox13 = new javax.swing.JCheckBox();
+        jCheckBox28 = new javax.swing.JCheckBox();
         L_p73 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         txtA_Vp6otro = new javax.swing.JTextArea();
+        pnl_Dr37 = new javax.swing.JPanel();
+        jCheckBox3 = new javax.swing.JCheckBox();
+        jCheckBox17 = new javax.swing.JCheckBox();
         L_Dp54 = new javax.swing.JLabel();
         pnl_DLp6 = new javax.swing.JPanel();
         L_p5_tipo1 = new javax.swing.JLabel();
@@ -1739,9 +1739,15 @@ public class violenciaView extends javax.swing.JFrame {
         L_Dp53.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         L_Dp53.setText("6. De acuerdo con las siguientes opciones, señale las 5 que comúnmente utiliza el personal docente como estrategias de atención a situaciones de");
 
-        cbox_p61nina.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cbox_p61ninaMouseClicked(evt);
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox1ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox15ActionPerformed(evt);
             }
         });
 
@@ -1750,16 +1756,16 @@ public class violenciaView extends javax.swing.JFrame {
         pnl_Dr33Layout.setHorizontalGroup(
             pnl_Dr33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dr33Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(cbox_p61nina, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(97, 97, 97)
-                .addComponent(cbox_p61nino, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addGap(15, 15, 15)
+                .addComponent(jCheckBox1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
+                .addComponent(jCheckBox15)
+                .addGap(24, 24, 24))
         );
         pnl_Dr33Layout.setVerticalGroup(
-            pnl_Dr33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cbox_p61nina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(cbox_p61nino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            pnl_Dr33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(jCheckBox1)
+            .addComponent(jCheckBox15)
         );
 
         L_p56.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -1774,13 +1780,13 @@ public class violenciaView extends javax.swing.JFrame {
                 .addComponent(L_p56, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(pnl_Dr33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(61, 61, 61))
+                .addGap(45, 45, 45))
         );
         pnl_Dp42Layout.setVerticalGroup(
             pnl_Dp42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dp42Layout.createSequentialGroup()
                 .addGroup(pnl_Dp42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(pnl_Dr33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnl_Dr33, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(L_p56))
                 .addGap(3, 3, 3))
         );
@@ -1789,21 +1795,33 @@ public class violenciaView extends javax.swing.JFrame {
 
         pnl_Dr36.setBackground(new java.awt.Color(204, 204, 204));
 
+        jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox2ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox16ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnl_Dr36Layout = new javax.swing.GroupLayout(pnl_Dr36);
         pnl_Dr36.setLayout(pnl_Dr36Layout);
         pnl_Dr36Layout.setHorizontalGroup(
             pnl_Dr36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dr36Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(cbox_p62nina, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(cbox_p62nino, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addContainerGap()
+                .addComponent(jCheckBox2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
+                .addComponent(jCheckBox16)
+                .addGap(33, 33, 33))
         );
         pnl_Dr36Layout.setVerticalGroup(
-            pnl_Dr36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cbox_p62nina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(cbox_p62nino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            pnl_Dr36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(jCheckBox2)
+            .addComponent(jCheckBox16)
         );
 
         L_p61.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -1816,31 +1834,14 @@ public class violenciaView extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_Dp47Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(L_p61, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(88, 88, 88)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(pnl_Dr36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(32, 32, 32))
         );
         pnl_Dp47Layout.setVerticalGroup(
             pnl_Dp47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(L_p61)
-            .addComponent(pnl_Dr36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-
-        javax.swing.GroupLayout pnl_Dr37Layout = new javax.swing.GroupLayout(pnl_Dr37);
-        pnl_Dr37.setLayout(pnl_Dr37Layout);
-        pnl_Dr37Layout.setHorizontalGroup(
-            pnl_Dr37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_Dr37Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(cbox_p63nina, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(cbox_p63nino, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
-        );
-        pnl_Dr37Layout.setVerticalGroup(
-            pnl_Dr37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cbox_p63nina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(cbox_p63nino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(pnl_Dr36, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         L_p62.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -1852,31 +1853,42 @@ public class violenciaView extends javax.swing.JFrame {
             pnl_Dp48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_Dp48Layout.createSequentialGroup()
                 .addComponent(L_p62, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(96, 96, 96)
-                .addComponent(pnl_Dr37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnl_Dp48Layout.setVerticalGroup(
-            pnl_Dp48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnl_Dr37, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(L_p62, javax.swing.GroupLayout.Alignment.TRAILING)
+            pnl_Dp48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnl_Dp48Layout.createSequentialGroup()
+                .addComponent(L_p62)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
+
+        jCheckBox5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox5ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox19ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnl_Dr43Layout = new javax.swing.GroupLayout(pnl_Dr43);
         pnl_Dr43.setLayout(pnl_Dr43Layout);
         pnl_Dr43Layout.setHorizontalGroup(
             pnl_Dr43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dr43Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(cbox_p65nina, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(cbox_p65nino, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addGap(19, 19, 19)
+                .addComponent(jCheckBox5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
+                .addComponent(jCheckBox19)
+                .addGap(21, 21, 21))
         );
         pnl_Dr43Layout.setVerticalGroup(
             pnl_Dr43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cbox_p65nina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(cbox_p65nino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jCheckBox5)
+            .addComponent(jCheckBox19)
         );
 
         L_p64.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -1895,7 +1907,7 @@ public class violenciaView extends javax.swing.JFrame {
         );
         pnl_Dp50Layout.setVerticalGroup(
             pnl_Dp50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnl_Dr43, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(pnl_Dr43, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(L_p64, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
@@ -1903,21 +1915,37 @@ public class violenciaView extends javax.swing.JFrame {
 
         pnl_Dr38.setBackground(new java.awt.Color(204, 204, 204));
 
+        jCheckBox4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox4ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox18ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnl_Dr38Layout = new javax.swing.GroupLayout(pnl_Dr38);
         pnl_Dr38.setLayout(pnl_Dr38Layout);
         pnl_Dr38Layout.setHorizontalGroup(
             pnl_Dr38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dr38Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(cbox_p64nina, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(cbox_p64nino, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addGap(16, 16, 16)
+                .addComponent(jCheckBox4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
+                .addComponent(jCheckBox18)
+                .addGap(28, 28, 28))
         );
         pnl_Dr38Layout.setVerticalGroup(
             pnl_Dr38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cbox_p64nina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(cbox_p64nino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_Dr38Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnl_Dr38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jCheckBox18)
+                    .addComponent(jCheckBox4))
+                .addContainerGap())
         );
 
         L_p63.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -1944,21 +1972,37 @@ public class violenciaView extends javax.swing.JFrame {
 
         pnl_Dr44.setBackground(new java.awt.Color(204, 204, 204));
 
+        jCheckBox6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox6ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox20ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnl_Dr44Layout = new javax.swing.GroupLayout(pnl_Dr44);
         pnl_Dr44.setLayout(pnl_Dr44Layout);
         pnl_Dr44Layout.setHorizontalGroup(
             pnl_Dr44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dr44Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(cbox_p66nina, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(cbox_p66nino, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addGap(20, 20, 20)
+                .addComponent(jCheckBox6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
+                .addComponent(jCheckBox20)
+                .addGap(27, 27, 27))
         );
         pnl_Dr44Layout.setVerticalGroup(
             pnl_Dr44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cbox_p66nina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(cbox_p66nino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(pnl_Dr44Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnl_Dr44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jCheckBox20)
+                    .addComponent(jCheckBox6))
+                .addContainerGap())
         );
 
         L_p65.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -1988,21 +2032,33 @@ public class violenciaView extends javax.swing.JFrame {
 
         pnl_Dr45.setBackground(new java.awt.Color(204, 204, 204));
 
+        jCheckBox8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox8ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox22ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnl_Dr45Layout = new javax.swing.GroupLayout(pnl_Dr45);
         pnl_Dr45.setLayout(pnl_Dr45Layout);
         pnl_Dr45Layout.setHorizontalGroup(
             pnl_Dr45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dr45Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(cbox_p68nina, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(cbox_p68nino, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addGap(23, 23, 23)
+                .addComponent(jCheckBox8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
+                .addComponent(jCheckBox22)
+                .addGap(24, 24, 24))
         );
         pnl_Dr45Layout.setVerticalGroup(
             pnl_Dr45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cbox_p68nina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(cbox_p68nino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jCheckBox8)
+            .addComponent(jCheckBox22)
         );
 
         javax.swing.GroupLayout pnl_Dp52Layout = new javax.swing.GroupLayout(pnl_Dp52);
@@ -2018,68 +2074,96 @@ public class violenciaView extends javax.swing.JFrame {
         );
         pnl_Dp52Layout.setVerticalGroup(
             pnl_Dp52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_Dp52Layout.createSequentialGroup()
-                .addGroup(pnl_Dp52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(L_p66)
-                    .addComponent(pnl_Dr45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22))
+            .addComponent(L_p66, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(pnl_Dr45, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
+
+        L_p67.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        L_p67.setText("Informar a las autoridades escolares");
+
+        jCheckBox7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox7ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox21ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnl_Dr46Layout = new javax.swing.GroupLayout(pnl_Dr46);
         pnl_Dr46.setLayout(pnl_Dr46Layout);
         pnl_Dr46Layout.setHorizontalGroup(
             pnl_Dr46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dr46Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(cbox_p67nina, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(cbox_p67nino, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addGap(20, 20, 20)
+                .addComponent(jCheckBox7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
+                .addComponent(jCheckBox21)
+                .addGap(26, 26, 26))
         );
         pnl_Dr46Layout.setVerticalGroup(
             pnl_Dr46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cbox_p67nina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(cbox_p67nino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(pnl_Dr46Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnl_Dr46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jCheckBox21)
+                    .addComponent(jCheckBox7))
+                .addContainerGap())
         );
-
-        L_p67.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        L_p67.setText("Informar a las autoridades escolares");
 
         javax.swing.GroupLayout pnl_Dp53Layout = new javax.swing.GroupLayout(pnl_Dp53);
         pnl_Dp53.setLayout(pnl_Dp53Layout);
         pnl_Dp53Layout.setHorizontalGroup(
             pnl_Dp53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_Dp53Layout.createSequentialGroup()
+            .addGroup(pnl_Dp53Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(L_p67, javax.swing.GroupLayout.PREFERRED_SIZE, 428, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(79, 79, 79)
+                .addComponent(L_p67, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(pnl_Dr46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(63, 63, 63))
         );
         pnl_Dp53Layout.setVerticalGroup(
             pnl_Dp53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnl_Dr46, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(L_p67, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_Dp53Layout.createSequentialGroup()
+                .addGap(3, 3, 3)
+                .addGroup(pnl_Dp53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pnl_Dr46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_p67)))
         );
 
         L_p68.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         L_p68.setText("Hablar en privado con el alumno o alumna.");
+
+        jCheckBox9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox9ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox23ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnl_Dr47Layout = new javax.swing.GroupLayout(pnl_Dr47);
         pnl_Dr47.setLayout(pnl_Dr47Layout);
         pnl_Dr47Layout.setHorizontalGroup(
             pnl_Dr47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dr47Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(cbox_p69nina, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(cbox_p69nino, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addGap(24, 24, 24)
+                .addComponent(jCheckBox9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
+                .addComponent(jCheckBox23)
+                .addGap(23, 23, 23))
         );
         pnl_Dr47Layout.setVerticalGroup(
             pnl_Dr47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cbox_p69nina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(cbox_p69nino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jCheckBox9)
+            .addComponent(jCheckBox23)
         );
 
         javax.swing.GroupLayout pnl_Dp54Layout = new javax.swing.GroupLayout(pnl_Dp54);
@@ -2097,7 +2181,7 @@ public class violenciaView extends javax.swing.JFrame {
             .addGroup(pnl_Dp54Layout.createSequentialGroup()
                 .addGroup(pnl_Dp54Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(L_p68)
-                    .addComponent(pnl_Dr47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(pnl_Dr47, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(11, 11, 11))
         );
 
@@ -2105,21 +2189,33 @@ public class violenciaView extends javax.swing.JFrame {
 
         pnl_Dr48.setBackground(new java.awt.Color(204, 204, 204));
 
+        jCheckBox10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox10ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox24ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnl_Dr48Layout = new javax.swing.GroupLayout(pnl_Dr48);
         pnl_Dr48.setLayout(pnl_Dr48Layout);
         pnl_Dr48Layout.setHorizontalGroup(
             pnl_Dr48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dr48Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(cbox_p610nina, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(cbox_p610nino, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addGap(26, 26, 26)
+                .addComponent(jCheckBox10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                .addComponent(jCheckBox24)
+                .addGap(23, 23, 23))
         );
         pnl_Dr48Layout.setVerticalGroup(
             pnl_Dr48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cbox_p610nina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(cbox_p610nino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jCheckBox10)
+            .addComponent(jCheckBox24)
         );
 
         L_p69.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -2141,25 +2237,37 @@ public class violenciaView extends javax.swing.JFrame {
             .addGroup(pnl_Dp55Layout.createSequentialGroup()
                 .addGroup(pnl_Dp55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(L_p69)
-                    .addComponent(pnl_Dr48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(pnl_Dr48, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(14, 14, 14))
         );
+
+        jCheckBox11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox11ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox25ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnl_Dr49Layout = new javax.swing.GroupLayout(pnl_Dr49);
         pnl_Dr49.setLayout(pnl_Dr49Layout);
         pnl_Dr49Layout.setHorizontalGroup(
             pnl_Dr49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dr49Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(cbox_p611nina, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(cbox_p611nino, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addGap(26, 26, 26)
+                .addComponent(jCheckBox11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addComponent(jCheckBox25)
+                .addGap(30, 30, 30))
         );
         pnl_Dr49Layout.setVerticalGroup(
             pnl_Dr49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cbox_p611nina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(cbox_p611nino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jCheckBox11)
+            .addComponent(jCheckBox25)
         );
 
         L_p70.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -2178,7 +2286,7 @@ public class violenciaView extends javax.swing.JFrame {
         );
         pnl_Dp56Layout.setVerticalGroup(
             pnl_Dp56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnl_Dr49, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(pnl_Dr49, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(L_p70, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
@@ -2186,21 +2294,33 @@ public class violenciaView extends javax.swing.JFrame {
 
         pnl_Dr50.setBackground(new java.awt.Color(204, 204, 204));
 
+        jCheckBox12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox12ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox26ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnl_Dr50Layout = new javax.swing.GroupLayout(pnl_Dr50);
         pnl_Dr50.setLayout(pnl_Dr50Layout);
         pnl_Dr50Layout.setHorizontalGroup(
             pnl_Dr50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dr50Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(cbox_p612nina, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(cbox_p612nino, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addGap(27, 27, 27)
+                .addComponent(jCheckBox12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addComponent(jCheckBox26)
+                .addGap(30, 30, 30))
         );
         pnl_Dr50Layout.setVerticalGroup(
             pnl_Dr50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cbox_p612nina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(cbox_p612nino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jCheckBox12)
+            .addComponent(jCheckBox26)
         );
 
         L_p71.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -2226,21 +2346,37 @@ public class violenciaView extends javax.swing.JFrame {
                 .addGap(14, 14, 14))
         );
 
+        jCheckBox14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox14ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox27ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnl_Dr51Layout = new javax.swing.GroupLayout(pnl_Dr51);
         pnl_Dr51.setLayout(pnl_Dr51Layout);
         pnl_Dr51Layout.setHorizontalGroup(
             pnl_Dr51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dr51Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(cbox_p613nina, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(cbox_p613nino, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addGap(28, 28, 28)
+                .addComponent(jCheckBox14)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addComponent(jCheckBox27)
+                .addGap(31, 31, 31))
         );
         pnl_Dr51Layout.setVerticalGroup(
             pnl_Dr51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cbox_p613nina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(cbox_p613nino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(pnl_Dr51Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnl_Dr51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jCheckBox27)
+                    .addComponent(jCheckBox14))
+                .addContainerGap())
         );
 
         L_p72.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -2267,21 +2403,33 @@ public class violenciaView extends javax.swing.JFrame {
 
         pnl_Dr52.setBackground(new java.awt.Color(204, 204, 204));
 
+        jCheckBox13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox13ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox28ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnl_Dr52Layout = new javax.swing.GroupLayout(pnl_Dr52);
         pnl_Dr52.setLayout(pnl_Dr52Layout);
         pnl_Dr52Layout.setHorizontalGroup(
             pnl_Dr52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dr52Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(cbox_p614nina, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
-                .addComponent(cbox_p614nino, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10))
+                .addGap(32, 32, 32)
+                .addComponent(jCheckBox13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addComponent(jCheckBox28)
+                .addGap(35, 35, 35))
         );
         pnl_Dr52Layout.setVerticalGroup(
             pnl_Dr52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cbox_p614nina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(cbox_p614nino, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jCheckBox13)
+            .addComponent(jCheckBox28)
         );
 
         L_p73.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -2303,7 +2451,7 @@ public class violenciaView extends javax.swing.JFrame {
             .addGroup(pnl_Dp59Layout.createSequentialGroup()
                 .addGroup(pnl_Dp59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(L_p73)
-                    .addComponent(pnl_Dr52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(pnl_Dr52, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(14, 14, 14))
         );
 
@@ -2314,15 +2462,54 @@ public class violenciaView extends javax.swing.JFrame {
         txtA_Vp6otro.setRows(5);
         jScrollPane3.setViewportView(txtA_Vp6otro);
 
+        jCheckBox3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox3ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox17ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pnl_Dr37Layout = new javax.swing.GroupLayout(pnl_Dr37);
+        pnl_Dr37.setLayout(pnl_Dr37Layout);
+        pnl_Dr37Layout.setHorizontalGroup(
+            pnl_Dr37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_Dr37Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(jCheckBox3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
+                .addComponent(jCheckBox17)
+                .addGap(27, 27, 27))
+        );
+        pnl_Dr37Layout.setVerticalGroup(
+            pnl_Dr37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnl_Dr37Layout.createSequentialGroup()
+                .addGroup(pnl_Dr37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jCheckBox3)
+                    .addComponent(jCheckBox17))
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout pnl_Dp5_container1Layout = new javax.swing.GroupLayout(pnl_Dp5_container1);
         pnl_Dp5_container1.setLayout(pnl_Dp5_container1Layout);
         pnl_Dp5_container1Layout.setHorizontalGroup(
             pnl_Dp5_container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnl_Dp42, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(pnl_Dp47, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(pnl_Dp5_container1Layout.createSequentialGroup()
+                .addComponent(pnl_Dp42, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(23, 23, 23))
+            .addGroup(pnl_Dp5_container1Layout.createSequentialGroup()
+                .addComponent(pnl_Dp47, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(23, 23, 23))
             .addGroup(pnl_Dp5_container1Layout.createSequentialGroup()
                 .addGap(2, 2, 2)
-                .addComponent(pnl_Dp48, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(pnl_Dp48, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnl_Dr37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(63, 63, 63))
             .addComponent(pnl_Dp49, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(pnl_Dp50, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(pnl_Dp51, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -2348,10 +2535,12 @@ public class violenciaView extends javax.swing.JFrame {
             .addGroup(pnl_Dp5_container1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(pnl_Dp42, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(6, 6, 6)
                 .addComponent(pnl_Dp47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pnl_Dp48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addGroup(pnl_Dp5_container1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(pnl_Dr37, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnl_Dp48, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnl_Dp49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -2361,7 +2550,7 @@ public class violenciaView extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnl_Dp53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pnl_Dp52, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnl_Dp52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnl_Dp54, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -2464,9 +2653,9 @@ public class violenciaView extends javax.swing.JFrame {
                 .addGroup(pnl_Dp7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(pnl_DLp6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(checkB_Inv_Vp6_ninas, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnl_Dp7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(pnl_Dp5_container1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnl_Dp5_container1, javax.swing.GroupLayout.PREFERRED_SIZE, 484, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(checkB_Inv_Vp6_ninos, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(35, Short.MAX_VALUE))
         );
@@ -3346,10 +3535,117 @@ public class violenciaView extends javax.swing.JFrame {
         vsv.setVp23("INVALIDAR");
     }//GEN-LAST:event_checkB_Inv_Vp23ActionPerformed
 
-    private void cbox_p61ninaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbox_p61ninaMouseClicked
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         // TODO add your handling code here:
-        vsv.setVp61nina("true");
-    }//GEN-LAST:event_cbox_p61ninaMouseClicked
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+    private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox2ActionPerformed
+
+    private void jCheckBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox3ActionPerformed
+
+    private void jCheckBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox4ActionPerformed
+
+    private void jCheckBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox5ActionPerformed
+
+    private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox6ActionPerformed
+
+    private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox7ActionPerformed
+
+    private void jCheckBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox8ActionPerformed
+
+    private void jCheckBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox9ActionPerformed
+
+    private void jCheckBox10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox10ActionPerformed
+
+    private void jCheckBox11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox11ActionPerformed
+
+    private void jCheckBox12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox12ActionPerformed
+
+    private void jCheckBox13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox13ActionPerformed
+
+    private void jCheckBox14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox14ActionPerformed
+
+    private void jCheckBox15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox15ActionPerformed
+
+    private void jCheckBox16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox16ActionPerformed
+
+    private void jCheckBox17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox17ActionPerformed
+
+    private void jCheckBox18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox18ActionPerformed
+
+    private void jCheckBox19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox19ActionPerformed
+
+    private void jCheckBox20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox20ActionPerformed
+
+    private void jCheckBox21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox21ActionPerformed
+
+    private void jCheckBox22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox22ActionPerformed
+
+    private void jCheckBox23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox23ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox23ActionPerformed
+
+    private void jCheckBox24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox24ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox24ActionPerformed
+
+    private void jCheckBox25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox25ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox25ActionPerformed
+
+    private void jCheckBox26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox26ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox26ActionPerformed
+
+    private void jCheckBox27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox27ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox27ActionPerformed
+
+    private void jCheckBox28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox28ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox28ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -3436,34 +3732,6 @@ public class violenciaView extends javax.swing.JFrame {
     private javax.swing.JButton btn_DGuardar1;
     private javax.swing.JButton btn_DSiguiente1;
     private javax.swing.JButton btn_save_V;
-    private java.awt.Checkbox cbox_p610nina;
-    private java.awt.Checkbox cbox_p610nino;
-    private java.awt.Checkbox cbox_p611nina;
-    private java.awt.Checkbox cbox_p611nino;
-    private java.awt.Checkbox cbox_p612nina;
-    private java.awt.Checkbox cbox_p612nino;
-    private java.awt.Checkbox cbox_p613nina;
-    private java.awt.Checkbox cbox_p613nino;
-    private java.awt.Checkbox cbox_p614nina;
-    private java.awt.Checkbox cbox_p614nino;
-    private java.awt.Checkbox cbox_p61nina;
-    private java.awt.Checkbox cbox_p61nino;
-    private java.awt.Checkbox cbox_p62nina;
-    private java.awt.Checkbox cbox_p62nino;
-    private java.awt.Checkbox cbox_p63nina;
-    private java.awt.Checkbox cbox_p63nino;
-    private java.awt.Checkbox cbox_p64nina;
-    private java.awt.Checkbox cbox_p64nino;
-    private java.awt.Checkbox cbox_p65nina;
-    private java.awt.Checkbox cbox_p65nino;
-    private java.awt.Checkbox cbox_p66nina;
-    private java.awt.Checkbox cbox_p66nino;
-    private java.awt.Checkbox cbox_p67nina;
-    private java.awt.Checkbox cbox_p67nino;
-    private java.awt.Checkbox cbox_p68nina;
-    private java.awt.Checkbox cbox_p68nino;
-    private java.awt.Checkbox cbox_p69nina;
-    private java.awt.Checkbox cbox_p69nino;
     private javax.swing.JCheckBox checkB_Inv_Vp11;
     private javax.swing.JCheckBox checkB_Inv_Vp12;
     private javax.swing.JCheckBox checkB_Inv_Vp13;
@@ -3481,6 +3749,34 @@ public class violenciaView extends javax.swing.JFrame {
     private javax.swing.JCheckBox checkB_Inv_Vp5;
     private javax.swing.JCheckBox checkB_Inv_Vp6_ninas;
     private javax.swing.JCheckBox checkB_Inv_Vp6_ninos;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox10;
+    private javax.swing.JCheckBox jCheckBox11;
+    private javax.swing.JCheckBox jCheckBox12;
+    private javax.swing.JCheckBox jCheckBox13;
+    private javax.swing.JCheckBox jCheckBox14;
+    private javax.swing.JCheckBox jCheckBox15;
+    private javax.swing.JCheckBox jCheckBox16;
+    private javax.swing.JCheckBox jCheckBox17;
+    private javax.swing.JCheckBox jCheckBox18;
+    private javax.swing.JCheckBox jCheckBox19;
+    private javax.swing.JCheckBox jCheckBox2;
+    private javax.swing.JCheckBox jCheckBox20;
+    private javax.swing.JCheckBox jCheckBox21;
+    private javax.swing.JCheckBox jCheckBox22;
+    private javax.swing.JCheckBox jCheckBox23;
+    private javax.swing.JCheckBox jCheckBox24;
+    private javax.swing.JCheckBox jCheckBox25;
+    private javax.swing.JCheckBox jCheckBox26;
+    private javax.swing.JCheckBox jCheckBox27;
+    private javax.swing.JCheckBox jCheckBox28;
+    private javax.swing.JCheckBox jCheckBox3;
+    private javax.swing.JCheckBox jCheckBox4;
+    private javax.swing.JCheckBox jCheckBox5;
+    private javax.swing.JCheckBox jCheckBox6;
+    private javax.swing.JCheckBox jCheckBox7;
+    private javax.swing.JCheckBox jCheckBox8;
+    private javax.swing.JCheckBox jCheckBox9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

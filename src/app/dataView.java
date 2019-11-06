@@ -33,7 +33,7 @@ public class dataView extends javax.swing.JFrame {
     public dataView() {
         initComponents();
         this.setLocationRelativeTo(null);
-        System.out.println(sv.getEncuesta());
+        //System.out.println(sv.getEncuesta());
         
     }
 
