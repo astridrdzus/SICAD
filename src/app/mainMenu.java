@@ -27,6 +27,7 @@ public class mainMenu extends javax.swing.JFrame {
     public mainMenu() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.btn_analisis.setEnabled(false);
     }
 
     /**
@@ -41,9 +42,9 @@ public class mainMenu extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jPanel1 = new javax.swing.JPanel();
         panel_prinicipal = new javax.swing.JPanel();
-        btnBusqueda1 = new java.awt.Button();
-        btnCapture = new java.awt.Button();
-        btnBusqueda = new java.awt.Button();
+        btn_Busqueda = new java.awt.Button();
+        btn_capturar = new java.awt.Button();
+        btn_analisis = new java.awt.Button();
         jLabel1 = new javax.swing.JLabel();
 
         jMenu1.setText("jMenu1");
@@ -53,36 +54,36 @@ public class mainMenu extends javax.swing.JFrame {
 
         jPanel1.setPreferredSize(new java.awt.Dimension(600, 300));
 
-        btnBusqueda1.setBackground(new java.awt.Color(153, 153, 255));
-        btnBusqueda1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        btnBusqueda1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        btnBusqueda1.setLabel("Búqueda rápida");
-        btnBusqueda1.setName(""); // NOI18N
-        btnBusqueda1.addActionListener(new java.awt.event.ActionListener() {
+        btn_Busqueda.setBackground(new java.awt.Color(153, 153, 255));
+        btn_Busqueda.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btn_Busqueda.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        btn_Busqueda.setLabel("Búqueda rápida");
+        btn_Busqueda.setName(""); // NOI18N
+        btn_Busqueda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBusqueda1ActionPerformed(evt);
+                btn_BusquedaActionPerformed(evt);
             }
         });
 
-        btnCapture.setBackground(new java.awt.Color(255, 153, 51));
-        btnCapture.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        btnCapture.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        btnCapture.setLabel("Capturar");
-        btnCapture.setName(""); // NOI18N
-        btnCapture.addActionListener(new java.awt.event.ActionListener() {
+        btn_capturar.setBackground(new java.awt.Color(255, 153, 51));
+        btn_capturar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btn_capturar.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        btn_capturar.setLabel("Capturar");
+        btn_capturar.setName(""); // NOI18N
+        btn_capturar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCaptureActionPerformed(evt);
+                btn_capturarActionPerformed(evt);
             }
         });
 
-        btnBusqueda.setBackground(new java.awt.Color(153, 255, 153));
-        btnBusqueda.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        btnBusqueda.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        btnBusqueda.setLabel("Análisis de datos");
-        btnBusqueda.setName(""); // NOI18N
-        btnBusqueda.addActionListener(new java.awt.event.ActionListener() {
+        btn_analisis.setBackground(new java.awt.Color(153, 255, 153));
+        btn_analisis.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btn_analisis.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        btn_analisis.setLabel("Análisis de datos");
+        btn_analisis.setName(""); // NOI18N
+        btn_analisis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBusquedaActionPerformed(evt);
+                btn_analisisActionPerformed(evt);
             }
         });
 
@@ -92,11 +93,11 @@ public class mainMenu extends javax.swing.JFrame {
             panel_prinicipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_prinicipalLayout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addComponent(btnCapture, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btn_capturar, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addComponent(btnBusqueda1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btn_Busqueda, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
-                .addComponent(btnBusqueda, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btn_analisis, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20))
         );
         panel_prinicipalLayout.setVerticalGroup(
@@ -104,9 +105,9 @@ public class mainMenu extends javax.swing.JFrame {
             .addGroup(panel_prinicipalLayout.createSequentialGroup()
                 .addContainerGap(20, Short.MAX_VALUE)
                 .addGroup(panel_prinicipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(btnCapture, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)
-                    .addComponent(btnBusqueda1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnBusqueda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btn_capturar, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)
+                    .addComponent(btn_Busqueda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_analisis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
@@ -153,20 +154,22 @@ public class mainMenu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnBusquedaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBusquedaActionPerformed
+    private void btn_analisisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_analisisActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBusquedaActionPerformed
+    }//GEN-LAST:event_btn_analisisActionPerformed
 
-    private void btnBusqueda1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBusqueda1ActionPerformed
+    private void btn_BusquedaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_BusquedaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBusqueda1ActionPerformed
+        busquedaView busV = new busquedaView();
+        busV.setVisible(true);
+    }//GEN-LAST:event_btn_BusquedaActionPerformed
 
-    private void btnCaptureActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCaptureActionPerformed
+    private void btn_capturarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_capturarActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);                 //Disapears the view
         surveyTypes surv = new surveyTypes();
         surv.setVisible(true);                  //Appears survey Types view
-    }//GEN-LAST:event_btnCaptureActionPerformed
+    }//GEN-LAST:event_btn_capturarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -214,9 +217,9 @@ public class mainMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Button btnBusqueda;
-    private java.awt.Button btnBusqueda1;
-    private java.awt.Button btnCapture;
+    private java.awt.Button btn_Busqueda;
+    private java.awt.Button btn_analisis;
+    private java.awt.Button btn_capturar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JPanel jPanel1;

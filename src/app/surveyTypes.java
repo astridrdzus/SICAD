@@ -19,6 +19,7 @@ public class surveyTypes extends javax.swing.JFrame {
     public surveyTypes() {
         initComponents();
         this.setLocationRelativeTo(null);
+        btn_ViolenciaSurv.setEnabled(false);
     }
 
     /** This method is called from within the constructor to

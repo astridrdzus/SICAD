@@ -93,11 +93,11 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      <Component id="btnCapture" min="-2" pref="163" max="-2" attributes="0"/>
+                      <Component id="btn_capturar" min="-2" pref="163" max="-2" attributes="0"/>
                       <EmptySpace pref="29" max="32767" attributes="0"/>
-                      <Component id="btnBusqueda1" min="-2" pref="165" max="-2" attributes="0"/>
+                      <Component id="btn_Busqueda" min="-2" pref="165" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                      <Component id="btnBusqueda" min="-2" pref="174" max="-2" attributes="0"/>
+                      <Component id="btn_analisis" min="-2" pref="174" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -107,9 +107,9 @@
                   <Group type="102" attributes="0">
                       <EmptySpace pref="20" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="btnCapture" pref="102" max="32767" attributes="0"/>
-                          <Component id="btnBusqueda1" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnBusqueda" alignment="1" max="32767" attributes="0"/>
+                          <Component id="btn_capturar" pref="102" max="32767" attributes="0"/>
+                          <Component id="btn_Busqueda" alignment="1" max="32767" attributes="0"/>
+                          <Component id="btn_analisis" alignment="1" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace pref="18" max="32767" attributes="0"/>
                   </Group>
@@ -117,7 +117,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="java.awt.Button" name="btnBusqueda1">
+            <Component class="java.awt.Button" name="btn_Busqueda">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="99" red="99" type="rgb"/>
@@ -132,10 +132,10 @@
                 <Property name="name" type="java.lang.String" value="" noResource="true"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBusqueda1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_BusquedaActionPerformed"/>
               </Events>
             </Component>
-            <Component class="java.awt.Button" name="btnCapture">
+            <Component class="java.awt.Button" name="btn_capturar">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="33" green="99" red="ff" type="rgb"/>
@@ -150,10 +150,10 @@
                 <Property name="name" type="java.lang.String" value="" noResource="true"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCaptureActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_capturarActionPerformed"/>
               </Events>
             </Component>
-            <Component class="java.awt.Button" name="btnBusqueda">
+            <Component class="java.awt.Button" name="btn_analisis">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="99" green="ff" red="99" type="rgb"/>
@@ -168,7 +168,7 @@
                 <Property name="name" type="java.lang.String" value="" noResource="true"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBusquedaActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_analisisActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
