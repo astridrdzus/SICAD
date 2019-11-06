@@ -5,6 +5,7 @@
  */
 package app;
 
+import controller.ctrlViolencia;
 import surveyClasses.violenciaSurvey;
 
 /**
@@ -2726,8 +2727,11 @@ public class violenciaView extends javax.swing.JFrame {
 
     private void btn_save_VActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_save_VActionPerformed
         // TODO add your handling code here:
+        ctrlViolencia ctrlVio = new ctrlViolencia(this.vsv);
         vsv.setVp6otro(txtA_Vp6otro.getText());
-        vsv.setVp6otro(txtA_Vpobs.getText());
+        vsv.setVobs(txtA_Vpobs.getText());
+        ctrlVio.insert_Data();
+        this.btn_save_V.setEnabled(false);
         
     }//GEN-LAST:event_btn_save_VActionPerformed
 

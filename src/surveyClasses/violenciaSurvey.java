@@ -53,6 +53,7 @@ public class violenciaSurvey {
     private String Vp613nino;
     private String Vp614nino;
     private String Vp6otro;
+    private String Vobs;
 
     public String getFolio() {
         return folio;
@@ -397,6 +398,19 @@ public class violenciaSurvey {
     public void setVp6otro(String Vp6otro) {
         this.Vp6otro = Vp6otro;
     }
+
+    public String getVobs() {
+        return Vobs;
+    }
+
+    public void setVobs(String Vobs) {
+        this.Vobs = Vobs;
+    }
+    
+    
+
+
+    
 
  
     
