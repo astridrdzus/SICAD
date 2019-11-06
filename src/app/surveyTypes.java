@@ -147,6 +147,7 @@ public class surveyTypes extends javax.swing.JFrame {
         dataView datav = new dataView();
         datav.sv = this.sv;
         datav.encuesta_label.setText(datav.sv.getEncuesta());
+        datav.btn_next.setEnabled(false);
         datav.setVisible(true);
         
         /*this.setVisible(false);

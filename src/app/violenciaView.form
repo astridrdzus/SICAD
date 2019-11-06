@@ -2316,9 +2316,9 @@
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                                      <Component id="cbox_p61nina" min="-2" pref="15" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="cbox_p61nina" min="-2" pref="18" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
                                       <Component id="cbox_p61nino" min="-2" pref="15" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                   </Group>
@@ -2333,6 +2333,9 @@
                           </Layout>
                           <SubComponents>
                             <Component class="java.awt.Checkbox" name="cbox_p61nina">
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="cbox_p61ninaMouseClicked"/>
+                              </Events>
                             </Component>
                             <Component class="java.awt.Checkbox" name="cbox_p61nino">
                             </Component>

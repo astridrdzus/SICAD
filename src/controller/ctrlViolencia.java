@@ -20,12 +20,17 @@ import surveyClasses.violenciaSurvey;
  *
  * @author astri
  */
-public class ctrlViolencia {
+public class ctrlViolencia implements ActionListener {
     
     private violenciaSurvey vsv = new violenciaSurvey();
 
     public ctrlViolencia(violenciaSurvey vsv) {
         this.vsv = vsv;
+    }
+    
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        
     }
     
     public boolean createVio( violenciaSurvey vsv){
@@ -126,4 +131,6 @@ public class ctrlViolencia {
                 JOptionPane.showMessageDialog(null, "Error al guardar");
             }
     }
+
+
 }

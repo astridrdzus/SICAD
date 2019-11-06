@@ -1002,13 +1002,10 @@ public class violenciaView extends javax.swing.JFrame {
         pnl_Dp2Layout.setHorizontalGroup(
             pnl_Dp2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dp2Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(pnl_Dp2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnl_Dp2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(L_Vp1, javax.swing.GroupLayout.PREFERRED_SIZE, 1031, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnl_Dp2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(pnl_Dr2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(L_Vp1, javax.swing.GroupLayout.PREFERRED_SIZE, 1031, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnl_Dr2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(57, Short.MAX_VALUE))
         );
         pnl_Dp2Layout.setVerticalGroup(
@@ -1657,13 +1654,10 @@ public class violenciaView extends javax.swing.JFrame {
         pnl_Dp3Layout.setHorizontalGroup(
             pnl_Dp3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dp3Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(pnl_Dp3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnl_Dp3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(L_Vp2, javax.swing.GroupLayout.PREFERRED_SIZE, 1031, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnl_Dp3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(pnl_Dr6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(L_Vp2, javax.swing.GroupLayout.PREFERRED_SIZE, 1031, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnl_Dr6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(37, Short.MAX_VALUE))
         );
         pnl_Dp3Layout.setVerticalGroup(
@@ -1745,14 +1739,20 @@ public class violenciaView extends javax.swing.JFrame {
         L_Dp53.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         L_Dp53.setText("6. De acuerdo con las siguientes opciones, señale las 5 que comúnmente utiliza el personal docente como estrategias de atención a situaciones de");
 
+        cbox_p61nina.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cbox_p61ninaMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pnl_Dr33Layout = new javax.swing.GroupLayout(pnl_Dr33);
         pnl_Dr33.setLayout(pnl_Dr33Layout);
         pnl_Dr33Layout.setHorizontalGroup(
             pnl_Dr33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_Dr33Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(cbox_p61nina, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100)
+                .addContainerGap()
+                .addComponent(cbox_p61nina, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(97, 97, 97)
                 .addComponent(cbox_p61nino, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10))
         );
@@ -2956,6 +2956,7 @@ public class violenciaView extends javax.swing.JFrame {
         vsv.setVp6otro(txtA_Vp6otro.getText());
         vsv.setVobs(txtA_Vpobs.getText());
         System.out.println("before calling the controller vio");
+        System.out.println("actual folio: "+ vsv.getFolio());
         ctrlViolencia ctrlVio = new ctrlViolencia(this.vsv);
         ctrlVio.insert_Data();
         this.btn_save_V.setEnabled(false);
@@ -3339,8 +3340,13 @@ public class violenciaView extends javax.swing.JFrame {
     private void checkB_Inv_Vp23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkB_Inv_Vp23ActionPerformed
         // TODO add your handling code here:
         rbtnG_Vp23.clearSelection();
-        vsv.setVp22("INVALIDAR");
+        vsv.setVp23("INVALIDAR");
     }//GEN-LAST:event_checkB_Inv_Vp23ActionPerformed
+
+    private void cbox_p61ninaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbox_p61ninaMouseClicked
+        // TODO add your handling code here:
+        vsv.setVp61nina("true");
+    }//GEN-LAST:event_cbox_p61ninaMouseClicked
 
     /**
      * @param args the command line arguments
