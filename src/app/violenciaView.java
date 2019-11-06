@@ -355,10 +355,11 @@ public class violenciaView extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        btn_save_V = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         txtA_Vpobs = new javax.swing.JTextArea();
         jLabel4 = new javax.swing.JLabel();
+        btn_regresar = new javax.swing.JButton();
+        btn_save_V = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -3012,14 +3013,6 @@ public class violenciaView extends javax.swing.JFrame {
             .addGap(0, 59, Short.MAX_VALUE)
         );
 
-        btn_save_V.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btn_save_V.setText("Guardar");
-        btn_save_V.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_save_VActionPerformed(evt);
-            }
-        });
-
         txtA_Vpobs.setColumns(20);
         txtA_Vpobs.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtA_Vpobs.setRows(5);
@@ -3030,13 +3023,8 @@ public class violenciaView extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(51, 51, 51)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 733, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(349, 349, 349)
-                        .addComponent(btn_save_V)))
+                .addGap(51, 51, 51)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 733, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -3044,13 +3032,27 @@ public class violenciaView extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btn_save_V)
-                .addGap(63, 63, 63))
+                .addGap(99, 99, 99))
         );
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("Observaciones: ");
+
+        btn_regresar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn_regresar.setText("Regresar al menú principal");
+        btn_regresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_regresarActionPerformed(evt);
+            }
+        });
+
+        btn_save_V.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn_save_V.setText("Guardar");
+        btn_save_V.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_save_VActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -3065,7 +3067,13 @@ public class violenciaView extends javax.swing.JFrame {
                         .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(129, 129, 129)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(427, 427, 427)
+                        .addComponent(btn_regresar))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(477, 477, 477)
+                        .addComponent(btn_save_V)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -3080,7 +3088,11 @@ public class violenciaView extends javax.swing.JFrame {
                         .addComponent(jLabel4)
                         .addGap(18, 18, 18)))
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(581, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(btn_save_V)
+                .addGap(119, 119, 119)
+                .addComponent(btn_regresar)
+                .addContainerGap(394, Short.MAX_VALUE))
         );
 
         tab_pnl_Dparte1.addTab("VIOLENCIA_Parte 3", jPanel6);
@@ -3672,6 +3684,13 @@ public class violenciaView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cbox_Vp614ninosActionPerformed
 
+    private void btn_regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_regresarActionPerformed
+        // TODO add your handling code here:
+        mainMenu main = new mainMenu();
+        this.setVisible(false);
+        main.setVisible(true);
+    }//GEN-LAST:event_btn_regresarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -3756,6 +3775,7 @@ public class violenciaView extends javax.swing.JFrame {
     private javax.swing.JButton btn_DAtras1;
     private javax.swing.JButton btn_DGuardar1;
     private javax.swing.JButton btn_DSiguiente1;
+    private javax.swing.JButton btn_regresar;
     private javax.swing.JButton btn_save_V;
     private javax.swing.JCheckBox cbox_Vp610ninas;
     private javax.swing.JCheckBox cbox_Vp610ninos;

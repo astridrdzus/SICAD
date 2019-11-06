@@ -271,6 +271,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
         txtA_Dp6 = new javax.swing.JTextArea();
         jPanel7 = new javax.swing.JPanel();
         btn_save_D = new javax.swing.JButton();
+        btn_regresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -2178,6 +2179,14 @@ public class desarrolloView_0 extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        btn_regresar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn_regresar.setText("Regresar al menú principal");
+        btn_regresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_regresarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
@@ -2190,8 +2199,11 @@ public class desarrolloView_0 extends javax.swing.JFrame {
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 854, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(264, 264, 264)
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(292, 292, 292)
+                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(454, 454, 454)
+                        .addComponent(btn_regresar)))
                 .addContainerGap(216, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -2201,9 +2213,11 @@ public class desarrolloView_0 extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
+                .addGap(69, 69, 69)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(375, Short.MAX_VALUE))
+                .addGap(90, 90, 90)
+                .addComponent(btn_regresar)
+                .addContainerGap(218, Short.MAX_VALUE))
         );
 
         tab_pnl_Dparte1.addTab("DESARROLLO_Parte 3", jPanel6);
@@ -2623,6 +2637,13 @@ public class desarrolloView_0 extends javax.swing.JFrame {
         dsv.setDp45("Nada");
     }//GEN-LAST:event_rbtn_Dp45_NadaActionPerformed
 
+    private void btn_regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_regresarActionPerformed
+        // TODO add your handling code here:
+        mainMenu main = new mainMenu();
+        this.setVisible(false);
+        main.setVisible(true);
+    }//GEN-LAST:event_btn_regresarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2691,6 +2712,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
     private javax.swing.JLabel L_p55;
     private javax.swing.JLabel L_p5_Valor;
     private javax.swing.JLabel L_p5_tipo;
+    private javax.swing.JButton btn_regresar;
     public javax.swing.JButton btn_save_D;
     private javax.swing.JComboBox<String> cb_Dp51;
     private javax.swing.JComboBox<String> cb_Dp52;
