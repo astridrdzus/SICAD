@@ -679,6 +679,7 @@ public class dataView extends javax.swing.JFrame {
             
             //Deactive button after clicking 
             this.btn_SaveData.setEnabled(false);
+            this.btn_next.setEnabled(true);
             
         }catch(Exception e){
             
@@ -813,7 +814,7 @@ public class dataView extends javax.swing.JFrame {
     private javax.swing.JLabel L_turno;
     public javax.swing.JButton btn_SaveData;
     private javax.swing.JButton btn_back;
-    private javax.swing.JButton btn_next;
+    public javax.swing.JButton btn_next;
     private javax.swing.JButton btn_openfile;
     public javax.swing.JComboBox<String> cbox_aniosServicio;
     public javax.swing.JComboBox<String> cbox_antiguedad;
