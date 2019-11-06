@@ -29,9 +29,10 @@ public class ctrlViolencia {
     }
     
     public boolean createVio( violenciaSurvey vsv){
-        
+        System.out.println("createVio");
         PreparedStatement ps = null;
         Connection con = getConnection();
+        System.out.println("connected");
         
         String sql = "INSERT INTO encuesta_violencia (folio, p11, p12, p13, p14, p15,p16, p21, p22, p23, p24,p25,p26, p3, p4, p5, " //16
                 + "p61nina, p62nina, p63nina, p64nina, p65nina, p66nina, p67nina, p68nina, p69nina, p610nina, p611nina," //11
@@ -43,9 +44,10 @@ public class ctrlViolencia {
                        + "?,?,?,?,?,?,?,?,?,?,"
                        + "?,?,?,?,?,?)";
         
-    
+        System.out.println("after creating statement");
         try{
             ps = con.prepareStatement(sql);
+            System.out.println("statement prepared");
             ps.setString(1, vsv.getFolio());
             ps.setString(2, vsv.getVp11());
             ps.setString(3, vsv.getVp12());
@@ -113,6 +115,7 @@ public class ctrlViolencia {
         }
     }   
     public void insert_Data(){
+        System.out.println("insert ");
         boolean flag = createVio(this.vsv);
             //dq.getLastID();
             System.out.println(flag);
