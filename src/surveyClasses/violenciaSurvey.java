@@ -56,7 +56,7 @@ public class violenciaSurvey {
     private String Vp613nino = "false";
     private String Vp614nino = "false";
     private String Vp6otro = "false";
-    private String VpObs = "false";
+    private String VpObs ;
 
     public String getVp16() {
         return Vp16;
