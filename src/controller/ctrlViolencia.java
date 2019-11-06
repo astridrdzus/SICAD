@@ -132,6 +132,12 @@ public class ctrlViolencia implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Error al guardar");
             }
     }
+    
+    public static void main(String[] args) {
+        violenciaSurvey vsv =  new violenciaSurvey();
+        ctrlViolencia ctrlVio = new ctrlViolencia(vsv);
+        ctrlVio.insert_Data();
+    }
 
 
 }
