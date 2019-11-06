@@ -15,14 +15,14 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
 import surveyClasses.desarrolloSurvey;
-import surveyClasses.surveyData;
+import surveyClasses.dataSurvey;
 
 /**
  *
  * @author astridrou
  */
 public class dataView extends javax.swing.JFrame {
-    public surveyData sv = new surveyData();
+    public dataSurvey sv = new dataSurvey();
     public desarrolloSurvey dsv = new desarrolloSurvey();
     public String folio = null;
     /**

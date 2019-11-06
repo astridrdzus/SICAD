@@ -2479,13 +2479,9 @@ public class desarrolloView_0 extends javax.swing.JFrame {
 
     private void btn_save_DActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_save_DActionPerformed
         // TODO add your handling code here:
-        dataQueries dq = new dataQueries();
-       // dsv.setFolio(dq.getLastFolio());
-        System.out.println("folio: "+dsv.getFolio());
-        //System.out.println(dsv.getDp1());
-        dsv.setDpObs(txtA_Dp6.getText());
-        //dsv.setDp1(rbtnG_Dp1.toString());
-        ctrlDesarrollo ctrlDes = new ctrlDesarrollo(this.dsv,dq,this);
+
+        dsv.setDpObs(txtA_Dp6.getText());        //dsv.setDp1(rbtnG_Dp1.toString());
+        ctrlDesarrollo ctrlDes = new ctrlDesarrollo(this.dsv);
         ctrlDes.insert_Data();
         this.btn_save_D.setEnabled(false);
     }//GEN-LAST:event_btn_save_DActionPerformed

@@ -11,7 +11,7 @@ import java.io.FileInputStream;
  *
  * @author astri
  */
-public class surveyData {
+public class dataSurvey {
     private String folio;
     private String encuesta;
     private String municipio;

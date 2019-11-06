@@ -9,7 +9,7 @@ import databaseConnection.dataQueries;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
-import surveyClasses.surveyData;
+import surveyClasses.dataSurvey;
 import java.sql.SQLException;
 
 /**
@@ -18,7 +18,7 @@ import java.sql.SQLException;
  */
 public class ctrlData implements ActionListener{
     
-    private surveyData sv;
+    private dataSurvey sv;
     private dataQueries dq;
     private dataView dataFrm;
     public String lastFolio;
@@ -31,7 +31,7 @@ public class ctrlData implements ActionListener{
         this.lastFolio = lastFolio;
     }
     
-    public ctrlData(surveyData sv, dataQueries dq, dataView dataFrm){
+    public ctrlData(dataSurvey sv, dataQueries dq, dataView dataFrm){
         this.sv = sv;
         this.dq = dq;
         this.dataFrm = dataFrm;

@@ -6,14 +6,14 @@
 
 package app;
 
-import surveyClasses.surveyData;
+import surveyClasses.dataSurvey;
 
 /**
  *
  * @author astri
  */
 public class surveyTypes extends javax.swing.JFrame {
-    public surveyData sv = new surveyData(); //This object is for setting the survey type when clicking the buttons.
+    public dataSurvey sv = new dataSurvey(); //This object is for setting the survey type when clicking the buttons.
 
     /** Creates new form tiposCuestionarios */
     public surveyTypes() {
@@ -126,8 +126,8 @@ public class surveyTypes extends javax.swing.JFrame {
         
         
         this.setVisible(false);
-        surveyData svD  = new surveyData();
-        //Creating a new surveyData for Desarrollo Survey
+        dataSurvey svD  = new dataSurvey();
+        //Creating a new dataSurvey for Desarrollo Survey
         svD.setEncuesta("DESARROLLO");
         svD.setFolio("D_");
         
@@ -141,8 +141,8 @@ public class surveyTypes extends javax.swing.JFrame {
     private void btn_ViolenciaSurvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ViolenciaSurvActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
-        surveyData svD  = new surveyData();
-        //Creating a new surveyData for Desarrollo Survey
+        dataSurvey svD  = new dataSurvey();
+        //Creating a new dataSurvey for Desarrollo Survey
         svD.setEncuesta("VIOLENCIA");
         svD.setFolio("V_");
         

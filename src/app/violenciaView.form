@@ -2,21 +2,31 @@
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
-    <Component class="javax.swing.ButtonGroup" name="rbtnG_Dp1">
+    <Component class="javax.swing.ButtonGroup" name="rbtnG_Vp3">
     </Component>
-    <Component class="javax.swing.ButtonGroup" name="rbtnG_Dp21">
+    <Component class="javax.swing.ButtonGroup" name="rbtnG_Vp11">
     </Component>
-    <Component class="javax.swing.ButtonGroup" name="rbtnG_Dp22">
+    <Component class="javax.swing.ButtonGroup" name="rbtnG_Vp12">
     </Component>
-    <Component class="javax.swing.ButtonGroup" name="rbtnG_Dp23">
+    <Component class="javax.swing.ButtonGroup" name="rbtnG_Vp13">
     </Component>
-    <Component class="javax.swing.ButtonGroup" name="rbtnG_Dp31">
+    <Component class="javax.swing.ButtonGroup" name="rbtnG_Vp14">
     </Component>
-    <Component class="javax.swing.ButtonGroup" name="rbtnG_Dp32">
+    <Component class="javax.swing.ButtonGroup" name="rbtnG_Vp15">
     </Component>
-    <Component class="javax.swing.ButtonGroup" name="rbtnG_Dp33">
+    <Component class="javax.swing.ButtonGroup" name="rbtnG_Vp21">
     </Component>
-    <Component class="javax.swing.ButtonGroup" name="rbtnG_Dp34">
+    <Component class="javax.swing.ButtonGroup" name="rbtnG_Vp22">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="rbtnG_Vp23">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="rbtnG_Vp24">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="rbtnG_Vp25">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="rbtnG_Vp4">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="rbtnG_Vp5">
     </Component>
   </NonVisualComponents>
   <Properties>
@@ -97,20 +107,21 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="pnl_Dp3" min="-2" max="-2" attributes="0"/>
-                              <Component id="pnl_Dp2" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="pnl_Dp3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="pnl_Dp2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
                           <Component id="pnl_Dp2" min="-2" pref="318" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                           <Component id="pnl_Dp3" min="-2" pref="318" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="202" max="-2" attributes="0"/>
                       </Group>
@@ -293,6 +304,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Poco"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp11_PocoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Vp11_Nada">
                                   <Properties>
@@ -301,6 +315,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Nada"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp11_NadaActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp11">
                                   <Properties>
@@ -359,7 +376,7 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" max="-2" attributes="0"/>
-                                          <Component id="rbtn_Dp12_Mucho" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rbtn_Vp12_Mucho" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                                           <Component id="rbtn_Vp12_Regular" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
@@ -377,7 +394,7 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="rbtn_Dp12_Mucho" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="rbtn_Vp12_Mucho" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="rbtn_Vp12_Regular" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="rbtn_Vp12_Poco" alignment="3" min="-2" max="-2" attributes="0"/>
                                               <Component id="rbtn_Vp12_Nada" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -388,7 +405,7 @@
                                 </DimensionLayout>
                               </Layout>
                               <SubComponents>
-                                <Component class="javax.swing.JRadioButton" name="rbtn_Dp12_Mucho">
+                                <Component class="javax.swing.JRadioButton" name="rbtn_Vp12_Mucho">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="14" style="0"/>
@@ -396,7 +413,7 @@
                                     <Property name="text" type="java.lang.String" value="Mucho"/>
                                   </Properties>
                                   <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Dp12_MuchoActionPerformed"/>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp12_MuchoActionPerformed"/>
                                   </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Vp12_Regular">
@@ -417,6 +434,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Poco"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp12_PocoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Vp12_Nada">
                                   <Properties>
@@ -425,6 +445,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Nada"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp12_NadaActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp12">
                                   <Properties>
@@ -550,6 +573,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Poco"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp13_PocoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Vp13_Nada">
                                   <Properties>
@@ -558,6 +584,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Nada"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp13_NadaActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp13">
                                   <Properties>
@@ -686,6 +715,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Poco"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp14_PocoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Vp14_Nada">
                                   <Properties>
@@ -694,6 +726,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Nada"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp14_NadaActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp14">
                                   <Properties>
@@ -846,6 +881,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Poco"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp15_PocoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Vp15_Nada">
                                   <Properties>
@@ -854,6 +892,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Nada"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp15_NadaActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp15">
                                   <Properties>
@@ -1076,6 +1117,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Ambos"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp21_ambosActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Vp21_ninguno">
                                   <Properties>
@@ -1084,6 +1128,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Ninguno"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp21_ningunoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp21">
                                   <Properties>
@@ -1199,6 +1246,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Ambos"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp22_ambosActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Vp22_ninguno">
                                   <Properties>
@@ -1207,6 +1257,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Ninguno"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp22_ningunoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp22">
                                   <Properties>
@@ -1327,6 +1380,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Ambos"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp23_ambosActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Vp23_ninguno">
                                   <Properties>
@@ -1335,6 +1391,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Ninguno"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp23_ningunoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp23">
                                   <Properties>
@@ -1470,6 +1529,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Ambos"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp24_ambosActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Vp24_ninguno">
                                   <Properties>
@@ -1478,6 +1540,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Ninguno"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp24_ningunoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp24">
                                   <Properties>
@@ -1625,6 +1690,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Ambos"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp25_ambosActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JRadioButton" name="rbtn_Vp25_ninguno">
                                   <Properties>
@@ -1633,6 +1701,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="Ninguno"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp25_ningunoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp25">
                                   <Properties>
@@ -1803,7 +1874,7 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                   <Component id="L_Dp54" min="-2" pref="878" max="-2" attributes="0"/>
@@ -1812,13 +1883,13 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="pnl_DLp6" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="checkB_Inv_Vp6" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="pnl_Dp5_container1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="pnl_DLp6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="pnl_Dp5_container1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="checkB_Inv_Vp6_ninas" min="-2" max="-2" attributes="0"/>
+                                      <Component id="checkB_Inv_Vp6_ninos" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -1836,10 +1907,13 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="pnl_DLp6" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="checkB_Inv_Vp6" alignment="0" min="-2" pref="15" max="-2" attributes="0"/>
+                              <Component id="checkB_Inv_Vp6_ninas" alignment="0" min="-2" pref="15" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="pnl_Dp5_container1" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="pnl_Dp5_container1" min="-2" max="-2" attributes="0"/>
+                              <Component id="checkB_Inv_Vp6_ninos" min="-2" pref="15" max="-2" attributes="0"/>
+                          </Group>
                           <EmptySpace pref="35" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -1892,7 +1966,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" max="-2" attributes="0"/>
-                              <Component id="pnl_Dp42" min="-2" max="-2" attributes="0"/>
+                              <Component id="pnl_Dp42" min="-2" pref="20" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="pnl_Dp47" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -1940,14 +2014,19 @@
                                   <Component id="L_p56" min="-2" pref="272" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="pnl_Dr33" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="163" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="L_p56" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="pnl_Dr33" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="pnl_Dr33" min="-2" max="-2" attributes="0"/>
+                                      <Component id="L_p56" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                         </DimensionLayout>
                       </Layout>
@@ -2264,7 +2343,7 @@
                                   <Component id="L_p65" min="-2" pref="418" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
                                   <Component id="pnl_Dr44" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="163" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -2334,7 +2413,7 @@
                                   <Component id="L_p66" min="-2" pref="292" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="pnl_Dr45" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="161" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -2463,7 +2542,7 @@
                                   <Component id="L_p68" min="-2" pref="291" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="pnl_Dr47" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -2531,9 +2610,9 @@
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="L_p69" min="-2" pref="418" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
-                                  <Component id="pnl_Dr48" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="pnl_Dr48" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -2603,7 +2682,7 @@
                                   <Component id="L_p70" min="-2" pref="428" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
                                   <Component id="pnl_Dr49" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="59" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -2738,7 +2817,7 @@
                                   <Component id="L_p72" min="-2" pref="428" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
                                   <Component id="pnl_Dr51" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="160" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -2878,7 +2957,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                       <SubComponents>
-                        <Component class="javax.swing.JTextArea" name="txtA_Vp615">
+                        <Component class="javax.swing.JTextArea" name="txtA_Vp6otro">
                           <Properties>
                             <Property name="columns" type="int" value="20"/>
                             <Property name="rows" type="int" value="5"/>
@@ -2949,7 +3028,7 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp6">
+                <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp6_ninas">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="14" style="0"/>
@@ -2957,10 +3036,24 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="0" green="0" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Invalidar pregunta"/>
+                    <Property name="text" type="java.lang.String" value="Invalidar Ni&#xf1;as"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Vp6ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Vp6_ninasActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp6_ninos">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Tahoma" size="14" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Invalidar Ni&#xf1;os"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="checkB_Inv_Vp6_ninosActionPerformed"/>
                   </Events>
                 </Component>
               </SubComponents>
@@ -3078,6 +3171,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="No se han presentado casos"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp3_noSehanActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp3">
                       <Properties>
@@ -3196,6 +3292,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="M&#xe1;s de 10"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp4_mas10ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="rbtn_Vp4_noSehan">
                       <Properties>
@@ -3204,6 +3303,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="No se han presentado casos"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp4_noSehanActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp4">
                       <Properties>
@@ -3324,6 +3426,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="M&#xe1;s de 10"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp5_mas10ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JRadioButton" name="rbtn_Vp5_noSehan">
                       <Properties>
@@ -3332,6 +3437,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="No se han presentado casos"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rbtn_Vp5_noSehanActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="checkB_Inv_Vp5">
                       <Properties>
@@ -3431,7 +3539,7 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="349" max="-2" attributes="0"/>
-                                  <Component id="btn_save_D" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btn_save_V" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
@@ -3444,14 +3552,14 @@
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="jScrollPane2" min="-2" pref="148" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="btn_save_D" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn_save_V" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JButton" name="btn_save_D">
+                <Component class="javax.swing.JButton" name="btn_save_V">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="14" style="0"/>
@@ -3459,7 +3567,7 @@
                     <Property name="text" type="java.lang.String" value="Guardar"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_save_DActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_save_VActionPerformed"/>
                   </Events>
                 </Component>
                 <Container class="javax.swing.JScrollPane" name="jScrollPane2">
@@ -3469,7 +3577,7 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                   <SubComponents>
-                    <Component class="javax.swing.JTextArea" name="txtA_Dp6">
+                    <Component class="javax.swing.JTextArea" name="txtA_Vpobs">
                       <Properties>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
