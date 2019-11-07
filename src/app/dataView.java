@@ -14,6 +14,7 @@ import java.sql.Connection;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import surveyClasses.desarrolloSurvey;
 import surveyClasses.dataSurvey;
 import surveyClasses.violenciaSurvey;
@@ -673,6 +674,9 @@ public class dataView extends javax.swing.JFrame {
             //System.out.println("Before calling controller");
             controller.actionPerformed(evt);
             folio = controller.getLastFolio();
+            JOptionPane.showMessageDialog(null,"El folio es: "+folio);
+            this.btn_back.setEnabled(false);
+            
             System.out.println("folio atribute: "+folio);
             
             
