@@ -14,6 +14,7 @@ import surveyClasses.dataSurvey;
  */
 public class surveyTypes extends javax.swing.JFrame {
     public dataSurvey sv = new dataSurvey(); //This object is for setting the survey type when clicking the buttons.
+    String window = null;
 
     /** Creates new form tiposCuestionarios */
     public surveyTypes() {
@@ -133,11 +134,20 @@ public class surveyTypes extends javax.swing.JFrame {
         System.out.println("survey type: " +this.sv.getEncuesta());
         this.sv.setFolio("D_");
         
-        dataView datav = new dataView();
-        datav.sv = this.sv;
-        datav.encuesta_label.setText(datav.sv.getEncuesta());
-        datav.btn_next.setEnabled(false);
-        datav.setVisible(true);
+        if (window.equals("CAPTURA")){
+            dataView datav = new dataView();
+            datav.sv = this.sv;
+            datav.encuesta_label.setText(datav.sv.getEncuesta());
+            datav.btn_next.setEnabled(false);
+            datav.setVisible(true);
+            
+        }
+        
+        if (window.equals("FILTROS")){
+            filtrosDesarrollo filD = new filtrosDesarrollo();
+            filD.setVisible(true);
+        }
+
        
         /*
         this.setVisible(false);

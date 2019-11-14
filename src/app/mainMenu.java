@@ -27,7 +27,7 @@ public class mainMenu extends javax.swing.JFrame {
     public mainMenu() {
         initComponents();
         this.setLocationRelativeTo(null);
-        this.btn_analisis.setEnabled(false);
+        //this.btn_analisis.setEnabled(false);
     }
 
     /**
@@ -156,6 +156,12 @@ public class mainMenu extends javax.swing.JFrame {
 
     private void btn_analisisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_analisisActionPerformed
         // TODO add your handling code here:
+        
+        this.setVisible(false);
+        surveyTypes surv = new surveyTypes();
+        surv.window = "FILTROS";
+        surv.setVisible(true); 
+        //filD.setVisible
     }//GEN-LAST:event_btn_analisisActionPerformed
 
     private void btn_BusquedaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_BusquedaActionPerformed
@@ -169,6 +175,7 @@ public class mainMenu extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.setVisible(false);                 //Disapears the view
         surveyTypes surv = new surveyTypes();
+        surv.window = "CAPTURA";
         surv.setVisible(true);                  //Appears survey Types view
     }//GEN-LAST:event_btn_capturarActionPerformed
 

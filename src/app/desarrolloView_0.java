@@ -276,10 +276,11 @@ public class desarrolloView_0 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         tab_pnl_Dparte1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        tab_pnl_Dparte1.setPreferredSize(new java.awt.Dimension(1170, 1500));
 
         jScrollPane1.setPreferredSize(new java.awt.Dimension(1000, 1500));
 
-        jPanel1.setPreferredSize(new java.awt.Dimension(1000, 750));
+        jPanel1.setPreferredSize(new java.awt.Dimension(1300, 700));
 
         L_Dp11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         L_Dp11.setText("1. Señale el ciclo escolar en que su escuela ha estado adscrita al Programa Nacional de Convivencia Escolar (puede");
@@ -1197,7 +1198,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
                         .addComponent(pnl_Dp1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(pnl_Dp2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(pnl_Dp4, javax.swing.GroupLayout.PREFERRED_SIZE, 982, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(147, Short.MAX_VALUE))
+                .addContainerGap(284, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1208,7 +1209,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
                 .addComponent(pnl_Dp2, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnl_Dp4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(138, 138, 138))
+                .addContainerGap())
         );
 
         jScrollPane1.setViewportView(jPanel1);
@@ -2228,7 +2229,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(tab_pnl_Dparte1)
+                .addComponent(tab_pnl_Dparte1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
