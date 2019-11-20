@@ -114,6 +114,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
         rbtnG_Dp43 = new javax.swing.ButtonGroup();
         rbtnG_Dp44 = new javax.swing.ButtonGroup();
         rbtnG_Dp45 = new javax.swing.ButtonGroup();
+        jSpinner1 = new javax.swing.JSpinner();
         tab_pnl_Dparte1 = new javax.swing.JTabbedPane();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
@@ -269,9 +270,12 @@ public class desarrolloView_0 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         txtA_Dp6 = new javax.swing.JTextArea();
-        jPanel7 = new javax.swing.JPanel();
-        btn_save_D = new javax.swing.JButton();
         btn_regresar = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        txtA_DObsCap = new javax.swing.JTextArea();
+        btn_save_D = new javax.swing.JButton();
+        jCheckBox1 = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -2155,31 +2159,6 @@ public class desarrolloView_0 extends javax.swing.JFrame {
         txtA_Dp6.setRows(5);
         jScrollPane2.setViewportView(txtA_Dp6);
 
-        btn_save_D.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btn_save_D.setText("Guardar");
-        btn_save_D.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_save_DActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addContainerGap(214, Short.MAX_VALUE)
-                .addComponent(btn_save_D)
-                .addGap(212, 212, 212))
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addContainerGap(23, Short.MAX_VALUE)
-                .addComponent(btn_save_D)
-                .addContainerGap())
-        );
-
         btn_regresar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn_regresar.setText("Regresar al menú principal");
         btn_regresar.addActionListener(new java.awt.event.ActionListener() {
@@ -2188,24 +2167,55 @@ public class desarrolloView_0 extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel2.setText("Observaciones sobre la recolección de datos: ");
+
+        txtA_DObsCap.setColumns(20);
+        txtA_DObsCap.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtA_DObsCap.setRows(5);
+        jScrollPane3.setViewportView(txtA_DObsCap);
+
+        btn_save_D.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn_save_D.setText("Guardar");
+        btn_save_D.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_save_DActionPerformed(evt);
+            }
+        });
+
+        jCheckBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jCheckBox1.setText("En esta encuesta hubieron respuestas inválidas");
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btn_save_D)
+                .addGap(537, 537, 537))
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(95, 95, 95)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 854, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 1012, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel6Layout.createSequentialGroup()
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jCheckBox1))
+                                .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1012, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(292, 292, 292)
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(454, 454, 454)
+                        .addGap(486, 486, 486)
                         .addComponent(btn_regresar)))
-                .addContainerGap(216, Short.MAX_VALUE))
+                .addContainerGap(58, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2213,12 +2223,18 @@ public class desarrolloView_0 extends javax.swing.JFrame {
                 .addGap(33, 33, 33)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(69, 69, 69)
-                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(90, 90, 90)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jCheckBox1))
+                .addGap(28, 28, 28)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(77, 77, 77)
+                .addComponent(btn_save_D)
+                .addGap(47, 47, 47)
                 .addComponent(btn_regresar)
-                .addContainerGap(218, Short.MAX_VALUE))
+                .addContainerGap(185, Short.MAX_VALUE))
         );
 
         tab_pnl_Dparte1.addTab("DESARROLLO_Parte 3", jPanel6);
@@ -2508,6 +2524,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
         dataQueries dq = new dataQueries();
         System.out.println("folio actual: " +dsv.getFolio());
         dsv.setDpObs(txtA_Dp6.getText());
+        dsv.setDpObsCaptura(txtA_DObsCap.getText());
         ctrlDesarrollo ctrlDes = new ctrlDesarrollo(this.dsv);
         ctrlDes.insert_Data();
         this.btn_save_D.setEnabled(false);
@@ -2645,6 +2662,12 @@ public class desarrolloView_0 extends javax.swing.JFrame {
         main.setVisible(true);
     }//GEN-LAST:event_btn_regresarActionPerformed
 
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+        // TODO add your handling code here:
+       dsv.setEncuestaInv("INVÁLIDAS");
+        
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2734,15 +2757,18 @@ public class desarrolloView_0 extends javax.swing.JFrame {
     private javax.swing.JCheckBox checkB_Inv_Dp43;
     private javax.swing.JCheckBox checkB_Inv_Dp44;
     private javax.swing.JCheckBox checkB_Inv_Dp45;
+    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JSpinner jSpinner1;
     private javax.swing.JPanel pnl_DLp5;
     private javax.swing.JPanel pnl_Dp1;
     private javax.swing.JPanel pnl_Dp2;
@@ -2852,6 +2878,7 @@ public class desarrolloView_0 extends javax.swing.JFrame {
     private javax.swing.JRadioButton rbtn_Dp45_Poco;
     private javax.swing.JRadioButton rbtn_Dp45_Regular;
     private javax.swing.JTabbedPane tab_pnl_Dparte1;
+    private javax.swing.JTextArea txtA_DObsCap;
     private javax.swing.JTextArea txtA_Dp6;
     // End of variables declaration//GEN-END:variables
 }

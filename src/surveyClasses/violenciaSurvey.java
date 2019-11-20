@@ -57,6 +57,9 @@ public class violenciaSurvey {
     private String Vp614nino = "NO";
     private String Vp6otro = "NO";
     private String VpObs ;
+    public String EncuestaInv= "VALIDA";
+    public String VpObsCaptura;
+    
 
     public String getVp16() {
         return Vp16;
@@ -424,6 +427,22 @@ public class violenciaSurvey {
 
     public void setVpObs(String VpObs) {
         this.VpObs = VpObs;
+    }
+    
+    public String getEncuestaInv() {
+        return EncuestaInv;
+    }
+
+    public void setEncuestaInv(String EncuestaInv) {
+        this.EncuestaInv = EncuestaInv;
+    }
+    
+    public String getVpObsCaptura() {
+        return VpObsCaptura;
+    }
+
+    public void setVpObsCaptura(String VpObsCaptura) {
+        this.VpObsCaptura = VpObsCaptura;
     }
     
     

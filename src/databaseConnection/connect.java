@@ -45,10 +45,10 @@ public class connect {
     }
     
     
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         connect con = new connect();
         con.getConnection();
-    }*/
+    }
 
 
 
