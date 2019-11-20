@@ -17,8 +17,8 @@ import javax.swing.JOptionPane;
  * @author astri
  */
 public class connect {
-    public static final String URL = "jdbc:mysql://localhost/sicad_test"; // Test DB
-    //public static final String URL = "jdbc:mysql://localhost/SICAD"; // DB with actual data
+    //public static final String URL = "jdbc:mysql://localhost/sicad_test"; // Test DB
+    public static final String URL = "jdbc:mysql://localhost/SICAD"; // DB with actual data
     public static final String USERNAME = "root";
     public static final String PASSWORD = "";
     //public Connection con = null;

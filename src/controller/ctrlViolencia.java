@@ -5,6 +5,7 @@
  */
 package controller;
 
+import app.violenciaView;
 import static databaseConnection.connect.getConnection;
 import databaseConnection.dataQueries;
 import java.awt.event.ActionEvent;
@@ -42,12 +43,12 @@ public class ctrlViolencia implements ActionListener {
         String sql = "INSERT INTO encuesta_violencia (folio, p11, p12, p13, p14, p15,p16, p21, p22, p23, p24,p25,p26, p3, p4, p5, " //16
                 + "p61nina, p62nina, p63nina, p64nina, p65nina, p66nina, p67nina, p68nina, p69nina, p610nina, p611nina," //11
                 + "p612nina, p613nina, p614nina, p61nino, p62nino, p63nino, p64nino, p65nino, p66nino, p67nino, p68nino," //11
-                +"p69nino, p610nino, p611nino, p612nino, p613nino, p614nino,p6otro,observaciones) " //8
+                +"p69nino, p610nino, p611nino, p612nino, p613nino, p614nino,p6otro,observaciones, respuestas, obsCap) " //8
                 + "VALUES(?,?,?,?,?,?,?,?,?,?,"
                        + "?,?,?,?,?,?,?,?,?,?,"
                        + "?,?,?,?,?,?,?,?,?,?,"
                        + "?,?,?,?,?,?,?,?,?,?,"
-                       + "?,?,?,?,?,?)";
+                       + "?,?,?,?,?,?,?,?)";
         
         System.out.println("after creating statement");
         try{
@@ -99,6 +100,8 @@ public class ctrlViolencia implements ActionListener {
             ps.setString(44, vsv.getVp614nino());
             ps.setString(45, vsv.getVp6otro());
             ps.setString(46, vsv.getVpObs());
+            ps.setString(47, vsv.getEncuestaInv());
+            ps.setString(48, vsv.getVpObsCaptura());
             
             System.out.println(ps);
             ps.execute();
@@ -138,6 +141,7 @@ public class ctrlViolencia implements ActionListener {
         ctrlViolencia ctrlVio = new ctrlViolencia(vsv);
         ctrlVio.insert_Data();
     }
+    
 
 
 }
