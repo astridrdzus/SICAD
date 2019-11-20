@@ -30,6 +30,8 @@ public class desarrolloSurvey {
     public String Dp54;
     public String Dp55;
     public String DpObs;
+    public String DpObsCaptura;
+    public String EncuestaInv= "VALIDA";
     
 
     public String getFolio() {
@@ -190,6 +192,23 @@ public class desarrolloSurvey {
     public void setDpObs(String DpObs) {
         this.DpObs = DpObs;
     }
+
+    public String getDpObsCaptura() {
+        return DpObsCaptura;
+    }
+
+    public void setDpObsCaptura(String DpObsCaptura) {
+        this.DpObsCaptura = DpObsCaptura;
+    }
+
+    public String getEncuestaInv() {
+        return EncuestaInv;
+    }
+
+    public void setEncuestaInv(String EncuestaInv) {
+        this.EncuestaInv = EncuestaInv;
+    }
+    
     
     
     

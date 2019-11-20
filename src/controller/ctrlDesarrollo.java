@@ -40,7 +40,7 @@ public class ctrlDesarrollo implements ActionListener{
         Connection con = getConnection();
         
         String sql = "INSERT INTO encuesta_desarrollo (folio, p1, p21, p22, p23, p31, p32, p33, p34, p41, p42, p43, "
-                + "p44, p45, p51, p52, p53, p54, p55, observaciones ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+                + "p44, p45, p51, p52, p53, p54, p55, observaciones, respuestas,obsCap ) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         
     
         try{
@@ -65,6 +65,8 @@ public class ctrlDesarrollo implements ActionListener{
             ps.setString(18, dsv.getDp54());
             ps.setString(19, dsv.getDp55());
             ps.setString(20, dsv.getDpObs());
+            ps.setString(21, dsv.getEncuestaInv());
+            ps.setString(22, dsv.getDpObsCaptura());
             
             System.out.println(ps);
             ps.execute();
@@ -96,6 +98,12 @@ public class ctrlDesarrollo implements ActionListener{
                 JOptionPane.showMessageDialog(null, "Error al guardar");
             }
     }
+    
+    /*
+    public static void main(String[] args) {
+        desarrolloSurvey dsv = new desarrolloSurvey();
+        ctrlDesarrollo ctrl = new ctrlDesarrollo(dsv);
+    }*/
 
 
 
