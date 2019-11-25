@@ -691,18 +691,14 @@ public class dataView extends javax.swing.JFrame {
             }else{
                 System.out.println("Operation failed");
                 JOptionPane.showMessageDialog(null, "Hubo un error, cierre el archivo en caso de estar abierto.");
-            }
-           
-           
+            }         
             
             //INSERTING TO DATABASE
             ctrlData controller = new ctrlData(this.sv,dq, this); //Folio prefix setted before (on Survey Types)
-            //System.out.println("Before calling controller");
             controller.actionPerformed(evt);
             folio = controller.getLastFolio();
             JOptionPane.showMessageDialog(null,"El folio es: "+folio);
             this.btn_back.setEnabled(false);
-            
             System.out.println("folio atribute: "+folio);
             
             

@@ -290,7 +290,7 @@ public class dataQueries extends connect{
     public static void main(String[] args) throws FileNotFoundException, InterruptedException {
         dataQueries dq = new dataQueries();
         try{
-            dq.readFile("D_1");
+            dq.readFile("V_27");
             
         }catch(IOException e){
             System.err.println(e);
