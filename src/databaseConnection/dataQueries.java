@@ -106,7 +106,7 @@ public class dataQueries extends connect{
         }
     }
     
-    public boolean readFile (String filename) throws FileNotFoundException{
+    public boolean readFile (String filename) throws FileNotFoundException, IOException, InterruptedException{
         PreparedStatement ps = null;
         ResultSet rs = null; //Result of the query
          //ResultSet rs = ps.executeQuery();
@@ -116,28 +116,22 @@ public class dataQueries extends connect{
         
             try{
             ps = con.prepareStatement(sql);
-            //ps.setString(1, sv.getFolio());
+            ps.setString(1, filename);
             
             rs= ps.executeQuery();
             
-            while(rs.next()){
-                File pdf = new File("C:\\Users\\astri\\Documents\\encuestas_escaneadas\\D_01.pdf");
-                
-                try (FileOutputStream fos = new FileOutputStream(pdf)) {
-                    byte[] buffer = new byte[1024];
-                    InputStream is = rs.getBinaryStream("archivo");
-                    while (is.read(buffer) > 0 ){
-                        fos.write(buffer);
-                    }
-                    fos.close();
-                }catch (IOException e){
-                    e.printStackTrace();
-                }
-                
-                return true;
+            if(rs.next()){
+                 File pdf = new File(rs.getString("archivo"));
+                if(pdf.exists()){
+                   Process pro = Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler "+pdf);
+                   pro.waitFor();
+               }
+            }
+            
+
+            return true;
 
                 //sv.setFecha(rs.getString("fecha"));
-            }return false;
                  
             
         }catch(SQLException e){
@@ -293,10 +287,10 @@ public class dataQueries extends connect{
         return lastfolio; 
     }
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException, InterruptedException {
         dataQueries dq = new dataQueries();
         try{
-            dq.readFile("D_01");
+            dq.readFile("D_1");
             
         }catch(IOException e){
             System.err.println(e);
