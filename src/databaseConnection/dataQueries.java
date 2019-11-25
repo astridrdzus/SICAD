@@ -107,6 +107,7 @@ public class dataQueries extends connect{
     }
     
     public boolean readFile (String filename) throws FileNotFoundException, IOException, InterruptedException{
+        System.out.println("Archivo: "+filename);
         PreparedStatement ps = null;
         ResultSet rs = null; //Result of the query
          //ResultSet rs = ps.executeQuery();
@@ -287,6 +288,7 @@ public class dataQueries extends connect{
         return lastfolio; 
     }
     
+    /*
     public static void main(String[] args) throws FileNotFoundException, InterruptedException {
         dataQueries dq = new dataQueries();
         try{
@@ -299,7 +301,7 @@ public class dataQueries extends connect{
         
         
         
-    }
+    }*/
     
      
 }

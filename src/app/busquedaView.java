@@ -8,15 +8,23 @@ package app;
 
 import javax.swing.table.DefaultTableModel;
 import controller.ctrlBusqueda;
+import databaseConnection.dataQueries;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.sql.ResultSet;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import surveyClasses.dataSurvey;
 /**
  *
  * @author astri
  */
 public class busquedaView extends javax.swing.JFrame {
+    
+    dataSurvey surveyQ = new dataSurvey();
 
     /** Creates new form busquedaView */
     public busquedaView() {
@@ -49,7 +57,7 @@ public class busquedaView extends javax.swing.JFrame {
             while(rs.next()){
                 model.addRow(new Object[]{rs.getString("folio"), rs.getString("fecha"), rs.getString("municipio"), rs.getString("encuesta"), rs.getString("nivel"),
                 //rs.getBlob("ARCHIVO")});
-                rs.getBlob("archivo")});
+                rs.getString("archivo")});
             }
             table_datosEsc.setModel((model));
         }catch(Exception e){
@@ -120,6 +128,8 @@ public class busquedaView extends javax.swing.JFrame {
         cbox_encuesta = new javax.swing.JComboBox<>();
         btn_buscar = new javax.swing.JButton();
         btn_regresar = new javax.swing.JButton();
+        jPanel8 = new javax.swing.JPanel();
+        btn_PDFview = new java.awt.Button();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -134,6 +144,11 @@ public class busquedaView extends javax.swing.JFrame {
                 "FOLIO", "FECHA", "MUNICIPIO", "ENCUESTA", "NIVEL"
             }
         ));
+        table_datosEsc.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                table_datosEscMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(table_datosEsc);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -316,14 +331,14 @@ public class busquedaView extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 3, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(29, 29, 29))
+                .addGap(77, 77, 77))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(38, 38, 38)
                 .addComponent(btn_buscar)
@@ -338,6 +353,35 @@ public class busquedaView extends javax.swing.JFrame {
             }
         });
 
+        btn_PDFview.setBackground(new java.awt.Color(102, 255, 102));
+        btn_PDFview.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn_PDFview.setLabel("Ver archivo PDF");
+        btn_PDFview.setName(""); // NOI18N
+        btn_PDFview.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_PDFviewActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btn_PDFview, javax.swing.GroupLayout.DEFAULT_SIZE, 207, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(btn_PDFview, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(161, Short.MAX_VALUE))
+        );
+
+        btn_PDFview.getAccessibleContext().setAccessibleName("button 1");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -345,26 +389,33 @@ public class busquedaView extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(88, 88, 88)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1005, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(26, 26, 26)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 931, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(100, 100, 100)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(490, 490, 490)
                         .addComponent(btn_regresar)))
-                .addContainerGap(144, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 457, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 457, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(34, 34, 34)
                 .addComponent(btn_regresar, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(97, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -431,7 +482,7 @@ public class busquedaView extends javax.swing.JFrame {
             while(rs.next()){
                 model.addRow(new Object[]{rs.getString("folio"), rs.getString("fecha"), rs.getString("municipio"), rs.getString("encuesta"), rs.getString("nivel"),
                 //rs.getBlob("ARCHIVO")});
-                rs.getBlob("archivo")});
+                rs.getString("archivo")});
             }
             table_datosEsc.setModel((model));
         }catch(Exception e){
@@ -445,6 +496,36 @@ public class busquedaView extends javax.swing.JFrame {
         this.setVisible(false);
         main.setVisible(true);
     }//GEN-LAST:event_btn_regresarActionPerformed
+
+    private void table_datosEscMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_table_datosEscMouseClicked
+        // TODO add your handling code here:
+        DefaultTableModel model = (DefaultTableModel)table_datosEsc.getModel();
+        int selectedRowIndex = table_datosEsc.getSelectedRow();
+        
+        String folio = model.getValueAt(selectedRowIndex,0).toString();
+        String archivo = model. getValueAt(selectedRowIndex,5).toString();
+        surveyQ.setFolio(folio);
+        surveyQ.setArchivo(archivo);
+        
+        //System.out.println(folio);
+        txt_folio.setText(surveyQ.getFolio());
+    }//GEN-LAST:event_table_datosEscMouseClicked
+
+    private void btn_PDFviewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_PDFviewActionPerformed
+        // TODO add your handling code here:
+        dataQueries dq = new dataQueries();
+        try{
+            dq.readFile(surveyQ.getArchivo());
+            
+        }catch(FileNotFoundException e){
+            System.out.println(e);
+        }catch( IOException e2){
+            System.out.println(e2);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(busquedaView.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }//GEN-LAST:event_btn_PDFviewActionPerformed
 
     /**
      * @param args the command line arguments
@@ -484,6 +565,7 @@ public class busquedaView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private java.awt.Button btn_PDFview;
     private javax.swing.JButton btn_buscar;
     private javax.swing.JButton btn_regresar;
     public javax.swing.JComboBox<String> cbox_encuesta;
@@ -502,6 +584,7 @@ public class busquedaView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable table_datosEsc;
     private javax.swing.JTextField txt_folio;
