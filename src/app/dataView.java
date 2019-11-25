@@ -28,6 +28,9 @@ public class dataView extends javax.swing.JFrame {
     public desarrolloSurvey dsv = new desarrolloSurvey();
     public violenciaSurvey vsv = new violenciaSurvey();
     public String folio = null;
+    JFileChooser chooser = new JFileChooser();
+    File f1 = new File("f1.pdf");
+
     /**
      * Creates new form datosEscuelaView
      */
@@ -663,14 +666,37 @@ public class dataView extends javax.swing.JFrame {
 
     private void btn_SaveDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SaveDataActionPerformed
         // TODO add your handling code here:
+
         
+
         try{
-            //Connection con = null;
-            //con = getConnection();
-            //surveyTypes  surveyTypeView = new surveyTypes();             
-            //System.out.println(surveyTypeView.sv.getEncuesta());
+            //Renaming PDF file according to folio generated
             dataQueries dq = new dataQueries();
-            ctrlData controller = new ctrlData(this.sv,dq,this);
+            String renamedPDF = sv.getFolio()+ Integer.toString(dq.getLastID());
+            System.out.println("Renamed PDF: "+renamedPDF);
+            String onlyPath = f1.getParent();
+            System.out.println(" Only Path: "+onlyPath);
+            String newfilePath= onlyPath+ "\\"+renamedPDF+".pdf";
+            File f2 = new File(newfilePath);
+            System.out.println(f2);
+            String filepath = "";
+            boolean b = f1.renameTo(f2);
+            if (b){
+                System.out.println("File renamed");
+                filepath = f1.getAbsolutePath();
+                System.out.println("New filepath: "+newfilePath);
+                txtf_filepath.setText(newfilePath);
+                sv.setArchivo(newfilePath);
+                         
+            }else{
+                System.out.println("Operation failed");
+                JOptionPane.showMessageDialog(null, "Hubo un error, cierre el archivo en caso de estar abierto.");
+            }
+           
+           
+            
+            //INSERTING TO DATABASE
+            ctrlData controller = new ctrlData(this.sv,dq, this); //Folio prefix setted before (on Survey Types)
             //System.out.println("Before calling controller");
             controller.actionPerformed(evt);
             folio = controller.getLastFolio();
@@ -718,18 +744,17 @@ public class dataView extends javax.swing.JFrame {
     private void btn_openfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_openfileActionPerformed
         // TODO add your handling code here:
         
-        //Getting the file path and name to convert it to fileinputStream
-        JFileChooser chooser = new JFileChooser();
         chooser.setCurrentDirectory(new File("C:/Users/astri/Documents/encuestas_escaneadas"));
         chooser.showOpenDialog(null);
-        File f = chooser.getSelectedFile();
-        String filepath = f.getAbsolutePath();
-        //String filename = f.getName();
-        //System.out.println("filename: "+filename);
+        File f0 = chooser.getSelectedFile();
+        f1 = f0;
+        String filepath = f1.getAbsolutePath();
         txtf_filepath.setText(filepath);
-        sv.setArchivo(filepath);
-        System.out.println("path: "+sv.getArchivo());
         
+        
+        //Getting the file path and name to convert it to fileinputStream
+        
+
         /*
         try {
             FileInputStream input = new FileInputStream(filepath);
