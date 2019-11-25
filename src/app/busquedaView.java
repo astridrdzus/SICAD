@@ -504,8 +504,9 @@ public class busquedaView extends javax.swing.JFrame {
         
         String folio = model.getValueAt(selectedRowIndex,0).toString();
         String archivo = model. getValueAt(selectedRowIndex,5).toString();
+        File auxfile = new File(archivo);
         surveyQ.setFolio(folio);
-        surveyQ.setArchivo(archivo);
+        surveyQ.setArchivo(auxfile.getName());
         
         //System.out.println(folio);
         txt_folio.setText(surveyQ.getFolio());
@@ -515,7 +516,7 @@ public class busquedaView extends javax.swing.JFrame {
         // TODO add your handling code here:
         dataQueries dq = new dataQueries();
         try{
-            dq.readFile(surveyQ.getArchivo());
+            dq.readFile(surveyQ.getArchivo(), surveyQ.getFolio());
             
         }catch(FileNotFoundException e){
             System.out.println(e);
