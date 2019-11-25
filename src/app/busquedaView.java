@@ -406,6 +406,7 @@ public class busquedaView extends javax.swing.JFrame {
         System.out.println("fecha: "+fecha);
         System.out.println("nivel: "+nivel);
         System.out.println("encuesta : "+encuesta);
+        
         String query = "SELECT * FROM datos_escuela WHERE folio LIKE '%"+folio+"%' OR municipio LIKE '%"+municipio+"%' "
                 + " OR fecha LIKE '%"+fecha+"%' OR nivel LIKE '%"+nivel+"%' OR  encuesta LIKE '%"+encuesta+"%'";
         //String query = "SELECT * FROM datos_escuela WHERE folio LIKE '%"+folio+"%' AND municipio LIKE '%"+municipio+"%' "

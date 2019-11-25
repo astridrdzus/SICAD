@@ -724,16 +724,20 @@ public class dataView extends javax.swing.JFrame {
         chooser.showOpenDialog(null);
         File f = chooser.getSelectedFile();
         String filepath = f.getAbsolutePath();
-        String filename = f.getName();
-        System.out.println("filename: "+filename);
+        //String filename = f.getName();
+        //System.out.println("filename: "+filename);
         txtf_filepath.setText(filepath);
+        sv.setArchivo(filepath);
+        System.out.println("path: "+sv.getArchivo());
+        
+        /*
         try {
             FileInputStream input = new FileInputStream(filepath);
             sv.setArchivo(input);
             System.out.println("sv.getArchivo"+ sv.getArchivo());
         } catch (FileNotFoundException ex) {
             Logger.getLogger(dataView.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        }*/
         
     }//GEN-LAST:event_btn_openfileActionPerformed
 

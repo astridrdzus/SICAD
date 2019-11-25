@@ -92,7 +92,7 @@ public class ctrlData implements ActionListener{
             //System.out.println(sv.getFecha());
             
             System.out.println(sv.getArchivo());
-            
+            System.out.println("Path archivo: "+sv.getArchivo());
             
             boolean flag = dq.create(sv);
             //dq.getLastID();

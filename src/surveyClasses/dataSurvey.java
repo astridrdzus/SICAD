@@ -25,17 +25,11 @@ public class dataSurvey {
     private String anios_servicio;
     private String nombre;
     private String fecha;
-    private FileInputStream archivo;
+    private String archivo;
 
-    public FileInputStream getArchivo() {
-        return archivo;
-    }
 
-    public void setArchivo(FileInputStream archivo) {
-        this.archivo = archivo;
-    }
+     
 
-    
     public String getFolio() {
         return folio;
     }
@@ -139,8 +133,19 @@ public class dataSurvey {
     public void setFecha(String fecha) {
         this.fecha = fecha;
     }
+    
+    public String getArchivo() {
+        return archivo;
+    }
+
+    public void setArchivo(String archivo) {
+        this.archivo = archivo;
+    }
 
 
-
+    /*
+    public static void main(String[] args) {
+        
+    }*/
 
 }

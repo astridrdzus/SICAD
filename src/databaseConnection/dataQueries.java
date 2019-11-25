@@ -4,6 +4,11 @@
  * and open the template in the editor.
  */
 package databaseConnection;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import surveyClasses.*;
 import java.sql.PreparedStatement;
 import java.sql.Connection;
@@ -17,6 +22,7 @@ import surveyClasses.desarrolloSurvey;
  * @author astri
  */
 public class dataQueries extends connect{
+    
     
     public int getLastID(){
         int lastID=0;
@@ -78,9 +84,8 @@ public class dataQueries extends connect{
             ps.setString(11, sv.getEdad());
             ps.setString(12, sv.getAnios_servicio());
             ps.setString(13, sv.getNombre());
-            System.out.println("before");
             System.out.println("archivo ps : "+sv.getArchivo());
-            ps.setBinaryStream(14, sv.getArchivo());
+            ps.setString(14, sv.getArchivo());
             System.out.println(ps);
             ps.execute();
             
@@ -101,7 +106,52 @@ public class dataQueries extends connect{
         }
     }
     
-    
+    public boolean readFile (String filename) throws FileNotFoundException{
+        PreparedStatement ps = null;
+        ResultSet rs = null; //Result of the query
+         //ResultSet rs = ps.executeQuery();
+        Connection con = getConnection();
+        
+        String sql = "SELECT * FROM datos_escuela  WHERE folio = ? ";
+        
+            try{
+            ps = con.prepareStatement(sql);
+            //ps.setString(1, sv.getFolio());
+            
+            rs= ps.executeQuery();
+            
+            while(rs.next()){
+                File pdf = new File("C:\\Users\\astri\\Documents\\encuestas_escaneadas\\D_01.pdf");
+                
+                try (FileOutputStream fos = new FileOutputStream(pdf)) {
+                    byte[] buffer = new byte[1024];
+                    InputStream is = rs.getBinaryStream("archivo");
+                    while (is.read(buffer) > 0 ){
+                        fos.write(buffer);
+                    }
+                    fos.close();
+                }catch (IOException e){
+                    e.printStackTrace();
+                }
+                
+                return true;
+
+                //sv.setFecha(rs.getString("fecha"));
+            }return false;
+                 
+            
+        }catch(SQLException e){
+            System.err.println(e);
+            return false;
+        }finally{
+            try{
+                con.close();
+            }catch(SQLException e){
+                System.err.println(e);
+            }
+        }
+        
+    }
     
    
     
@@ -243,7 +293,19 @@ public class dataQueries extends connect{
         return lastfolio; 
     }
     
-    
+    public static void main(String[] args) {
+        dataQueries dq = new dataQueries();
+        try{
+            dq.readFile("D_01");
+            
+        }catch(IOException e){
+            System.err.println(e);
+            
+        }
+        
+        
+        
+    }
     
      
 }
