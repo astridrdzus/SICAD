@@ -3388,7 +3388,7 @@ public class violenciaView extends javax.swing.JFrame {
 
     private void rbtn_Vp5_entre1y5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Vp5_entre1y5ActionPerformed
         // TODO add your handling code here:
-        vsv.setVp4("Entre 1 y 5");
+        vsv.setVp5("Entre 1 y 5");
     }//GEN-LAST:event_rbtn_Vp5_entre1y5ActionPerformed
 
     private void rbtn_Vp5_entre5y10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Vp5_entre5y10ActionPerformed
@@ -3419,12 +3419,12 @@ public class violenciaView extends javax.swing.JFrame {
 
     private void rbtn_Vp15_PocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Vp15_PocoActionPerformed
         // TODO add your handling code here:
-        vsv.setVp14("Poco");
+        vsv.setVp15("Poco");
     }//GEN-LAST:event_rbtn_Vp15_PocoActionPerformed
 
     private void rbtn_Vp16_PocoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Vp16_PocoActionPerformed
         // TODO add your handling code here:
-        vsv.setVp15("Poco");
+        vsv.setVp16("Poco");
     }//GEN-LAST:event_rbtn_Vp16_PocoActionPerformed
 
     private void rbtn_Vp11_NadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_Vp11_NadaActionPerformed
