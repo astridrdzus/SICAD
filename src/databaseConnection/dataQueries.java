@@ -26,7 +26,7 @@ public class dataQueries extends connect{
     
     public int getLastID(){
         int lastID=0;
-        String lastRowID= null;
+        String lastRowID= "0";
         PreparedStatement ps = null;
         ResultSet rs = null;
         Connection con = getConnection();

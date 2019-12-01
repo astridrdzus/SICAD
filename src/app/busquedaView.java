@@ -450,6 +450,8 @@ public class busquedaView extends javax.swing.JFrame {
         String folio = txt_folio.getText();
         String municipio = cbox_municipio.getSelectedItem().toString();
         String fecha = date_chooser.getDate().toString();
+     
+        System.out.println(date_chooser.getDateFormatString());
         String nivel = cbox_nivel.getSelectedItem().toString();
         String encuesta = cbox_encuesta.getSelectedItem().toString();
         System.out.println("folio: "+folio);
@@ -458,8 +460,10 @@ public class busquedaView extends javax.swing.JFrame {
         System.out.println("nivel: "+nivel);
         System.out.println("encuesta : "+encuesta);
         
-        String query = "SELECT * FROM datos_escuela WHERE folio LIKE '%"+folio+"%' OR municipio LIKE '%"+municipio+"%' "
-                + " OR fecha LIKE '%"+fecha+"%' OR nivel LIKE '%"+nivel+"%' OR  encuesta LIKE '%"+encuesta+"%'";
+        String query = "SELECT * FROM datos_escuela WHERE folio LIKE '%" + folio+ "%'" + "AND encuesta = '"+encuesta+"' AND  municipio = '" + municipio+"'";
+        System.out.println("BUSCANDO... ");
+       // String query = "SELECT * FROM datos_escuela WHERE folio LIKE '%"+folio+"%' OR municipio LIKE '%"+municipio+"%' "
+        //        + " OR fecha LIKE '%"+fecha+"%' OR nivel LIKE '%"+nivel+"%' OR  encuesta LIKE '%"+encuesta+"%'";
         //String query = "SELECT * FROM datos_escuela WHERE folio LIKE '%"+folio+"%' AND municipio LIKE '%"+municipio+"%' "
         //        + " AND fecha LIKE '%"+fecha+"%' AND nivel LIKE '%"+nivel+"%' AND  encuesta LIKE '%"+encuesta+"%'";
 

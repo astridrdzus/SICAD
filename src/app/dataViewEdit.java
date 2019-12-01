@@ -23,7 +23,7 @@ import surveyClasses.violenciaSurvey;
  *
  * @author astridrou
  */
-public class dataView extends javax.swing.JFrame {
+public class dataViewEdit extends javax.swing.JFrame {
     public dataSurvey sv = new dataSurvey();
     public desarrolloSurvey dsv = new desarrolloSurvey();
     public violenciaSurvey vsv = new violenciaSurvey();
@@ -34,7 +34,7 @@ public class dataView extends javax.swing.JFrame {
     /**
      * Creates new form datosEscuelaView
      */
-    public dataView() {
+    public dataViewEdit() {
         initComponents();
         this.setLocationRelativeTo(null);
         //System.out.println(sv.getEncuesta());
@@ -71,15 +71,15 @@ public class dataView extends javax.swing.JFrame {
         panel_sistema = new javax.swing.JPanel();
         L_sistema = new javax.swing.JLabel();
         cbox_sistema = new javax.swing.JComboBox<>();
+        panel_modalidad = new javax.swing.JPanel();
+        cbox_modalidad = new javax.swing.JComboBox<>();
+        L_modalidad = new javax.swing.JLabel();
         panel_antiguedad = new javax.swing.JPanel();
         L_antiguedad = new javax.swing.JLabel();
         cbox_antiguedad = new javax.swing.JComboBox<>();
         panel_turno = new javax.swing.JPanel();
         L_turno = new javax.swing.JLabel();
         cbox_turno = new javax.swing.JComboBox<>();
-        panel_modalidad = new javax.swing.JPanel();
-        cbox_modalidad = new javax.swing.JComboBox<>();
-        L_modalidad = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         L_Encuestador = new javax.swing.JLabel();
         txt_encuestador = new javax.swing.JTextField();
@@ -255,7 +255,7 @@ public class dataView extends javax.swing.JFrame {
         panel_sistemaLayout.setHorizontalGroup(
             panel_sistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_sistemaLayout.createSequentialGroup()
-                .addContainerGap(53, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(L_sistema)
                 .addGap(35, 35, 35)
                 .addComponent(cbox_sistema, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -268,6 +268,32 @@ public class dataView extends javax.swing.JFrame {
                 .addGroup(panel_sistemaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(L_sistema)
                     .addComponent(cbox_sistema, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        cbox_modalidad.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cbox_modalidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--SELECCIONE--", "Regular", "Indígena", "CONAFE" }));
+
+        L_modalidad.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        L_modalidad.setText("Modalidad: ");
+
+        javax.swing.GroupLayout panel_modalidadLayout = new javax.swing.GroupLayout(panel_modalidad);
+        panel_modalidad.setLayout(panel_modalidadLayout);
+        panel_modalidadLayout.setHorizontalGroup(
+            panel_modalidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_modalidadLayout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(L_modalidad)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addComponent(cbox_modalidad, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        panel_modalidadLayout.setVerticalGroup(
+            panel_modalidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_modalidadLayout.createSequentialGroup()
+                .addGroup(panel_modalidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cbox_modalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_modalidad))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -330,32 +356,6 @@ public class dataView extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        cbox_modalidad.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        cbox_modalidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "--SELECCIONE--", "Regular", "Indígena", "CONAFE" }));
-
-        L_modalidad.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        L_modalidad.setText("Modalidad: ");
-
-        javax.swing.GroupLayout panel_modalidadLayout = new javax.swing.GroupLayout(panel_modalidad);
-        panel_modalidad.setLayout(panel_modalidadLayout);
-        panel_modalidadLayout.setHorizontalGroup(
-            panel_modalidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_modalidadLayout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(L_modalidad)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(cbox_modalidad, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        panel_modalidadLayout.setVerticalGroup(
-            panel_modalidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_modalidadLayout.createSequentialGroup()
-                .addGroup(panel_modalidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cbox_modalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(L_modalidad))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
         javax.swing.GroupLayout panel_datosEscuelaLayout = new javax.swing.GroupLayout(panel_datosEscuela);
         panel_datosEscuela.setLayout(panel_datosEscuelaLayout);
         panel_datosEscuelaLayout.setHorizontalGroup(
@@ -366,10 +366,10 @@ public class dataView extends javax.swing.JFrame {
                     .addGroup(panel_datosEscuelaLayout.createSequentialGroup()
                         .addComponent(panel_Municipio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())
-                    .addGroup(panel_datosEscuelaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(panel_modalidad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(panel_datosEscuelaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(panel_sistema, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(panel_datosEscuelaLayout.createSequentialGroup()
+                        .addGroup(panel_datosEscuelaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(panel_sistema, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(panel_modalidad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(panel_antiguedad, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(panel_turno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(panel_datosEscuelaLayout.createSequentialGroup()
@@ -377,7 +377,8 @@ public class dataView extends javax.swing.JFrame {
                                 .addGap(143, 143, 143))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panel_datosEscuelaLayout.createSequentialGroup()
                                 .addGap(10, 10, 10)
-                                .addComponent(panel_nivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                .addComponent(panel_nivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         panel_datosEscuelaLayout.setVerticalGroup(
             panel_datosEscuelaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -386,15 +387,15 @@ public class dataView extends javax.swing.JFrame {
                 .addComponent(L_datosEsc)
                 .addGap(26, 26, 26)
                 .addComponent(panel_Municipio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panel_nivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panel_sistema, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panel_turno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(panel_modalidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panel_turno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panel_antiguedad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -473,13 +474,13 @@ public class dataView extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(panel_datosEscuela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 38, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(panel_datosDirec, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(panel_datosDirec, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(panel_datosEscuela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         btn_next.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -634,7 +635,7 @@ public class dataView extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(47, 47, 47)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addContainerGap(56, Short.MAX_VALUE))
         );
 
         pack();
@@ -667,18 +668,12 @@ public class dataView extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         
-
+        /*
         try{
             //Renaming PDF file according to folio generated
             dataQueries dq = new dataQueries();
             String renamedPDF = sv.getFolio()+ Integer.toString(dq.getLastID());
             System.out.println("Renamed PDF: "+renamedPDF);
-            String newpath = renamedPDF+".pdf";
-            sv.setArchivo("BASE_REAL\\"+newpath);
-            
-            
-            /*
-            //Getting the filepath
             String onlyPath = f1.getParent();
             System.out.println(" Only Path: "+onlyPath);
             String newfilePath= onlyPath+ "\\"+renamedPDF+".pdf";
@@ -691,15 +686,15 @@ public class dataView extends javax.swing.JFrame {
                 filepath = f1.getAbsolutePath();
                 System.out.println("New filepath: "+newfilePath);
                 txtf_filepath.setText(newfilePath);
-                sv.setArchivo("BASE_REAL\\"+f1.getName());
+                sv.setArchivo(newfilePath);
                          
             }else{
                 System.out.println("Operation failed");
                 JOptionPane.showMessageDialog(null, "Hubo un error, cierre el archivo en caso de estar abierto.");
-            } 
-           */
+            }         
             
             //INSERTING TO DATABASE
+            
             ctrlData controller = new ctrlData(this.sv,dq, this); //Folio prefix setted before (on Survey Types)
             controller.actionPerformed(evt);
             folio = controller.getLastFolio();
@@ -715,7 +710,7 @@ public class dataView extends javax.swing.JFrame {
             
         }catch(Exception e){
             
-        }
+        }*/
     }//GEN-LAST:event_btn_SaveDataActionPerformed
 
     private void txtf_filepathActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtf_filepathActionPerformed
@@ -746,7 +741,7 @@ public class dataView extends javax.swing.JFrame {
     private void btn_openfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_openfileActionPerformed
         // TODO add your handling code here:
         
-        chooser.setCurrentDirectory(new File("BASE_REAL/"));
+        chooser.setCurrentDirectory(new File("C:/Users/astri/Documents/encuestas_escaneadas"));
         chooser.showOpenDialog(null);
         File f0 = chooser.getSelectedFile();
         f1 = f0;
@@ -785,14 +780,46 @@ public class dataView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(dataView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(dataViewEdit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(dataView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(dataViewEdit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(dataView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(dataViewEdit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(dataView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(dataViewEdit.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -829,7 +856,7 @@ public class dataView extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new dataView().setVisible(true);
+                new dataViewEdit().setVisible(true);
             }
         });
     }
